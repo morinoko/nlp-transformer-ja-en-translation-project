@@ -15,6 +15,14 @@ The following three datasets were used for evaluation:
 - [Kyoto Free Translation Task (KFTT)](https://huggingface.co/datasets/Hoshikuzu/KFTT)
 - [Custom-built Ruby Dataset](https://huggingface.co/datasets/morinoko-inari/ruby-rails-ja-en)
 
+## Dependencies
+- transformers
+- datasets
+- evaluate
+- torch
+- sentencepiece
+- sacrebleu
+
 ## Directory Structure
 
 - `model_evaluation/`: Contains scripts and output files from model evaluation
