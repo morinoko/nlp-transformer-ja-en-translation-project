@@ -1,6 +1,8 @@
 # NLP Project: Using Transformers for Japanese-English Translation
 
-This repository contains the scripts (and outputs) for evaluating four transformer models for Japanese-English translation, as well as a fine-tuning experiment using the Helsinki Opus model. 
+This repository contains the scripts (and outputs) for evaluating four transformer models for Japanese-English translation, as well as a fine-tuning experiment using the Helsinki Opus model.
+
+See report and presentation slides in the `report_and_presentation_slides/` directory for more details on the models, datasets, evaluation metrics, and results.
 
 The models evaluated are:
 - [Helsinki OPUS JA-EN (Helsinki-NLP/opus-mt-ja-en)](https://huggingface.co/Helsinki-NLP/opus-mt-ja-en)
