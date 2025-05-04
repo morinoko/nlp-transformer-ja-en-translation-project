@@ -40,10 +40,10 @@ python ./model_evaluation/scripts/model_helsinki.py > `output.txt`
 
 Outputs are already saved in the `model_evaluation/script_outputs/` directory if you wish to inspect them.
 
-### MBart JA-EN Model Evaluation
+### Helsinki Opus MT Model Evaluation
 
 ```bash
-python ./model_evaluation/scripts/model_mbart_ja_en.py
+python ./model_evaluation/scripts/model_helsinki.py
 ```
 
 ### Mitsua Elan MT Model Evaluation
@@ -56,6 +56,12 @@ python ./model_evaluation/scripts/model_mitsua_elan.py
 
 ```bash
 python ./model_evaluation/scripts/model_staka_fugu.py
+```
+
+### MBart JA-EN Model Evaluation
+
+```bash
+python ./model_evaluation/scripts/model_mbart_ja_en.py
 ```
 
 ### Ruby Fine-tuned Version of Helsinki Opus Model Evaluation
