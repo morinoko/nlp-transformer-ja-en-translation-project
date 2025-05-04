@@ -7,12 +7,14 @@ See report and presentation slides in the [`report_and_presentation_slides/`](ht
 - [Link to presentation slides](https://github.com/morinoko/nlp-transformer-ja-en-translation-project/blob/main/report_and_presentation_slides/ProjectPresentationSlides.pdf)
 - [Presentation video](https://www.youtube.com/watch?v=TeqbkwpSctI) (YouTube)
 
+### Models evaluated
 The models evaluated are:
 - [Helsinki OPUS JA-EN (Helsinki-NLP/opus-mt-ja-en)](https://huggingface.co/Helsinki-NLP/opus-mt-ja-en)
 - [ElanMT (Mitsua/elan-mt-bt-ja-en)](https://huggingface.co/Mitsua/elan-mt-bt-ja-en)
 - [FuguMT (staka/fugumt-ja-en)](https://huggingface.co/staka/fugumt-ja-en)
 - [MBart JA-EN (ken11/mbart-ja-en)](https://huggingface.co/ken11/mbart-ja-en)
 
+### Datasets used
 The following three datasets were used for evaluation:
 - [Tatoeba JA-EN](https://huggingface.co/datasets/Helsinki-NLP/tatoeba)
 - [Kyoto Free Translation Task (KFTT)](https://huggingface.co/datasets/Hoshikuzu/KFTT)
