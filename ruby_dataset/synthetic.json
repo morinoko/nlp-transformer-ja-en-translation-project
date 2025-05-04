@@ -1,0 +1,698 @@
+[
+  {
+    "en": "Ruby is an interpreted, high-level, general-purpose programming language which supports multiple programming paradigms.",
+    "ja": "Rubyは、複数のプログラミングパラダイムをサポートする、インタプリタ型の高水準汎用プログラミング言語です。"
+  },
+  {
+    "en": "Variables in Ruby do not need to be declared and are denoted by a name preceded with a special character.",
+    "ja": "Rubyの変数は宣言する必要がなく、特殊文字が前に付いた名前で表されます。"
+  },
+  {
+    "en": "A block is a chunk of code enclosed between braces or do...end keywords that you can pass to a method.",
+    "ja": "ブロックは、メソッドに渡すことができる、中括弧またはdo...endキーワードで囲まれたコードの塊です。"
+  },
+  {
+    "en": "Symbol objects represent names inside the Ruby interpreter, are created using the colon syntax, and are immutable.",
+    "ja": "シンボルオブジェクトはRubyインタプリタ内の名前を表し、コロン構文を使用して作成され、不変です。"
+  },
+  {
+    "en": "Ruby's garbage collector uses a mark-and-sweep algorithm to reclaim memory occupied by objects that are no longer referenced.",
+    "ja": "Rubyのガベージコレクタは、参照されなくなったオブジェクトが占めるメモリを再利用するために、マーク・アンド・スイープアルゴリズムを使用します。"
+  },
+  {
+    "en": "Procs are nameless functions, similar to lambdas, but with different behavior regarding return statements and argument checking.",
+    "ja": "Procは名前のない関数で、ラムダに似ていますが、return文や引数チェックの挙動が異なります。"
+  },
+  {
+    "en": "Metaprogramming in Ruby allows you to write code that writes code during runtime.",
+    "ja": "Rubyのメタプログラミングでは、実行時にコードを書くコードを作成することができます。"
+  },
+  {
+    "en": "The module keyword is used to create a namespace and prevent name clashes.",
+    "ja": "moduleキーワードは、名前空間を作成し、名前の衝突を防ぐために使用されます。"
+  },
+  {
+    "en": "Singleton methods are methods that are defined for only one specific object instance.",
+    "ja": "シングルトンメソッドは、特定のオブジェクトインスタンスに対してのみ定義されるメソッドです。"
+  },
+  {
+    "en": "Ruby's method_missing hook allows objects to intercept calls to undefined methods.",
+    "ja": "Rubyのmethod_missingフックにより、オブジェクトは未定義のメソッドへの呼び出しを傍受できます。"
+  },
+  {
+    "en": "Exception handling in Ruby is done with begin, rescue, ensure and end blocks.",
+    "ja": "Rubyでの例外処理は、begin、rescue、ensure、endブロックで行われます。"
+  },
+  {
+    "en": "Thread safety is a concern when multiple threads access shared data simultaneously.",
+    "ja": "複数のスレッドが共有データに同時にアクセスする場合、スレッドセーフティが懸念事項となります。"
+  },
+  {
+    "en": "The freeze method prevents an object from being modified, raising a RuntimeError if modification is attempted.",
+    "ja": "freezeメソッドはオブジェクトの変更を防止し、変更が試みられるとRuntimeErrorを発生させます。"
+  },
+  {
+    "en": "Ruby's eigenclass (or singleton class) is a hidden class associated with each object where singleton methods reside.",
+    "ja": "Rubyの特異クラス（またはシングルトンクラス）は、各オブジェクトに関連付けられた隠しクラスで、シングルトンメソッドが存在する場所です。"
+  },
+  {
+    "en": "Refinements provide a way to extend a class locally within a module, without affecting the class globally.",
+    "ja": "リファインメントは、クラスをグローバルに影響を与えることなく、モジュール内でローカルに拡張する方法を提供します。"
+  },
+  {
+    "en": "Fibers in Ruby provide a way to implement lightweight cooperative concurrency.",
+    "ja": "RubyのFiberは、軽量な協調的並行処理を実装する方法を提供します。"
+  },
+  {
+    "en": "Hash tables in Ruby use a special hashing algorithm optimized for string keys.",
+    "ja": "Rubyのハッシュテーブルでは、文字列キー用に最適化された特別なハッシュアルゴリズムを使用します。"
+  },
+  {
+    "en": "The defined? operator returns a description string or nil if its argument is defined or not.",
+    "ja": "defined?演算子は、その引数が定義されているかどうかによって、説明文字列またはnilを返します。"
+  },
+  {
+    "en": "Ruby implements tail call optimization only when the optimization flag is enabled.",
+    "ja": "Rubyは、最適化フラグが有効な場合にのみ末尾呼び出し最適化を実装します。"
+  },
+  {
+    "en": "RubyGems is Ruby's standard package manager used to distribute Ruby programs and libraries.",
+    "ja": "RubyGemsは、Rubyのプログラムとライブラリを配布するために使用される標準のパッケージマネージャです。"
+  },
+  {
+    "en": "The Array#map method returns a new array with the results of running a block once for every element in the original array.",
+    "ja": "Array#mapメソッドは、元の配列の各要素に対してブロックを一度実行した結果を含む新しい配列を返します。"
+  },
+  {
+    "en": "Array#select returns a new array containing all elements for which the given block returns a true value.",
+    "ja": "Array#selectは、与えられたブロックが真の値を返す全ての要素を含む新しい配列を返します。"
+  },
+  {
+    "en": "Array#flatten returns a new array that is a one-dimensional flattening of the original array.",
+    "ja": "Array#flattenは、元の配列を一次元に平坦化した新しい配列を返します。"
+  },
+  {
+    "en": "The Array#inject method combines all elements of the array by applying a binary operation specified by a block.",
+    "ja": "Array#injectメソッドは、ブロックで指定された二項演算を適用して配列の全要素を結合します。"
+  },
+  {
+    "en": "String#gsub substitutes all occurrences of a pattern with a replacement string or the result of a block.",
+    "ja": "String#gsubは、パターンの全ての出現を置換文字列またはブロックの結果で置き換えます。"
+  },
+  {
+    "en": "String#split divides a string into substrings based on a delimiter, returning an array of these substrings.",
+    "ja": "String#splitは、区切り文字に基づいて文字列を部分文字列に分割し、これらの部分文字列の配列を返します。"
+  },
+  {
+    "en": "String#match returns a MatchData object describing the match of a pattern against the string or nil if no match was found.",
+    "ja": "String#matchは、文字列に対するパターンの一致を記述するMatchDataオブジェクトを返します。一致がない場合はnilを返します。"
+  },
+  {
+    "en": "The String#encode method returns a copy of the string transcoded to the given encoding.",
+    "ja": "String#encodeメソッドは、指定されたエンコーディングに変換された文字列のコピーを返します。"
+  },
+  {
+    "en": "Hash#fetch returns a value from the hash for the given key, raising a KeyError if the key is not found.",
+    "ja": "Hash#fetchは、指定されたキーに対するハッシュの値を返します。キーが見つからない場合はKeyErrorを発生させます。"
+  },
+  {
+    "en": "Hash#merge returns a new hash containing the contents of the original hash and the other hash, with duplicate keys resolved with the block if provided.",
+    "ja": "Hash#mergeは、元のハッシュと他のハッシュの内容を含む新しいハッシュを返します。重複するキーはブロックが提供された場合、それによって解決されます。"
+  },
+  {
+    "en": "Enumerable#each_with_index calls the block with two arguments: the item and its index for each item in the enumerable.",
+    "ja": "Enumerable#each_with_indexは、列挙可能オブジェクトの各アイテムに対して、アイテムとそのインデックスの2つの引数でブロックを呼び出します。"
+  },
+  {
+    "en": "Enumerable#reduce combines elements of the enumerable by applying a binary operation specified by a block.",
+    "ja": "Enumerable#reduceは、ブロックで指定された二項演算を適用して列挙可能オブジェクトの要素を結合します。"
+  },
+  {
+    "en": "The Time#strftime method formats a time according to the directives in the given format string.",
+    "ja": "Time#strftimeメソッドは、指定された書式文字列の指示に従って時間をフォーマットします。"
+  },
+  {
+    "en": "File.open opens the file named by filename according to the given mode and returns a new File object.",
+    "ja": "File.openは、指定されたモードに従ってファイル名で指定されたファイルを開き、新しいFileオブジェクトを返します。"
+  },
+  {
+    "en": "IO#readlines returns an array of all lines in the IO stream, which can be filtered using an optional line separator.",
+    "ja": "IO#readlinesは、IOストリーム内のすべての行の配列を返します。オプションの行区切り文字を使用してフィルタリングできます。"
+  },
+  {
+    "en": "Regexp#match matches the regular expression against a string and returns a MatchData object describing the match or nil if there is no match.",
+    "ja": "Regexp#matchは、正規表現を文字列と照合し、一致を記述するMatchDataオブジェクトを返します。一致がない場合はnilを返します。"
+  },
+  {
+    "en": "The BasicObject#instance_eval evaluates a string containing Ruby code or a given block in the context of the receiver.",
+    "ja": "BasicObject#instance_evalは、Rubyコードを含む文字列または与えられたブロックをレシーバのコンテキストで評価します。"
+  },
+  {
+    "en": "Module#include adds the specified module's constants, class variables, and instance methods to the including class.",
+    "ja": "Module#includeは、指定されたモジュールの定数、クラス変数、インスタンスメソッドをインクルードするクラスに追加します。"
+  },
+  {
+    "en": "The Kernel#lambda method creates a Proc object that enforces argument count and returns from the lambda rather than the calling method.",
+    "ja": "Kernel#lambdaメソッドは、引数の数を強制し、呼び出したメソッドではなくラムダから戻る Procオブジェクトを作成します。"
+  },
+  {
+    "en": "The ObjectSpace module contains methods to interact with the garbage collection facility and allows iterating over all existing objects.",
+    "ja": "ObjectSpaceモジュールには、ガベージコレクション機能を操作するためのメソッドが含まれており、既存のすべてのオブジェクトを反復処理できます。"
+  },
+  {
+    "en": "The Module#define_method creates an instance method in the receiver with the given name and the body of the block.",
+    "ja": "Module#define_methodは、与えられた名前とブロックの本体を持つインスタンスメソッドをレシーバに作成します。"
+  },
+  {
+    "en": "Using method_missing allows you to intercept calls to undefined methods and implement dynamic behavior.",
+    "ja": "method_missingを使用すると、未定義メソッドへの呼び出しを傍受し、動的な振る舞いを実装できます。"
+  },
+  {
+    "en": "Object#send invokes the method identified by the symbol, passing it any arguments specified.",
+    "ja": "Object#sendは、シンボルによって識別されるメソッドを呼び出し、指定された引数を渡します。"
+  },
+  {
+    "en": "Module#class_eval evaluates a string containing Ruby code or a given block in the context of the receiver as a class.",
+    "ja": "Module#class_evalは、Rubyコードを含む文字列または与えられたブロックをクラスとしてレシーバのコンテキストで評価します。"
+  },
+  {
+    "en": "The Module#attr_accessor method defines getter and setter methods for instance variables.",
+    "ja": "Module#attr_accessorメソッドは、インスタンス変数のゲッターメソッドとセッターメソッドを定義します。"
+  },
+  {
+    "en": "The Object#instance_variable_set method sets the instance variable named by symbol to the given object.",
+    "ja": "Object#instance_variable_setメソッドは、シンボルで指定されたインスタンス変数を与えられたオブジェクトに設定します。"
+  },
+  {
+    "en": "The Module#remove_method removes the method definition from the current class, but leaves inherited methods intact.",
+    "ja": "Module#remove_methodは、現在のクラスからメソッド定義を削除しますが、継承されたメソッドはそのままにします。"
+  },
+  {
+    "en": "Module#undef_method prevents the class or module from responding to the named method.",
+    "ja": "Module#undef_methodは、クラスまたはモジュールが指定された名前のメソッドに応答できないようにします。"
+  },
+  {
+    "en": "The const_missing method is called when a reference is made to an undefined constant.",
+    "ja": "const_missingメソッドは、未定義の定数が参照されたときに呼び出されます。"
+  },
+  {
+    "en": "Module#const_set sets the named constant to the given object, returning that object.",
+    "ja": "Module#const_setは、指定された名前の定数を与えられたオブジェクトに設定し、そのオブジェクトを返します。"
+  },
+  {
+    "en": "The begin...rescue...ensure...end structure is used for exception handling in Ruby.",
+    "ja": "begin...rescue...ensure...end構造は、Rubyでの例外処理に使用されます。"
+  },
+  {
+    "en": "The rescue clause catches exceptions of specified types and executes code when an exception occurs.",
+    "ja": "rescue節は、指定されたタイプの例外をキャッチし、例外が発生したときにコードを実行します。"
+  },
+  {
+    "en": "The ensure clause is always executed whether an exception was raised or not, making it ideal for cleanup operations.",
+    "ja": "ensure節は、例外が発生したかどうかに関わらず常に実行されるため、クリーンアップ操作に理想的です。"
+  },
+  {
+    "en": "The retry statement in a rescue block jumps back to the beginning of the begin block and retries the code.",
+    "ja": "rescue節内のretry文は、begin節の先頭に戻り、コードを再試行します。"
+  },
+  {
+    "en": "Using raise without arguments re-raises the current exception in a rescue clause.",
+    "ja": "引数なしでraiseを使用すると、rescue節内で現在の例外を再度発生させます。"
+  },
+  {
+    "en": "The Exception#backtrace method returns an array of strings representing the call stack at the point where the exception was raised.",
+    "ja": "Exception#backtraceメソッドは、例外が発生した時点でのコールスタックを表す文字列の配列を返します。"
+  },
+  {
+    "en": "Custom exceptions should inherit from StandardError rather than Exception to avoid catching system exceptions.",
+    "ja": "カスタム例外は、システム例外をキャッチするのを避けるため、ExceptionではなくStandardErrorから継承するべきです。"
+  },
+  {
+    "en": "The throw and catch methods provide a way to exit from a deeply nested structure that isn't easy to exit with a return.",
+    "ja": "throwとcatchメソッドは、returnで簡単に抜け出せない深くネストした構造から抜け出す方法を提供します。"
+  },
+  {
+    "en": "BasicObject#respond_to? returns whether an object responds to a given method, with an optional second parameter to include private methods.",
+    "ja": "BasicObject#respond_to?は、オブジェクトが指定されたメソッドに応答するかどうかを返します。オプションの2番目のパラメータでプライベートメソッドを含めることができます。"
+  },
+  {
+    "en": "The prepend method inserts a module before the including class in the ancestor chain, allowing method overriding.",
+    "ja": "prependメソッドは、メソッドのオーバーライドを可能にするために、モジュールを継承チェーンのインクルードするクラスの前に挿入します。"
+  },
+  {
+    "en": "ActiveRecord is Rails' ORM (Object-Relational Mapping) framework that connects business objects and database tables.",
+    "ja": "ActiveRecordは、ビジネスオブジェクトとデータベーステーブルを接続するRailsのORM（オブジェクト関係マッピング）フレームワークです。"
+  },
+  {
+    "en": "The Rails router recognizes URLs and dispatches them to a controller's action or to a Rack application.",
+    "ja": "Railsのルーターは、URLを認識し、コントローラーのアクションまたはRackアプリケーションに送信します。"
+  },
+  {
+    "en": "Rails migrations are a feature that allows you to evolve your database schema over time.",
+    "ja": "Railsのマイグレーションは、時間の経過とともにデータベーススキーマを進化させることができる機能です。"
+  },
+  {
+    "en": "ActiveRecord::Base.find searches for a record by its primary key and raises an exception if not found.",
+    "ja": "ActiveRecord::Base.findは、主キーでレコードを検索し、見つからない場合は例外を発生させます。"
+  },
+  {
+    "en": "ActionController handles incoming web requests and facilitates the rendering of output.",
+    "ja": "ActionControllerは、受信したウェブリクエストを処理し、出力のレンダリング処理を担当します。"
+  },
+  {
+    "en": "ActionView is responsible for rendering templates and providing view helpers that assist when building HTML forms.",
+    "ja": "ActionViewは、テンプレートのレンダリングと、HTMLフォームの構築を支援するビューヘルパーの提供を担当します。"
+  },
+  {
+    "en": "ActiveJob provides a consistent interface for declaring, creating, and running background jobs.",
+    "ja": "ActiveJobは、バックグラウンドジョブを宣言、作成、実行するための一貫したインターフェースを提供します。"
+  },
+  {
+    "en": "Rails scaffolding automatically generates the model, views, controller, and migrations for a resource.",
+    "ja": "Railsのスキャフォールディングは、リソースのモデル、ビュー、コントローラー、マイグレーションを自動的に生成します。"
+  },
+  {
+    "en": "The before_action callback is executed before a controller action and is often used for authentication.",
+    "ja": "before_actionコールバックは、コントローラーアクションの前に実行され、認証によく使用されます。"
+  },
+  {
+    "en": "ActiveRecord callbacks allow you to trigger logic before or after an alteration of an object's state.",
+    "ja": "ActiveRecordコールバックを使用すると、オブジェクトの状態が変更される前後にロジックをトリガーできます。"
+  },
+  {
+    "en": "Strong Parameters is a feature of Action Controller that prevents assigning request parameters to objects unless they have been explicitly permitted.",
+    "ja": "Strong Parametersは、明示的に許可されていない限り、リクエストパラメータをオブジェクトにに設定するのを防止するAction Controllerの機能です。"
+  },
+  {
+    "en": "The has_many association indicates a one-to-many connection with another model, with the foreign key being on the other class.",
+    "ja": "has_many関連付けは、別のモデルとの1対多の接続を示し、外部キーは他のクラスにあります。"
+  },
+  {
+    "en": "Turbolinks accelerates navigation by replacing the full page refresh with JavaScript-powered partial updates.",
+    "ja": "Turbolinksは、完全ページ更新をJavaScriptによる部分更新に置き換えることで、ナビゲーションを高速化します。"
+  },
+  {
+    "en": "Rails environments (development, test, production) allow you to run your application differently based on the environment it's running in.",
+    "ja": "Rails環境（開発、テスト、本番）により、アプリケーションが実行されている環境に基づいて異なる方法でアプリケーションを実行できます。"
+  },
+  {
+    "en": "ActiveStorage facilitates uploading files to cloud storage services and attaching those files to Active Record objects.",
+    "ja": "ActiveStorageは、クラウドストレージサービスへのファイルのアップロードと、それらのファイルをActive Recordオブジェクトに添付することを容易にします。"
+  },
+  {
+    "en": "ActionMailer is the Rails component that enables sending emails from your application.",
+    "ja": "ActionMailerは、アプリケーションからメールを送信できるようにするRailsのコンポーネントです。"
+  },
+  {
+    "en": "Rails validators ensure that only valid data is stored in the database.",
+    "ja": "Railsのバリデータは、有効なデータのみがデータベースに保存されることを保証します。"
+  },
+  {
+    "en": "The rails generate command is used to automatically generate boilerplate code for various Rails components.",
+    "ja": "rails generateコマンドは、さまざまなRailsコンポーネントのボイラープレートコードを自動的に生成するために使用されます。"
+  },
+  {
+    "en": "Rails' flash is a special part of the session which is cleared with each request and commonly used to display error or success messages.",
+    "ja": "Railsのflashは、リクエストごとにクリアされるセッションの特別な部分で、一般的にエラーメッセージや成功メッセージの表示に使用されます。"
+  },
+  {
+    "en": "Concerns in Rails provide a way to share common code between controllers and models.",
+    "ja": "RailsのConcernsは、コントローラとモデル間で共通コードを共有する方法を提供します。"
+  },
+  {
+    "en": "By inheriting from ActiveRecord::Base, your class automatically gains the ability to interact with a database table.",
+    "ja": "ActiveRecord::Baseを継承することで、あなたのクラスは自動的にデータベーステーブルとやり取りする能力を獲得します。"
+  },
+  {
+    "en": "When dealing with complex queries, ActiveRecord's where.not can be more readable than SQL's NOT operator.",
+    "ja": "複雑なクエリを扱う場合、ActiveRecordのwhere.notは、SQLのNOT演算子よりも読みやすいことがあります。"
+  },
+  {
+    "en": "What makes ActiveRecord so powerful is its ability to represent associations between models using simple declarations.",
+    "ja": "ActiveRecordを非常に強力にしているのは、単純な宣言を使用してモデル間の関連性を表現する能力です。"
+  },
+  {
+    "en": "Did you know that counter_cache can significantly improve performance by avoiding unnecessary COUNT queries?",
+    "ja": "counter_cacheが不要なCOUNTクエリを回避することでパフォーマンスを大幅に向上できることをご存知でしたか？"
+  },
+  {
+    "en": "Through the use of transactions, ActiveRecord ensures that multiple database operations either all succeed or all fail.",
+    "ja": "トランザクションを使用することで、ActiveRecordは複数のデータベース操作がすべて成功するか、すべて失敗することを保証します。"
+  },
+  {
+    "en": "Never directly interpolate user input into your ActiveRecord queries, as this could lead to SQL injection attacks!",
+    "ja": "SQLインジェクション攻撃につながる可能性があるため、ユーザー入力を直接ActiveRecordクエリに補間しないでください！"
+  },
+  {
+    "en": "Although convenient, using find_or_create_by without a block might result in race conditions in high-traffic applications.",
+    "ja": "便利ではありますが、ブロックなしでfind_or_create_byを使用すると、高トラフィックのアプリケーションで競合状態が発生する可能性があります。"
+  },
+  {
+    "en": "Not only does ActiveRecord handle database operations, but it also provides validations to ensure data integrity.",
+    "ja": "ActiveRecordはデータベース操作を処理するだけでなく、データの整合性を確保するためのバリデーションも提供します。"
+  },
+  {
+    "en": "Optimistic locking, implemented via the lock_version column, prevents conflicting updates when multiple users edit the same record.",
+    "ja": "lock_versionカラムを介して実装される楽観的ロックは、複数のユーザーが同じレコードを編集する際の競合する更新を防止します。"
+  },
+  {
+    "en": "While developing the application, we discovered that ActiveRecord callbacks can sometimes lead to unexpected side effects.",
+    "ja": "アプリケーションを開発している間、ActiveRecordコールバックが時々予期しない副作用を引き起こす可能性があることを発見しました。"
+  },
+  {
+    "en": "Rarely do developers need to write raw SQL when using ActiveRecord, as its query interface is so comprehensive.",
+    "ja": "ActiveRecordを使用する場合、そのクエリインターフェースが非常に包括的であるため、開発者が生のSQLを書く必要はほとんどありません。"
+  },
+  {
+    "en": "Since implementing database indices, our ActiveRecord queries have become significantly faster.",
+    "ja": "データベースインデックスを実装して以来、私たちのActiveRecordクエリは大幅に高速化しました。"
+  },
+  {
+    "en": "Unless you explicitly specify a primary key, ActiveRecord will assume the table has an 'id' column.",
+    "ja": "主キーを明示的に指定しない限り、ActiveRecordはテーブルに'id'カラムがあると想定します。"
+  },
+  {
+    "en": "Before saving records, ActiveRecord checks if the object is valid by running all applicable validations.",
+    "ja": "レコードを保存する前に、ActiveRecordは適用可能なすべてのバリデーションを実行して、オブジェクトが有効かどうかをチェックします。"
+  },
+  {
+    "en": "Rails provides built-in support for three testing approaches: unit, functional, and integration testing.",
+    "ja": "Railsは、ユニットテスト、機能テスト、統合テストの3つのテストアプローチに対する組み込みサポートを提供しています。"
+  },
+  {
+    "en": "The Rails testing framework uses fixtures to populate the test database with sample data.",
+    "ja": "Railsのテストフレームワークは、フィクスチャを使用してテストデータベースにサンプルデータを入力します。"
+  },
+  {
+    "en": "Minitest is the default testing framework included with Rails and provides a complete suite of testing capabilities.",
+    "ja": "MinitestはRailsに同梱されているデフォルトのテストフレームワークで、完全なテスト機能スイートを提供します。"
+  },
+  {
+    "en": "RSpec is a popular alternative testing framework for Rails that emphasizes readable, descriptive test cases.",
+    "ja": "RSpecは、読みやすく説明的なテストケースを重視したRailsの人気のある代替テストフレームワークです。"
+  },
+  {
+    "en": "Controller tests in Rails focus on a single controller action and its interactions with the model and view.",
+    "ja": "Railsのコントローラテストは、単一のコントローラアクションとそのモデルおよびビューとの相互作用に焦点を当てています。"
+  },
+  {
+    "en": "Model tests verify the business logic, validations, and associations defined in ActiveRecord models.",
+    "ja": "モデルテストは、ActiveRecordモデルで定義されたビジネスロジック、バリデーション、関連付けを検証します。"
+  },
+  {
+    "en": "System tests in Rails allow testing of browser interactions using Capybara and a browser driver.",
+    "ja": "Railsのシステムテストでは、Capybaraとブラウザドライバーを使用してブラウザの操作をテストできます。"
+  },
+  {
+    "en": "The test environment in Rails uses a separate database to ensure tests do not affect development or production data.",
+    "ja": "Railsのテスト環境は、テストが開発または本番データに影響を与えないように、別のデータベースを使用します。"
+  },
+  {
+    "en": "Rails generators automatically create test files when generating models, controllers, and other components.",
+    "ja": "Railsジェネレーターは、モデル、コントローラー、その他のコンポーネントを生成するときに、テストファイルを自動的に作成します。"
+  },
+  {
+    "en": "Factories in Rails testing provide a more flexible alternative to fixtures for creating test data.",
+    "ja": "Railsテストにおけるファクトリーは、テストデータを作成するためのフィクスチャよりも柔軟な代替手段を提供します。"
+  },
+  {
+    "en": "The assert_difference method verifies that a numeric difference occurs before and after the execution of a block.",
+    "ja": "assert_differenceメソッドは、ブロックの実行前後に数値の差異が発生することを検証します。"
+  },
+  {
+    "en": "Mocks and stubs in Rails tests allow simulation of external dependencies without requiring actual implementation.",
+    "ja": "Railsテストのモックとスタブは、実際の実装を必要とせずに外部依存関係のシミュレーションを可能にします。"
+  },
+  {
+    "en": "Integration tests in Rails verify the interaction between controllers, assessing the whole application working together.",
+    "ja": "Railsの統合テストは、コントローラー間の相互作用を検証し、アプリケーション全体の連携を評価します。"
+  },
+  {
+    "en": "The Rails test runner provides options for running specific tests or test directories selectively.",
+    "ja": "Railsのテストランナーは、特定のテストまたはテストディレクトリを選択的に実行するためのオプションを提供します。"
+  },
+  {
+    "en": "Test-driven development in Rails involves writing tests before implementing the functionality they verify.",
+    "ja": "Railsのテスト駆動開発は、検証する機能を実装する前にテストを書くことを含みます。"
+  },
+  {
+    "en": "Rails parallel testing can distribute test execution across multiple processors to reduce test suite runtime.",
+    "ja": "Railsの並列テストは、テストスイートの実行時間を短縮するために、複数のプロセッサにわたってテスト実行を分散できます。"
+  },
+  {
+    "en": "The setup method in Rails tests initializes objects and conditions needed by all test methods in a class.",
+    "ja": "Railsテストのsetupメソッドは、クラス内のすべてのテストメソッドで必要なオブジェクトと条件を初期化します。"
+  },
+  {
+    "en": "ActionMailer tests check that emails are delivered with the correct content and recipients.",
+    "ja": "ActionMailerテストは、メールが正しい内容と受信者に配信されることを確認します。"
+  },
+  {
+    "en": "The Rails VCR gem records HTTP interactions for tests and replays them during future test runs.",
+    "ja": "Rails VCRgemは、テスト用のHTTP操作を記録し、将来のテスト実行中にそれらを再生します。"
+  },
+  {
+    "en": "Rails provides test helpers that simplify common testing tasks and promote test code reuse.",
+    "ja": "Railsは、一般的なテストタスクを簡素化し、テストコードの再利用を促進するテストヘルパーを提供します。"
+  },
+  {
+    "en": "ActionMailer provides a way to send emails from your application using mailer classes and views.",
+    "ja": "ActionMailerは、メーラークラスとビューを使用してアプリケーションからメールを送信する方法を提供します。"
+  },
+  {
+    "en": "To generate a mailer in Rails, developers can use the rails generate mailer command followed by the mailer name.",
+    "ja": "Railsでメーラーを生成するには、開発者はrails generate mailerコマンドの後にメーラー名を使用できます。"
+  },
+  {
+    "en": "Similar to controllers, mailers consist of methods that can be called to handle email delivery logic.",
+    "ja": "コントローラーと同様に、メーラーはメール配信ロジックを処理するために呼び出せるメソッドで構成されています。"
+  },
+  {
+    "en": "Within a mailer method, instance variables are assigned for use in the email template view.",
+    "ja": "メーラーメソッド内では、メールテンプレートビューで使用するためにインスタンス変数が割り当てられます。"
+  },
+  {
+    "en": "By default, Rails creates both HTML and plain text email templates when generating a new mailer action.",
+    "ja": "デフォルトでは、Railsは新しいメーラーアクションを生成するとき、HTMLとプレーンテキストの両方のメールテンプレートを作成します。"
+  },
+  {
+    "en": "Email delivery can be configured to happen synchronously or asynchronously using ActiveJob integration.",
+    "ja": "メール配信は、ActiveJob統合を使用して同期的または非同期的に行われるように設定できます。"
+  },
+  {
+    "en": "Through the use of callbacks, ActionMailer allows pre-processing of emails before they are sent.",
+    "ja": "コールバックを使用することで、ActionMailerはメールが送信される前に前処理を行うことができます。"
+  },
+  {
+    "en": "Rails applications in development mode can use the letter_opener gem to preview emails in the browser instead of sending them.",
+    "ja": "開発モードのRailsアプリケーションでは、letter_opener gemを使用して、メールを送信する代わりにブラウザでプレビューできます。"
+  },
+  {
+    "en": "The delivery_method configuration option specifies how emails will be delivered, with SMTP being the most common in production.",
+    "ja": "delivery_method設定オプションは、メールの配信方法を指定し、SMTPが本番環境で最も一般的です。"
+  },
+  {
+    "en": "In the testing environment, ActionMailer::Base.deliveries array stores emails for later inspection instead of sending them.",
+    "ja": "テスト環境では、ActionMailer::Base.deliveries配列がメールを送信する代わりに後で検査するためにメールを保存します。"
+  },
+  {
+    "en": "For multipart emails, Rails automatically sets the appropriate content-type headers based on the available templates.",
+    "ja": "マルチパートメールの場合、Railsは利用可能なテンプレートに基づいて適切なcontent-typeヘッダーを自動的に設定します。"
+  },
+  {
+    "en": "Rails mailers support file attachments through the attachments method, allowing binary data to be included with emails.",
+    "ja": "Railsメーラーは、attachmentsメソッドを通じてファイル添付をサポートし、バイナリデータをメールに含めることができます。"
+  },
+  {
+    "en": "A mailer preview class inheriting from ActionMailer::Preview enables developers to view emails in a browser during development.",
+    "ja": "ActionMailer::Previewを継承するメーラープレビュークラスにより、開発者は開発中にブラウザでメールを表示できます。"
+  },
+  {
+    "en": "The mail method, when called within a mailer action, returns a mail object that will eventually be delivered.",
+    "ja": "メーラーアクション内で呼び出されるとき、mailメソッドは最終的に配信されるメールオブジェクトを返します。"
+  },
+  {
+    "en": "During the asset compilation phase, Rails will automatically inline CSS when the premailer-rails gem is included in the project.",
+    "ja": "アセットコンパイルフェーズ中、premailer-rails gemがプロジェクトに含まれていると、RailsはCSSを自動的にインライン化します。"
+  },
+  {
+    "en": "Despite being similar to controllers, mailers differ in that they inherit from ActionMailer::Base rather than ApplicationController.",
+    "ja": "コントローラーに似ているにもかかわらず、メーラーはApplicationControllerではなくActionMailer::Baseから継承するという点で異なります。"
+  },
+  {
+    "en": "After defining a mailer method, calling the deliver_now or deliver_later method will trigger the actual email delivery process.",
+    "ja": "メーラーメソッドを定義した後、deliver_nowまたはdeliver_laterメソッドを呼び出すと、実際のメール配信プロセスが開始されます。"
+  },
+  {
+    "en": "With internationalization support, Rails mailers can render templates in different languages based on the user's locale.",
+    "ja": "国際化サポートにより、Railsメーラーはユーザーのロケールに基づいて異なる言語でテンプレートをレンダリングできます。"
+  },
+  {
+    "en": "Since version 6.0, Rails offers Action Mailbox for handling incoming emails by routing them to controller-like mailboxes.",
+    "ja": "バージョン6.0以降、Railsはコントローラーに似たメールボックスに受信メールをルーティングすることで、それらを処理するAction Mailboxを提供しています。"
+  },
+  {
+    "en": "Without properly configuring the sender address, emails might be marked as spam by receiving email servers.",
+    "ja": "送信者アドレスを適切に設定しないと、メールは受信メールサーバーによってスパムとしてマークされる可能性があります。"
+  },
+  {
+    "en": "Action Cable integrates WebSockets with the rest of your Rails application, allowing real-time features to be written in Ruby.",
+    "ja": "Action CableはWebSocketsをRailsアプリケーションの他の部分と統合し、リアルタイム機能をRubyで記述できるようにします。"
+  },
+  {
+    "en": "Through channels in Action Cable, specific streams can be created for different types of real-time functionality.",
+    "ja": "Action Cableのチャネルを通じて、異なるタイプのリアルタイム機能向けの特定のストリームを作成できます。"
+  },
+  {
+    "en": "Connection authentication in Action Cable often relies on the same authentication system used by the main Rails application.",
+    "ja": "Action Cableの接続認証は、多くの場合、メインのRailsアプリケーションで使用されるのと同じ認証システムに依存しています。"
+  },
+  {
+    "en": "While WebSockets maintain a persistent connection, Action Cable can fall back to polling when WebSockets aren't available.",
+    "ja": "WebSocketsは永続的な接続を維持しますが、Action CableはWebSocketsが利用できない場合にポーリングにフォールバックできます。"
+  },
+  {
+    "en": "Broadcasting to channels allows servers to push content to subscribed clients without requiring the clients to request it.",
+    "ja": "チャネルへのブロードキャストにより、サーバーはクライアントがリクエストすることなく、登録済みクライアントにコンテンツをプッシュできます。"
+  },
+  {
+    "en": "Redis is commonly used as the subscription adapter for Action Cable in production environments with multiple servers.",
+    "ja": "複数のサーバーを持つ本番環境では、RedisがAction Cableのサブスクリプションアダプターとして一般的に使用されます。"
+  },
+  {
+    "en": "Import maps in Rails 7 provide a way to use JavaScript modules directly from CDNs or local files without requiring a bundler.",
+    "ja": "Rails 7のインポートマップは、バンドラーを必要とせずにCDNやローカルファイルから直接JavaScriptモジュールを使用する方法を提供します。"
+  },
+  {
+    "en": "With import maps, browser-native ESM imports are mapped to specific URLs for modules, simplifying JavaScript management.",
+    "ja": "インポートマップを使用すると、ブラウザネイティブのESMインポートがモジュールの特定のURLにマッピングされ、JavaScript管理が簡素化されます。"
+  },
+  {
+    "en": "By editing the importmap.json file, developers can specify the source location for each JavaScript module used in the application.",
+    "ja": "importmap.jsonファイルを編集することで、開発者はアプリケーションで使用される各JavaScriptモジュールのソース場所を指定できます。"
+  },
+  {
+    "en": "Unlike traditional bundlers, import maps load modules on-demand rather than combining them into large bundles.",
+    "ja": "従来のバンドラーとは異なり、インポートマップはモジュールを大きなバンドルに結合するのではなく、オンデマンドでロードします。"
+  },
+  {
+    "en": "Local module installation for import maps can be managed using the pin command provided by the importmap-rails gem.",
+    "ja": "インポートマップのローカルモジュールインストールは、importmap-rails gemが提供するpinコマンドを使用して管理できます。"
+  },
+  {
+    "en": "During development, import maps can improve iteration speed since no rebuild step is required when changing JavaScript code.",
+    "ja": "開発中、JavaScriptコードを変更する際に再構築ステップが不要なため、インポートマップは反復速度を向上させることができます。"
+  },
+  {
+    "en": "Propshaft serves as an asset pipeline for Rails focused on simplicity and leveraging modern web standards.",
+    "ja": "Propshaftは、シンプルさと最新のWeb標準の活用に焦点を当てたRails向けのアセットパイプラインとして機能します。"
+  },
+  {
+    "en": "Unlike Sprockets, Propshaft doesn't transform assets but instead focuses on fingerprinting and path resolution.",
+    "ja": "Sprocketsとは異なり、Propshaftはアセットを変換せず、フィンガープリントとパス解決に焦点を当てています。"
+  },
+  {
+    "en": "Manifest compilation in Propshaft provides a mapping between logical asset names and their fingerprinted versions.",
+    "ja": "Propshaftのマニフェストコンパイルは、論理的なアセット名とそのフィンガープリントバージョン間のマッピングを提供します。"
+  },
+  {
+    "en": "Assets processed through Propshaft can be referenced in views using the asset_path helper method.",
+    "ja": "Propshaftを通じて処理されたアセットは、asset_pathヘルパーメソッドを使用してビューで参照できます。"
+  },
+  {
+    "en": "The Propshaft asset pipeline was designed to work well with modern front-end build tools like esbuild and Vite.",
+    "ja": "Propshaftアセットパイプラインは、esbuildやViteなどの最新のフロントエンドビルドツールとうまく連携するように設計されています。"
+  },
+  {
+    "en": "By delegating JavaScript processing to specialized tools, Propshaft maintains a clearer separation of concerns than previous asset pipelines.",
+    "ja": "JavaScript処理を専門ツールに委任することで、Propshaftは以前のアセットパイプラインよりも明確な関心の分離を維持します。"
+  },
+  {
+    "en": "Since Propshaft lacks the preprocessing capabilities of Sprockets, external compilers must be integrated for tasks like Sass compilation.",
+    "ja": "PropshaftにはSprocketsの前処理機能がないため、Sassコンパイルなどのタスクには外部コンパイラを統合する必要があります。"
+  },
+  {
+    "en": "Between Sprockets and Propshaft, the latter offers improved performance due to its minimalist approach to asset processing.",
+    "ja": "SprocketsとPropshaftの間では、後者はアセット処理に対するミニマリストアプローチにより、パフォーマンスが向上しています。"
+  },
+  {
+    "en": "Solid Queue provides a database-backed Active Job backend that prioritizes reliability and operational simplicity.",
+    "ja": "Solid Queueは、信頼性と運用のシンプルさを優先するデータベースをバックエンドとしたActive Jobバックエンドを提供します。"
+  },
+  {
+    "en": "Unlike Redis-based job queues, Solid Queue stores all job data directly in your application's primary database.",
+    "ja": "Redisベースのジョブキューとは異なり、Solid Queueはすべてのジョブデータをアプリケーションのプライマリデータベースに直接保存します。"
+  },
+  {
+    "en": "The architecture of Solid Queue separates job execution from job polling through dedicated processes called dispatchers.",
+    "ja": "Solid Queueのアーキテクチャは、ディスパッチャーと呼ばれる専用プロセスを通じて、ジョブの実行をジョブのポーリングから分離します。"
+  },
+  {
+    "en": "Through concurrency controls, Solid Queue prevents the same job from being processed simultaneously by multiple workers.",
+    "ja": "並行制御を通じて、Solid Queueは同じジョブが複数のワーカーによって同時に処理されることを防ぎます。"
+  },
+  {
+    "en": "Solid Queue's supervisor process monitors and restarts dispatchers and workers when they unexpectedly terminate.",
+    "ja": "Solid Queueのスーパーバイザープロセスは、ディスパッチャーとワーカーが予期せず終了した場合に、それらを監視して再起動します。"
+  },
+  {
+    "en": "Database-level locking mechanisms in Solid Queue ensure that scheduled jobs are processed exactly once.",
+    "ja": "Solid Queueのデータベースレベルのロックメカニズムは、スケジュールされたジョブが確実に1回だけ処理されることを保証します。"
+  },
+  {
+    "en": "During deployment, Solid Queue gracefully handles job processing by allowing in-progress jobs to complete before shutting down.",
+    "ja": "デプロイ中、Solid Queueはシャットダウンする前に進行中のジョブを完了させることで、ジョブ処理を適切に処理します。"
+  },
+  {
+    "en": "Solid Cache implements a database-backed cache store compatible with Rails' cache interface and multi-process environments.",
+    "ja": "Solid Cacheは、Railsのキャッシュインターフェースとマルチプロセス環境に互換性のあるデータベースバックアップのキャッシュストアを実装しています。"
+  },
+  {
+    "en": "The data model of Solid Cache utilizes two primary tables: one for entries and another for key-value pairs.",
+    "ja": "Solid Cacheのデータモデルは、エントリー用とキーと値のペア用の2つの主要テーブルを利用しています。"
+  },
+  {
+    "en": "Unlike memory-based caches, Solid Cache persists across application restarts without losing cached content.",
+    "ja": "メモリベースのキャッシュとは異なり、Solid Cacheはキャッシュされたコンテンツを失うことなくアプリケーションの再起動後も維持されます。"
+  },
+  {
+    "en": "For distributed applications, Solid Cache eliminates the need for a separate cache server while maintaining performance.",
+    "ja": "分散アプリケーションの場合、Solid Cacheはパフォーマンスを維持しながら、別のキャッシュサーバーの必要性を排除します。"
+  },
+  {
+    "en": "Memory utilization remains stable with Solid Cache even as the cache size grows due to database-based storage.",
+    "ja": "データベースベースのストレージにより、キャッシュサイズが増加しても、Solid Cacheではメモリ使用量は安定したままです。"
+  },
+  {
+    "en": "Solid Cache implements automatic expiration through a background job that periodically removes obsolete entries.",
+    "ja": "Solid Cacheは、定期的に古いエントリーを削除するバックグラウンドジョブを通じて自動有効期限切れを実装しています。"
+  },
+  {
+    "en": "Solid Cable extends Action Cable by providing database-backed persistence for WebSocket connections and broadcasts.",
+    "ja": "Solid CableはAction Cableを拡張し、WebSocket接続とブロードキャストのためのデータベースバックアップの永続性を提供します。"
+  },
+  {
+    "en": "Within high-availability environments, Solid Cable enables seamless WebSocket connection handling across multiple application servers.",
+    "ja": "高可用性環境内で、Solid Cableは複数のアプリケーションサーバー間でシームレスなWebSocket接続処理を可能にします。"
+  },
+  {
+    "en": "The subscription storage model in Solid Cable facilitates reconnection to appropriate channels even when users connect to different server instances.",
+    "ja": "Solid Cableのサブスクリプションストレージモデルは、ユーザーが異なるサーバーインスタンスに接続する場合でも、適切なチャネルへの再接続を容易にします。"
+  },
+  {
+    "en": "By storing connection state in the database, Solid Cable allows for more resilient real-time features in load-balanced environments.",
+    "ja": "データベースに接続状態を保存することで、Solid Cableはロードバランス環境でより回復力のあるリアルタイム機能を可能にします。"
+  },
+  {
+    "en": "The adaptation layer between Solid Cable and Action Cable maintains compatibility with existing channel implementations.",
+    "ja": "Solid CableとAction Cable間の適応層は、既存のチャネル実装との互換性を維持します。"
+  },
+  {
+    "en": "Message broadcasting in Solid Cable ensures delivery across all application servers through database-backed message queues.",
+    "ja": "Solid Cableのメッセージブロードキャストは、データベースバックアップのメッセージキューを通じて、すべてのアプリケーションサーバー間での配信を確保します。"
+  },
+  {
+    "en": "Connection recovery mechanisms in Solid Cable reduce user-visible disruptions during application deployments or server restarts.",
+    "ja": "Solid Cableの接続回復メカニズムは、アプリケーションのデプロイやサーバーの再起動中のユーザーに見える中断を減少させます。"
+  }
+]

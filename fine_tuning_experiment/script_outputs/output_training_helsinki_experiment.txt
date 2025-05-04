@@ -1,0 +1,615 @@
+Preparing dataset for training...
+Finished preparing datasets!
+
+Preparing model and tokenizer...
+Finished setting up model and tokenizer.
+
+Tokenizing datasets...
+Finished tokenizing datasets:
+100 samples:
+DatasetDict({
+    train: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 100
+    })
+    test: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 50
+    })
+})
+
+200 samples:
+DatasetDict({
+    train: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 200
+    })
+    test: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 50
+    })
+})
+
+300 samples:
+DatasetDict({
+    train: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 300
+    })
+    test: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 50
+    })
+})
+
+All samples:
+DatasetDict({
+    train: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 353
+    })
+    test: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 50
+    })
+})
+
+Starting training with 100 samples...
+{'eval_loss': 2.101158618927002, 'eval_bleu': 0.26586167720700127, 'eval_chrf': 60.66014487070915, 'eval_runtime': 4.546, 'eval_samples_per_second': 10.999, 'eval_steps_per_second': 0.88, 'epoch': 1.0}
+{'eval_loss': 2.0702762603759766, 'eval_bleu': 0.27020473584564464, 'eval_chrf': 60.56932545131738, 'eval_runtime': 4.1472, 'eval_samples_per_second': 12.056, 'eval_steps_per_second': 0.965, 'epoch': 2.0}
+{'eval_loss': 2.060081720352173, 'eval_bleu': 0.2746203342999537, 'eval_chrf': 60.654154391560056, 'eval_runtime': 4.2047, 'eval_samples_per_second': 11.891, 'eval_steps_per_second': 0.951, 'epoch': 3.0}
+{'train_runtime': 19.1294, 'train_samples_per_second': 15.683, 'train_steps_per_second': 1.098, 'train_loss': 1.9856452941894531, 'epoch': 3.0}
+Finished training with 100 samples!
+
+Saving 100 sample model...
+Saved!
+
+Starting training with 200 samples...
+{'eval_loss': 1.98030424118042, 'eval_bleu': 0.31145509367905927, 'eval_chrf': 62.22981260385656, 'eval_runtime': 4.2125, 'eval_samples_per_second': 11.869, 'eval_steps_per_second': 0.95, 'epoch': 1.0}
+{'eval_loss': 1.9480273723602295, 'eval_bleu': 0.1556783821205999, 'eval_chrf': 57.79000918786002, 'eval_runtime': 143.4964, 'eval_samples_per_second': 0.348, 'eval_steps_per_second': 0.028, 'epoch': 2.0}
+{'eval_loss': 1.936739444732666, 'eval_bleu': 0.2306888815155462, 'eval_chrf': 59.549808610908904, 'eval_runtime': 16.949, 'eval_samples_per_second': 2.95, 'eval_steps_per_second': 0.236, 'epoch': 3.0}
+{'train_runtime': 177.3584, 'train_samples_per_second': 3.383, 'train_steps_per_second': 0.22, 'train_loss': 1.8670223920773237, 'epoch': 3.0}
+Finished training with 200 samples!
+
+Saving 200 sample model...
+Saved!
+
+Starting training with 300 samples...
+{'eval_loss': 1.857462763786316, 'eval_bleu': 0.3178756870979631, 'eval_chrf': 62.894957252964964, 'eval_runtime': 4.638, 'eval_samples_per_second': 10.78, 'eval_steps_per_second': 0.862, 'epoch': 1.0}
+{'eval_loss': 1.8033236265182495, 'eval_bleu': 0.326648369710595, 'eval_chrf': 63.695117475382844, 'eval_runtime': 4.611, 'eval_samples_per_second': 10.844, 'eval_steps_per_second': 0.867, 'epoch': 2.0}
+{'eval_loss': 1.7931205034255981, 'eval_bleu': 0.32587210486890533, 'eval_chrf': 63.522041656825145, 'eval_runtime': 4.6287, 'eval_samples_per_second': 10.802, 'eval_steps_per_second': 0.864, 'epoch': 3.0}
+{'train_runtime': 28.7917, 'train_samples_per_second': 31.259, 'train_steps_per_second': 1.98, 'train_loss': 1.6673658939830043, 'epoch': 3.0}
+Finished training with 300 samples!
+
+Saving 300 sample model...
+Saved!
+
+Starting training with all samples...
+{'eval_loss': 1.7461631298065186, 'eval_bleu': 0.19134175611134932, 'eval_chrf': 61.01779351364779, 'eval_runtime': 19.5245, 'eval_samples_per_second': 2.561, 'eval_steps_per_second': 0.205, 'epoch': 1.0}
+{'eval_loss': 1.717726469039917, 'eval_bleu': 0.20186138643168108, 'eval_chrf': 61.541610359286516, 'eval_runtime': 22.6288, 'eval_samples_per_second': 2.21, 'eval_steps_per_second': 0.177, 'epoch': 2.0}
+{'eval_loss': 1.7063500881195068, 'eval_bleu': 0.20271144489427342, 'eval_chrf': 61.84192985926038, 'eval_runtime': 22.1985, 'eval_samples_per_second': 2.252, 'eval_steps_per_second': 0.18, 'epoch': 3.0}
+{'train_runtime': 83.8981, 'train_samples_per_second': 12.622, 'train_steps_per_second': 0.822, 'train_loss': 1.418707695560179, 'epoch': 3.0}
+Finished training with all samples!
+
+Saving all-sample model...
+Saved!
+
+Finished training ALL the models!
+Starting fine-tuned evaluation with test set:
+-----------------------------------------
+Fine-tuned Model Evaluation scores vs original model
+-----------------------------------------
+BLEU - Original Ruby: 0.2496851103506172
+chrF - Original Ruby: 59.37619927395916
+BLEU - Fine-tuned Ruby 100 samples: 0.2746203342999537
+chrF - Fine-tuned Ruby 100 samples: 60.47089758626366
+BLEU - Fine-tuned Ruby 200 samples: 0.3168182298079393
+chrF - Fine-tuned Ruby 200 samples: 62.373514004036345
+BLEU - Fine-tuned Ruby 300 samples: 0.32570045766431555
+chrF - Fine-tuned Ruby 300 samples: 63.31474413552124
+BLEU - Fine-tuned Ruby all samples: 0.33657499284757775
+chrF - Fine-tuned Ruby all samples: 63.31574401590807
+
+-----------------------------------------
+Translations from fine-tuned model test data output compared to original:
+-----------------------------------------
+1
+Original JA: これは動作しますが、あまりエレガントではありません。
+EN Reference: This works, but isn’t very elegant.
+---------------
+Original EN Prediction: This works, but it's not very elegant.
+Fine-tuned EN Prediction 100 samples: This works, but it's not very elegant.
+Fine-tuned EN Prediction 200 samples: This works, but it's not very elegant.
+Fine-tuned EN Prediction 300 samples: This works, but it isn't very elegant.
+Fine-tuned EN Prediction all samples: This works, but it isn't very elegant.
+
+2
+Original JA: つまり、selfのみがprivateメソッドを呼び出す際のレシーバとなります。
+EN Reference: Only self is allowed to be the receiver of a private method call.
+---------------
+Original EN Prediction: In other words, you're the only person calling the "private method" method.
+Fine-tuned EN Prediction 100 samples: In other words, it's the leciba for which you only call a "private method."
+Fine-tuned EN Prediction 200 samples: In other words, only self-resieves when calling a private method.
+Fine-tuned EN Prediction 300 samples: In other words, only self is the receiver when calling a private method.
+Fine-tuned EN Prediction all samples: In other words, only self is the receiver when calling a private method.
+
+3
+Original JA: オブジェクトを作りましょう。
+EN Reference: Create an object.
+---------------
+Original EN Prediction: Let's make an object.
+Fine-tuned EN Prediction 100 samples: Let's make an object.
+Fine-tuned EN Prediction 200 samples: Let's create an object.
+Fine-tuned EN Prediction 300 samples: Let's create an object.
+Fine-tuned EN Prediction all samples: Let's create an object.
+
+4
+Original JA: Action CableはWebSocketsをRailsアプリケーションの他の部分と統合し、リアルタイム機能をRubyで記述できるようにします。
+EN Reference: Action Cable integrates WebSockets with the rest of your Rails application, allowing real-time features to be written in Ruby.
+---------------
+Original EN Prediction: Action Cables combine webSocks with other parts of the Rails application and allow you to describe real-time features in Ruby.
+Fine-tuned EN Prediction 100 samples: Action Cable combines webSocks with other parts of Rails applications and allows you to describe real-time features in Ruby.
+Fine-tuned EN Prediction 200 samples: Action Cable combines webSocks with the rest of Rails applications so that they can describe real-time features in Ruby.
+Fine-tuned EN Prediction 300 samples: Action Cable combines webSockets with the rest of Rails applications so that they can describe real-time features in Ruby.
+Fine-tuned EN Prediction all samples: Action Cable integrations WebSocks with the rest of Rails applications so that they can describe real-time features in Ruby.
+
+5
+Original JA: 短いのでそのまま入力し直してもよいですが、先ほど入力したところに戻って 変更することもできます。
+EN Reference: You could type it in, it’s short enough, but you may also be able to go up and change what you just entered.
+---------------
+Original EN Prediction: It's so short that you can re-enter it, but you can go back to where you typed it and change it.
+Fine-tuned EN Prediction 100 samples: It's so short that you can re-enter it, but you can also change it back to where you typed it earlier.
+Fine-tuned EN Prediction 200 samples: It's so short that you can re-enter it, but you can also change it back to where you typed it earlier.
+Fine-tuned EN Prediction 300 samples: Since it's short, you can re-enter it as it is, but you can go back to where you just entered it and change it.
+Fine-tuned EN Prediction all samples: Since it is short, it can be re-entered, but it can be modified back to where we just entered it.
+
+6
+Original JA: このメソッドは実際の変数の型を意識せず、サポートしているメソッドに頼っています。
+EN Reference: This method does not care about the actual type of a variable; it just relies on what methods it supports.
+---------------
+Original EN Prediction: This method is unaware of the actual type of variable and depends on the methods that support it.
+Fine-tuned EN Prediction 100 samples: This method is unaware of the actual type of variable and depends on the methods it supports.
+Fine-tuned EN Prediction 200 samples: This method is not conscious of the actual variable type, but depends on the methods it supports.
+Fine-tuned EN Prediction 300 samples: This method is not conscious of the actual variable type, but depends on the methods it supports.
+Fine-tuned EN Prediction all samples: Not conscious of the actual variable type, this method depends on the methods it supports.
+
+7
+Original JA: この例では、sqrt(9)がメッセージになります。
+EN Reference: In this case it’s sqrt(9).
+---------------
+Original EN Prediction: In this example, sqrt (9) will be a message.
+Fine-tuned EN Prediction 100 samples: In this example, sqrts9 is a message.
+Fine-tuned EN Prediction 200 samples: In this example, sqrt (0) is a message.
+Fine-tuned EN Prediction 300 samples: In this example, sqrt (0) is a message.
+Fine-tuned EN Prediction all samples: In this example, sqrt (9) is the message.
+
+8
+Original JA: クラスや整数でさえオブジェクトです。
+EN Reference: Even classes and integers are objects.
+---------------
+Original EN Prediction: Even classes and integers are objects.
+Fine-tuned EN Prediction 100 samples: Even classes and integers are objects.
+Fine-tuned EN Prediction 200 samples: Even classes and integers are objects.
+Fine-tuned EN Prediction 300 samples: Even classes and integers are objects.
+Fine-tuned EN Prediction all samples: Even classes and integers are objects.
+
+9
+Original JA: では、=> nilは何でしょうか？
+EN Reference: But then what’s the => nil bit?
+---------------
+Original EN Prediction: Let's see if we can figure out what's greater than or equal to.
+Fine-tuned EN Prediction 100 samples: It's going to be equal to 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20.
+Fine-tuned EN Prediction 200 samples: Let's do another one.
+Fine-tuned EN Prediction 300 samples: So let's see if we can solve for nil.
+Fine-tuned EN Prediction all samples: So what's the nil?
+
+10
+Original JA: 3足す2
+EN Reference: Three plus two.
+---------------
+Original EN Prediction: Three plus two.
+Fine-tuned EN Prediction 100 samples: Three plus two.
+Fine-tuned EN Prediction 200 samples: Three plus two.
+Fine-tuned EN Prediction 300 samples: Three plus two.
+Fine-tuned EN Prediction all samples: Three plus two.
+
+11
+Original JA: JavaScript処理を専門ツールに委任することで、Propshaftは以前のアセットパイプラインよりも明確な関心の分離を維持します。
+EN Reference: By delegating JavaScript processing to specialized tools, Propshaft maintains a clearer separation of concerns than previous asset pipelines.
+---------------
+Original EN Prediction: By delegateing JavaScript processing as a special tool, Propshaft maintains a separateness of interest more clearly than the previous asset pipeline.
+Fine-tuned EN Prediction 100 samples: By delegateing JavaScript processing as a special tool, Propshaft maintains a separateness of interest more clearly than the previous asset pipeline.
+Fine-tuned EN Prediction 200 samples: By delegateing JavaScript processing as a special tool, Propshaft maintains a separateness of interest more clearly than the original asset pipeline.
+Fine-tuned EN Prediction 300 samples: By delegateing JavaScript processing as a special tool, Propshaft maintains a separateness of interest more clearly than the original asset pipeline.
+Fine-tuned EN Prediction all samples: By delegateing JavaScript processing as a special tool, Propshaft maintains a separateness of interest more clearly than the original asset pipeline.
+
+12
+Original JA: ActiveRecordを非常に強力にしているのは、単純な宣言を使用してモデル間の関連性を表現する能力です。
+EN Reference: What makes ActiveRecord so powerful is its ability to represent associations between models using simple declarations.
+---------------
+Original EN Prediction: What makes ActiveRecor so powerful is the ability to express relations between models using simple declarations.
+Fine-tuned EN Prediction 100 samples: What makes ActiveRecor so powerful is its ability to express relations between models using simple declarations.
+Fine-tuned EN Prediction 200 samples: What makes ActiveRecor so powerful is its ability to express relations between models using simple declarations.
+Fine-tuned EN Prediction 300 samples: What makes ActiveRecor so powerful is its ability to express relationships between models using simple declarations.
+Fine-tuned EN Prediction all samples: What makes ActiveRecord so powerful is its ability to express relationships between models using simple declarations.
+
+13
+Original JA: そのため、このメソッドは必ず小数（浮動小数点数）を返します。
+EN Reference: Therefore the method always returns a floating-point number.
+---------------
+Original EN Prediction: Therefore, this method always returns a decimal float value.
+Fine-tuned EN Prediction 100 samples: Therefore, this method always returns a decimal float value.
+Fine-tuned EN Prediction 200 samples: Therefore, this method always returns a decimal float value.
+Fine-tuned EN Prediction 300 samples: Therefore, this method always returns a decimal float value.
+Fine-tuned EN Prediction all samples: That is why this method always returns a decimal float value.
+
+14
+Original JA: File.openは、指定されたモードに従ってファイル名で指定されたファイルを開き、新しいFileオブジェクトを返します。
+EN Reference: File.open opens the file named by filename according to the given mode and returns a new File object.
+---------------
+Original EN Prediction: File.open will open a file named by filename according to the specified mode and return a new File object.
+Fine-tuned EN Prediction 100 samples: File. open opens a file named by the filename according to the specified mode and returns a new File object.
+Fine-tuned EN Prediction 200 samples: File. open opens a file named by the filename according to the specified mode and returns a new File object.
+Fine-tuned EN Prediction 300 samples: File.open opens a file named by the name according to the specified mode and returns a new File object.
+Fine-tuned EN Prediction all samples: File.open opens a file named by the name according to the given mode and returns a new File object.
+
+15
+Original JA: Windows をお使いの場合、スタートメニューのRubyからInteractive Rubyを起動してください。
+EN Reference: If you’re using Windows, open Interactive Ruby from the Ruby section of your Start Menu.
+---------------
+Original EN Prediction: If you want to use Windows, please start Interactive Ruby from Ruby on the start menu.
+Fine-tuned EN Prediction 100 samples: If you use Windows, please start Interactive Ruby from Ruby on the Start menu.
+Fine-tuned EN Prediction 200 samples: If you use Windows, please start Interactive Ruby from Ruby in the start-up menu.
+Fine-tuned EN Prediction 300 samples: If you are using Windows, please start Interactive Ruby from Ruby in the start-up menu.
+Fine-tuned EN Prediction all samples: If you are using Windows, start Interactive Ruby from Ruby in the start-up menu.
+
+16
+Original JA: 一つはカッコなしでメソッド呼び出しが使われていることです。
+EN Reference: One is that we’re calling the method without parentheses again.
+---------------
+Original EN Prediction: One is that method calls are being used without makeup.
+Fine-tuned EN Prediction 100 samples: One is that method calls are used without makeup.
+Fine-tuned EN Prediction 200 samples: One is that method calls are used without makeup.
+Fine-tuned EN Prediction 300 samples: For one thing, method calls are used without makeup.
+Fine-tuned EN Prediction all samples: For one thing, method calls are used without a screw.
+
+17
+Original JA: Array#replaceは、与えられた配列の内容で配列の内容を置き換えます。
+EN Reference: Array#replace replaces the contents of an array with the contents of another array.
+---------------
+Original EN Prediction: The Array#replace will replace the contents of the array with the contents of the given array.
+Fine-tuned EN Prediction 100 samples: Array#replace replaces the contents of the array with the contents of the given array.
+Fine-tuned EN Prediction 200 samples: Array#replace replaces the contents of the array with the contents of the given array.
+Fine-tuned EN Prediction 300 samples: Array#replace replaces the contents of the array with the contents of the given array.
+Fine-tuned EN Prediction all samples: Array#replace replaces the contents of the array with the contents of the given array.
+
+18
+Original JA: @@から始まる識別子はクラス変数になります。
+EN Reference: If it starts with @@, it is a class variable.
+---------------
+Original EN Prediction: The identifier starting with @@ will be a class variable.
+Fine-tuned EN Prediction 100 samples: The identifier starting with @ is a class variable.
+Fine-tuned EN Prediction 200 samples: The identifier starting with @@ is a class variable.
+Fine-tuned EN Prediction 300 samples: The identifier starting with @ is a class variable.
+Fine-tuned EN Prediction all samples: The identifier starting with @ is a class variable.
+
+19
+Original JA: インポートマップのローカルモジュールインストールは、importmap-rails gemが提供するpinコマンドを使用して管理できます。
+EN Reference: Local module installation for import maps can be managed using the pin command provided by the importmap-rails gem.
+---------------
+Original EN Prediction: The local installation of the import map can be managed by using the php command provided by iportmap-mailsgm.
+Fine-tuned EN Prediction 100 samples: The local installation of the import map can be managed by using the php command provided by iportmap-mailsgm.
+Fine-tuned EN Prediction 200 samples: Local installations for import maps can be managed using the php command provided by iportmap-mailsgm.
+Fine-tuned EN Prediction 300 samples: Local installations of import maps can be managed using the iportmap-rails gm supply command.
+Fine-tuned EN Prediction all samples: The local module installations of import maps can be managed by using the mailin command provided by importmap-rails gm.
+
+20
+Original JA: Action Cableのチャネルを通じて、異なるタイプのリアルタイム機能向けの特定のストリームを作成できます。
+EN Reference: Through channels in Action Cable, specific streams can be created for different types of real-time functionality.
+---------------
+Original EN Prediction: You can create a specific stream for different types of real-time functions through the ActionCile channel.
+Fine-tuned EN Prediction 100 samples: Through ActionCile channels, you can create a specific stream for different types of real-time functions.
+Fine-tuned EN Prediction 200 samples: Through ActionCable channels, you can create a specific stream for different types of real-time functions.
+Fine-tuned EN Prediction 300 samples: Through ActionCable channels, you can create a specific stream for different types of real-time functions.
+Fine-tuned EN Prediction all samples: Through Action Cable channels, you can create a specific stream for different types of real-time functions.
+
+21
+Original JA: これらはメソッドではないので、再定義できません。
+EN Reference: They are not methods, and cannot be redefined.
+---------------
+Original EN Prediction: These aren't methods, so we can't redefinate them.
+Fine-tuned EN Prediction 100 samples: These aren't methods, so they can't be redefined.
+Fine-tuned EN Prediction 200 samples: These aren't methods, so they can't be redefined.
+Fine-tuned EN Prediction 300 samples: These aren't methods, so they can't be redefined.
+Fine-tuned EN Prediction all samples: Since these aren't methods, they can't be redefined.
+
+22
+Original JA: Sprocketsとは異なり、Propshaftはアセットを変換せず、フィンガープリントとパス解決に焦点を当てています。
+EN Reference: Unlike Sprockets, Propshaft doesn't transform assets but instead focuses on fingerprinting and path resolution.
+---------------
+Original EN Prediction: Unlike Sprockers, Propshaft doesn't transform the asset, but focuses on fingerprint and path resolution.
+Fine-tuned EN Prediction 100 samples: Unlike Speckets, Propshaft doesn't transform the asset, but focuses on fingerprinting and path resolution.
+Fine-tuned EN Prediction 200 samples: Unlike Speckets, Propshaft doesn't convert asset, but focuss on fingerprints and path resolutions.
+Fine-tuned EN Prediction 300 samples: Unlike Speckets, Propshaft doesn't convert asset, but focuss on fingerprint and path resolution.
+Fine-tuned EN Prediction all samples: Unlike Speckets, Propshaft doesn't convert asset, but focuss on fingerprint and path resolution.
+
+23
+Original JA: だからと言って、定数を再定義するべきだということではありません。
+EN Reference: That isn’t to say you should redefine constants, though.
+---------------
+Original EN Prediction: That doesn't mean we should redefine the constant.
+Fine-tuned EN Prediction 100 samples: That doesn't mean we should redefin the constants.
+Fine-tuned EN Prediction 200 samples: That doesn't mean we should redefine the constants.
+Fine-tuned EN Prediction 300 samples: That doesn't mean we should redefine the constants.
+Fine-tuned EN Prediction all samples: That doesn't mean we should redefine the constant.
+
+24
+Original JA: method_missingを使用すると、未定義メソッドへの呼び出しを傍受し、動的な振る舞いを実装できます。
+EN Reference: Using method_missing allows you to intercept calls to undefined methods and implement dynamic behavior.
+---------------
+Original EN Prediction: Using method_missing enables you to intercept calls to undefined methods and implement dynamic behavior.
+Fine-tuned EN Prediction 100 samples: Using method_mixing enables you to intercept calls to an undefined method and implement dynamic behavior.
+Fine-tuned EN Prediction 200 samples: Using method_missing enables you to intercept calls to undefined methods and implement dynamic behaviors.
+Fine-tuned EN Prediction 300 samples: Using method_missing enables you to intercept calls to undefined methods and implement dynamic behaviors.
+Fine-tuned EN Prediction all samples: Using method_missing enables you to intercept calls to undefined methods and implement dynamic behavior.
+
+25
+Original JA: Railsのテストフレームワークは、フィクスチャを使用してテストデータベースにサンプルデータを入力します。
+EN Reference: The Rails testing framework uses fixtures to populate the test database with sample data.
+---------------
+Original EN Prediction: The test framework for Rails will be used to enter sample data into test databases.
+Fine-tuned EN Prediction 100 samples: The test framework for Rails inputs sample data into a test database using a fax machine.
+Fine-tuned EN Prediction 200 samples: The test framework for Rails inputs sample data into test databases using a faxer.
+Fine-tuned EN Prediction 300 samples: The test framework in Rails inputs sample data into test databases using a faxer.
+Fine-tuned EN Prediction all samples: The test framework in Rails inputs sample data into test databases using a faxer.
+
+26
+Original JA: rescue節は、指定されたタイプの例外をキャッチし、例外が発生したときにコードを実行します。
+EN Reference: The rescue clause catches exceptions of specified types and executes code when an exception occurs.
+---------------
+Original EN Prediction: The recoup section captures the exception of the specified type and executes the code when an exception occurs.
+Fine-tuned EN Prediction 100 samples: The recoup section captures an exception of the specified type and executes the code when an exception occurs.
+Fine-tuned EN Prediction 200 samples: The recoup section captures the exception of the specified type and executes the code when an exception occurs.
+Fine-tuned EN Prediction 300 samples: The rescue section captures the exception of the given type and executes the code when an exception occurs.
+Fine-tuned EN Prediction all samples: The rescue section captures an exception of the given type and executes the code when an exception occurs.
+
+27
+Original JA: importmap.jsonファイルを編集することで、開発者はアプリケーションで使用される各JavaScriptモジュールのソース場所を指定できます。
+EN Reference: By editing the importmap.json file, developers can specify the source location for each JavaScript module used in the application.
+---------------
+Original EN Prediction: By editing the emportmap. json file, the developer can specify the source location of each JavaScript module used by the application.
+Fine-tuned EN Prediction 100 samples: By editing the emportmap. json file, the developer can specify the source location of each JavaScript module used by the application.
+Fine-tuned EN Prediction 200 samples: By editing emportmap. json files, developers can specify the source location of each JavaScript module used by applications.
+Fine-tuned EN Prediction 300 samples: By editing the emportmap. json file, developers can specify the source location of each JavaScript module used by the application.
+Fine-tuned EN Prediction all samples: By editing the emportmap. json file, developers can specify the source of each JavaScript module used by the application.
+
+28
+Original JA: カスタム例外は、システム例外をキャッチするのを避けるため、ExceptionではなくStandardErrorから継承するべきです。
+EN Reference: Custom exceptions should inherit from StandardError rather than Exception to avoid catching system exceptions.
+---------------
+Original EN Prediction: Custom exceptions should be inherited from StandardError rather than Excessor to avoid catching system exceptions.
+Fine-tuned EN Prediction 100 samples: Custom exceptions should inherit from StandardError rather than Exact to avoid catching system exceptions.
+Fine-tuned EN Prediction 200 samples: Custom exceptions should inherit from StandardError rather than Exact to avoid catching system exceptions.
+Fine-tuned EN Prediction 300 samples: Custom exceptions should inherit from StandardError rather than Exection to avoid catching system exception.
+Fine-tuned EN Prediction all samples: Custom exceptions should inherit from StandardError rather than Explicit to avoid catching system exception.
+
+29
+Original JA: Railsのシステムテストでは、Capybaraとブラウザドライバーを使用してブラウザの操作をテストできます。
+EN Reference: System tests in Rails allow testing of browser interactions using Capybara and a browser driver.
+---------------
+Original EN Prediction: In Rails' system test, you can test your browser operation using Caporara and the browser driver.
+Fine-tuned EN Prediction 100 samples: In Rails' system test, you can test browser operations using Caporara and the browser driver.
+Fine-tuned EN Prediction 200 samples: In Rails system testing, you can test browser operations using CapKara and browser drivers.
+Fine-tuned EN Prediction 300 samples: In Rails system testing, you can test browser operations using CapKara and browser drivers.
+Fine-tuned EN Prediction all samples: In Rails system tests, you can test browser operations using CapKara and browser drivers.
+
+30
+Original JA: ActiveRecordを使用する場合、そのクエリインターフェースが非常に包括的であるため、開発者が生のSQLを書く必要はほとんどありません。
+EN Reference: Rarely do developers need to write raw SQL when using ActiveRecord, as its query interface is so comprehensive.
+---------------
+Original EN Prediction: When using ActiveRecor, the query interface is so comprehensive that you have little need for the developer to write a raw SQL.
+Fine-tuned EN Prediction 100 samples: When using ActiveRecor, the query interface is so comprehensive that the developer has little need to write a raw SQL.
+Fine-tuned EN Prediction 200 samples: When using ActiveRecor, the query interface is so comprehensive that the developers rarely need to write a raw SQL.
+Fine-tuned EN Prediction 300 samples: When using ActiveRecor, the query interface is so comprehensive that the developers rarely need to write a raw SQL.
+Fine-tuned EN Prediction all samples: When using ActiveRecord, the query interface is so comprehensive that developers rarely need to write a raw SQL.
+
+31
+Original JA: もしお使いのマシンにRubyが入っていない場合、始める前に インストールしておいてください。
+EN Reference: If you do not have Ruby on your computer install it before you get started.
+---------------
+Original EN Prediction: If your machine isn't loaded, please install it before you start.
+Fine-tuned EN Prediction 100 samples: If your machine isn't loaded, please install it before you start.
+Fine-tuned EN Prediction 200 samples: If your machine doesn't contain Ruby, please install it before you start.
+Fine-tuned EN Prediction 300 samples: If your machine doesn't contain Ruby, please install it before you start.
+Fine-tuned EN Prediction all samples: If Ruby isn't in your machine, please install it before you start.
+
+32
+Original JA: しかし、もうちょっと詳しく見てみましょう。
+EN Reference: But let’s take a closer look at things.
+---------------
+Original EN Prediction: But let's take a closer look.
+Fine-tuned EN Prediction 100 samples: But let's take a closer look.
+Fine-tuned EN Prediction 200 samples: But let's take a closer look.
+Fine-tuned EN Prediction 300 samples: But let's take a closer look.
+Fine-tuned EN Prediction all samples: But let's take a closer look.
+
+33
+Original JA: Rails VCRgemは、テスト用のHTTP操作を記録し、将来のテスト実行中にそれらを再生します。
+EN Reference: The Rails VCR gem records HTTP interactions for tests and replays them during future test runs.
+---------------
+Original EN Prediction: Rails VCRagem records your testing operations and plays them during future tests.
+Fine-tuned EN Prediction 100 samples: Rails VCRagem records HTTP testing operations and plays them during future tests.
+Fine-tuned EN Prediction 200 samples: Rails VCRagem records HTTP testing operations and plays them during future test executions.
+Fine-tuned EN Prediction 300 samples: Rails VCRagem records HTTP testing operations and plays them during future testing executions.
+Fine-tuned EN Prediction all samples: Rails VCRagem records the HTTP testing operations and plays them during future testing executions.
+
+34
+Original JA: 結果は以下のようになるはずです。
+EN Reference: The output should be:
+---------------
+Original EN Prediction: The result should be:
+Fine-tuned EN Prediction 100 samples: The result should be:
+Fine-tuned EN Prediction 200 samples: The result should be:
+Fine-tuned EN Prediction 300 samples: The result should be:
+Fine-tuned EN Prediction all samples: The result should be:
+
+35
+Original JA: 簡単ですね。
+EN Reference: Easy enough.
+---------------
+Original EN Prediction: It's easy, isn't it?
+Fine-tuned EN Prediction 100 samples: It's easy.
+Fine-tuned EN Prediction 200 samples: It's easy.
+Fine-tuned EN Prediction 300 samples: It's easy.
+Fine-tuned EN Prediction all samples: It's easy.
+
+36
+Original JA: 開発中、JavaScriptコードを変更する際に再構築ステップが不要なため、インポートマップは反復速度を向上させることができます。
+EN Reference: During development, import maps can improve iteration speed since no rebuild step is required when changing JavaScript code.
+---------------
+Original EN Prediction: In the course of the development of JavaScript code, there is no need for a reassemble step in changing the JavaScript code, so the import map can increase the repetition speed.
+Fine-tuned EN Prediction 100 samples: In the development of JavaScript code, there is no need for reassembled steps to change it, so the import map can increase the repetition speed.
+Fine-tuned EN Prediction 200 samples: During development, since reconstruction steps are unnecessary when changing JavaScript code, import maps can increase repetition speed.
+Fine-tuned EN Prediction 300 samples: During development, since reconstruction steps are unnecessary when changing JavaScript code, import maps can increase the repetition speed.
+Fine-tuned EN Prediction all samples: During development, since reconstruction steps are unnecessary when modifying JavaScript code, import maps can improve repetition speed.
+
+37
+Original JA: Rubyはオブジェクトの変数にアクセスできる簡単な方法を用意しています。
+EN Reference: Ruby provides an easy way of providing access to an object’s variables.
+---------------
+Original EN Prediction: Ruby provides a simple way to access object variables.
+Fine-tuned EN Prediction 100 samples: Ruby provides a simple way to access object variables.
+Fine-tuned EN Prediction 200 samples: Ruby provides a simple way to access object variables.
+Fine-tuned EN Prediction 300 samples: Ruby provides a simple way to access object variables.
+Fine-tuned EN Prediction all samples: Ruby provides a simple way to access object variables.
+
+38
+Original JA: prependメソッドは、メソッドのオーバーライドを可能にするために、モジュールを継承チェーンのインクルードするクラスの前に挿入します。
+EN Reference: The prepend method inserts a module before the including class in the ancestor chain, allowing method overriding.
+---------------
+Original EN Prediction: The prepend method will insert the module in front of the class that will be included in the inherit chain to enable the method to override.
+Fine-tuned EN Prediction 100 samples: The prepend method inserts a module in front of a class that allows the inherit chain to override methods.
+Fine-tuned EN Prediction 200 samples: The prepend method inserts modules in front of classes that are included in the inheritance chain to allow the method to override.
+Fine-tuned EN Prediction 300 samples: The prepend method inserts modules in front of classes that are included in the inheritance chain to allow method overrides.
+Fine-tuned EN Prediction all samples: The prepend method inserts modules in front of classes that are included in the inherit chain to allow the method to override.
+
+39
+Original JA: Module#attr_accessorメソッドは、インスタンス変数のゲッターメソッドとセッターメソッドを定義します。
+EN Reference: The Module#attr_accessor method defines getter and setter methods for instance variables.
+---------------
+Original EN Prediction: The Module #attr_accessor method defines the instance variable's Getter method and the sector method.
+Fine-tuned EN Prediction 100 samples: Module#attr_accessor methods define an instance variable's Getter method and a sector method.
+Fine-tuned EN Prediction 200 samples: The Module#attr_accessor method defines the instance variable's Getter method and the sector method.
+Fine-tuned EN Prediction 300 samples: The Module#attr_accessor method defines the instance variable's Getter method and the sector method.
+Fine-tuned EN Prediction all samples: The Control#attr_accessor method defines the instance variable's Getter method and the sector method.
+
+40
+Original JA: 開発モードのRailsアプリケーションでは、letter_opener gemを使用して、メールを送信する代わりにブラウザでプレビューできます。
+EN Reference: Rails applications in development mode can use the letter_opener gem to preview emails in the browser instead of sending them.
+---------------
+Original EN Prediction: The Rails application in development mode allows you to preview your browser using letter_opener gm instead of sending mail.
+Fine-tuned EN Prediction 100 samples: The Rails application in development mode allows you to preview the email in a browser instead of using letter_opener gm.
+Fine-tuned EN Prediction 200 samples: Rails applications in development mode can preview mails in browsers instead of sending mail using letter_opener gm.
+Fine-tuned EN Prediction 300 samples: Rails applications in development mode allow browser previews instead of sending emails using letter_opener gm.
+Fine-tuned EN Prediction all samples: Rails applications in development mode allow browser previews instead of sending emails using letter_opener gm.
+
+41
+Original JA: Array#injectメソッドは、ブロックで指定された二項演算を適用して配列の全要素を結合します。
+EN Reference: The Array#inject method combines all elements of the array by applying a binary operation specified by a block.
+---------------
+Original EN Prediction: The Array#inject method combines all elements of the array using the binary operation specified by the block.
+Fine-tuned EN Prediction 100 samples: The Array#inject method combines all elements of an array with a binary operation specified by a block.
+Fine-tuned EN Prediction 200 samples: The Array#inject method combines all elements of an array with a binary operation specified by a block.
+Fine-tuned EN Prediction 300 samples: The Array#inject method combines all elements of an array with a binary operation specified by a block.
+Fine-tuned EN Prediction all samples: The Array#inject method combines all elements of an array with a binary operation specified by a block.
+
+42
+Original JA: iのような使い捨ての変数が必要ですし、そのリストがどのくらいの長さになるか 計算する必要がありますし、どのようにリストを走査するか説明する必要があります。
+EN Reference: You need a throw-away variable like i, have to figure out how long the list is, and have to explain how to walk over the list.
+---------------
+Original EN Prediction: You need a disposable variable like i, and you need to calculate how long that list will be, and you need to explain how to scan the list.
+Fine-tuned EN Prediction 100 samples: You need a disposable variable, like i, and you need to calculate how long that list will be, and you need to explain how to scan the list.
+Fine-tuned EN Prediction 200 samples: You need a disposable variable, like i, and you need to calculate how long that list will be, and you need to explain how to scan the list.
+Fine-tuned EN Prediction 300 samples: You need a disposable variable, like i, and you need to figure out how long that list is, and you need to explain how to scan the list.
+Fine-tuned EN Prediction all samples: You need a disposable variable, like i, and you need to figure out how long that list is, and you need to explain how to scan the list.
+
+43
+Original JA: Solid Cableのメッセージブロードキャストは、データベースバックアップのメッセージキューを通じて、すべてのアプリケーションサーバー間での配信を確保します。
+EN Reference: Message broadcasting in Solid Cable ensures delivery across all application servers through database-backed message queues.
+---------------
+Original EN Prediction: The Solid Cable message broadcast will secure distribution between all applications servers through a database backup message queue.
+Fine-tuned EN Prediction 100 samples: Solid Cable message broadcasts ensure distribution between all application servers through a database backup message queue.
+Fine-tuned EN Prediction 200 samples: The Solid Cable Message Broadcast ensures delivery between all application servers through a message queue in a database backup.
+Fine-tuned EN Prediction 300 samples: The Solid Cable Message Broadcast ensures delivery between all application servers through a database backup message queue.
+Fine-tuned EN Prediction all samples: Message broadcasts in Solid Cable ensure delivery between all application servers through a database backup message queue.
+
+44
+Original JA: 定数は厳密な意味での定数ではありません。
+EN Reference: Constants are not really constant.
+---------------
+Original EN Prediction: Constants are not constants in the strict sense.
+Fine-tuned EN Prediction 100 samples: Constants are not constants in a strict sense.
+Fine-tuned EN Prediction 200 samples: Constants are not constants in a strict sense.
+Fine-tuned EN Prediction 300 samples: Constants are not exactly constants.
+Fine-tuned EN Prediction all samples: Constants are not exactly constants.
+
+45
+Original JA: メソッドは2つしか定義していないのに。
+EN Reference: We only defined two methods.
+---------------
+Original EN Prediction: Even though we've defined only two methods.
+Fine-tuned EN Prediction 100 samples: Even though we've defined only two methods.
+Fine-tuned EN Prediction 200 samples: Even though we only defined two methods.
+Fine-tuned EN Prediction 300 samples: Even though we only defined two methods.
+Fine-tuned EN Prediction all samples: Even though we only defined two methods.
+
+46
+Original JA: これらにシンボルを渡した場合には、 そのメソッドの可視性が変更されます。
+EN Reference: If you pass a Symbol to one of them, that method’s visibility is altered.
+---------------
+Original EN Prediction: If you give these symbols to them, their methods will be affected by visualization.
+Fine-tuned EN Prediction 100 samples: If you give these symbols to them, the method's visibleness will be changed.
+Fine-tuned EN Prediction 200 samples: If you pass a symbol to these, the methods will be modified to be visible.
+Fine-tuned EN Prediction 300 samples: If you pass a symbol to these, the methods will be modified to be visible.
+Fine-tuned EN Prediction all samples: If you pass a symbol to them, the methods will be modified to be visible.
+
+47
+Original JA: これはこのコマンドの評価結果です。
+EN Reference: That’s the result of the expression.
+---------------
+Original EN Prediction: This is the result of the assessment of this command.
+Fine-tuned EN Prediction 100 samples: This is the result of the assessment of this command.
+Fine-tuned EN Prediction 200 samples: This is the result of the assessment of this command.
+Fine-tuned EN Prediction 300 samples: This is the result of the assessment of this command.
+Fine-tuned EN Prediction all samples: This is the result of the assessment of this command.
+
+48
+Original JA: 便利ではありますが、ブロックなしでfind_or_create_byを使用すると、高トラフィックのアプリケーションで競合状態が発生する可能性があります。
+EN Reference: Although convenient, using find_or_create_by without a block might result in race conditions in high-traffic applications.
+---------------
+Original EN Prediction: It's convenient, but using find_or_create_by without block, there may be conflict states in high traffic applications.
+Fine-tuned EN Prediction 100 samples: It is convenient, but using find_or_create_by without a block can lead to conflict states in high traffic applications.
+Fine-tuned EN Prediction 200 samples: It is convenient, but using find_or_create_by without a block can lead to conflict states in high traffic applications.
+Fine-tuned EN Prediction 300 samples: It is convenient, but using find_or_create_by without a block can lead to competition with high traffic applications.
+Fine-tuned EN Prediction all samples: It is convenient, but using find_or_create_by without a block can lead to conflict states in high-passed applications.
+
+49
+Original JA: では、平方根(square root)を求めるにはどうすればいいでしょうか？
+EN Reference: But what if you want to go the other way and find the square root of something?
+---------------
+Original EN Prediction: Let's see if we can figure out what the square root is.
+Fine-tuned EN Prediction 100 samples: So let's say I have a square root.
+Fine-tuned EN Prediction 200 samples: So let's see if we can solve for square root.
+Fine-tuned EN Prediction 300 samples: So what do we do to get the square root of?
+Fine-tuned EN Prediction all samples: So what do we do to get the square root of?
+
+50
+Original JA: ブレースの間にあるものは（もし文字列でなければ）文字列に変換され、 その外側の文字列の中に置き換えられます。
+EN Reference: The bit between the braces is turned into a string (if it isn’t one already) and then substituted into the outer string at that point.
+---------------
+Original EN Prediction: If it's not a string, then it's converted into a string, and replaced with an outside string.
+Fine-tuned EN Prediction 100 samples: What's between the buzzers is converted to a string (if not a string) and replaced with an external string.
+Fine-tuned EN Prediction 200 samples: What's between the buzzers is converted to a string (if not a string) and replaced with an outside string.
+Fine-tuned EN Prediction 300 samples: What is between the beerace is converted to a string (if not a string) and replaced with an outside string.
+Fine-tuned EN Prediction all samples: What is between the braces is converted to a string (if not a string) and replaced with an outside string.
+

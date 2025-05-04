@@ -1,0 +1,205 @@
+####################################################
+Evaluation for morinoko-inari/ruby-rails-fine-tuned-ja-en
+####################################################
+
+-----------------------------------------
+Tatoeba samples
+-----------------------------------------
+
+Starting translation on Tatoeba samples...
+Finished Tatoeba samples!
+Total translation time: 19.9028 seconds
+
+-----------------------------------------
+Tatoeba Evaluation scores
+-----------------------------------------
+BLEU - Tatoeba: 0.41537224773581344
+chrF - Tatoeba: 59.014261135330536
+
+-----------------------------------------
+Translation samples from Tatoeba dataset:
+-----------------------------------------
+1
+Original JA: 彼女は花に慰められた。
+EN Prediction: The flowers comforted her.
+EN Reference: The flowers cheered her up.
+
+2
+Original JA: 彼の言葉はあまりにもひどくて繰り返しに耐えない。
+EN Prediction: His words are too bad to stand up to the repetition.
+EN Reference: His language is not fit to be repeated.
+
+3
+Original JA: 大都会には誘惑が多い。
+EN Prediction: There are a lot of temptations in big cities.
+EN Reference: The big cities are full of allurements.
+
+4
+Original JA: 私たちはお互い少しあきてきた。
+EN Prediction: We came a little close to each other.
+EN Reference: We got a little bored with each other.
+
+5
+Original JA: 街を楽しんでいるかい？
+EN Prediction: Are you enjoying the city?
+EN Reference: Are you enjoying the city?
+
+6
+Original JA: ジュディはとても利口な学生である。
+EN Prediction: Judy is a very clever student.
+EN Reference: Judy is a very clever student.
+
+7
+Original JA: 昨日知らない人が、私に電話をかけてきた。
+EN Prediction: A stranger called me yesterday.
+EN Reference: A stranger phoned me yesterday.
+
+8
+Original JA: 彼は喫煙という悪い習慣を断ち切った。
+EN Prediction: He broke the bad habit of smoking.
+EN Reference: He broke himself of the bad habit of smoking.
+
+9
+Original JA: 彼は急いで家へ帰ったが、結局だれもいなかった。
+EN Prediction: He hurried home, but no one was there.
+EN Reference: He hurried to the house only to find that it was empty.
+
+10
+Original JA: 私は綿製のブラウスの方が好きだ。
+EN Prediction: I prefer cotton blouses.
+EN Reference: I prefer blouses made from cotton.
+
+-----------------------------------------
+KFTT samples
+-----------------------------------------
+
+Starting translation on KFTT samples...
+Finished KFTT samples!
+Total translation time: 91.7460 seconds
+
+-----------------------------------------
+KFTT Evaluation scores
+-----------------------------------------
+BLEU - KFTT: 0.053475592367407364
+chrF - KFTT: 27.442053449267895
+
+-----------------------------------------
+Translation samples from KFTT dataset:
+-----------------------------------------
+1
+Original JA: この壬申検査には文部官僚の町田久成（東京国立博物館の初代館長）、蜷川式胤のほか、油絵画家の高橋由一、写真師の横山松三郎らが記録係として同行した。
+EN Prediction: In addition to the Tohoku Seed, the Minister of Public Affairs, Akira Matsusaki, a photographer, accompanied by a photographer, as a recording officer, as well as an oil painter's high - bridge.
+EN Reference: During this Jinshin Inspection, along with officials from the Education Ministry such as Hisanari MACHIDA (the first director of the Tokyo National Museum) and Noritane NINAGAWA, Yuichi TAKAHASHI (a painter) and Matsusaburo YOKOYAMA (a photographer) accompanied the team as recorders.
+
+2
+Original JA: 本書は、伊予吉田藩にて御殿医を勤めた平住専安（生年不詳-享保19年8月7日（1734年9月4日））が、正徳_(日本)年間に著した。
+EN Prediction: This book was written during the year of the Ishikita, the senior resident of Shikoku, who served as a doctor in Akita.
+EN Reference: The book was written in the Shotoku (Japan) era by Senan HIRAZUMI (year of birth unknown, died on September 4, 1734) who served as a family doctor to the lord of the domain of Iyo-Yoshida.
+
+3
+Original JA: 横田商會（よこたしょうかい、1903年6月設立-1912年9月合併）は、かつて京都に存在した日本の映画会社である。
+EN Prediction: The Japanese film company that once existed in Kyoto, founded in June 2003.
+EN Reference: Yokota Shokai (founded in June 1903, consolidated in September 1921) is a Japanese film company once existed in Kyoto.
+
+4
+Original JA: しかし、活動弁士を生業として、それのみで生活できるのは現在では澤登翠などごくわずかであり、大半の活動弁士は、山崎バニラのように声優などのテレビ出演や、山田広野のように映画監督など、副業を持っている場合が多い。
+EN Prediction: However, it is now only a small industry with activists who can live by it, and the majority of activists, like Yamasaki Vanilla, often have side jobs, such as voice shows, movie directors, and others like Yamada.
+EN Reference: However today there are very few, Midori SAWATO is one of these few, who can make their living exclusively by movie narration, so most katsudo benshi have sidelines such as television voice acting like Vanilla YAMAZAKI, or as film directors like Hirono YAMADA.
+
+5
+Original JA: その義維としても、あわよくば将軍への道が拓けようというのだから、積極的に関わったとも察せられる。
+EN Prediction: As a basis for that, we can see that he was actively involved because he was more likely to lead the way to the general.
+EN Reference: Yoshitsuna was possibly engaged in it positively because he would be on track to becoming Shogun if circumstances allowed.
+
+6
+Original JA: 義平次は金を貰えると聞いて駕籠を返すが、「アニよ、その金は？」「さあ、その金は・・・」「その金は？」「その金、ここにはござりませぬわい」と金子に見せかけた石を出す。
+EN Prediction: When I hear that he gets the gold, I return the basket, but I say, "Anini, what about the money?" "Come on, the money is...?" "The money is the money, isn't it?" "That money, it's not here, it's the stone that made it look like gold."
+EN Reference: Giheiji heard that he could get some money and had the palanquin return and said, 'Hey, where's the money?', 'Well, that money is...', 'Yes? That money?', 'I don't have the money here' and takes out the stone camouflaging as money.
+
+7
+Original JA: たとえば左京大夫は大名中でも四職家にしか許されない官であったが、戦国期には地方の小大名ですら任じられるようになり、時には複数の大名が同時期に任じられることもあった。
+EN Prediction: For example, he was allowed only by four of his best - known employees, but during the war, even the small local names came to be named at the same time, sometimes with multiple majors.
+EN Reference: For example, the post called Sakyo no daibu (Master of the Eastern Capital Offices) used to be a one which was only given to the four specific families called Shishiki-ke (four administrators' family: Yamana, Isshiki, Akamatsu, Kyogoku) among all the daimyo, however, during the Sengoku period even a low rank daimyo in a rural area was awarded the post and sometimes multiple daimyos were awarded at the same time.
+
+8
+Original JA: これは、大原に住みついた念仏行者を取り締まり、大原にそれ以前からあった来迎院(京都市左京区)、勝林院などの寺院を管理するために設置されたものである。
+EN Prediction: This has been set up to control temples such as the Kyoto Rehabilitation Hall, the Victory Gardens, and other temples that lived before that.
+EN Reference: This was established in order to supervise the Nembutsu practitioners who inhabited Ohara and administer other temples that were already present in Ohara, such as Raigo-in Temple (Sakyo Ward, Kyoto City) and Shorin-in Temple.
+
+9
+Original JA: しかし近世に至って表現豊かな楽器である三味線が渡来、完成され、更に箏、胡弓が加わり、これらによる新たな音楽が生まれた。
+EN Prediction: However, in the next generation, a colorful musical instrument, a colorful instrument, has come across, has been completed, has been completed, has been joined by a bow, and has produced new music by it.
+EN Reference: However, the shamisen, an instrument full of expression, introduced from abroad and reached its full potential by the early Edo period, and moreover, the koto and kokyu were added and consequently a new kind of music developed.
+
+10
+Original JA: 大化の改新以後、唐の影響を受けた様々な制度・行事・儀礼が行われるようになり、その際の様々な礼儀作法が定められるようになった。
+EN Prediction: After a new revolution, various institutions, actions, and rituals that were influenced by the fireworks began to take place, and the various manners of the occasion began to be prescribed.
+EN Reference: After the Taika Reform, various systems, functions, and formalities influenced by Tang models began to be introduced, and various rules and customs began to be prescribed.
+
+-----------------------------------------
+Ruby documentation samples
+-----------------------------------------
+
+Starting translation on Ruby samples...
+Finished Ruby samples!
+Total translation time: 47.1496 seconds
+
+-----------------------------------------
+Ruby Evaluation scores
+-----------------------------------------
+BLEU - Ruby: 0.3152288791629688
+chrF - Ruby: 61.82575514520963
+
+-----------------------------------------
+Translation samples from Ruby dataset:
+-----------------------------------------
+1
+Original JA: では「メッセージ」とは何でしょうか？
+EN Prediction: What is a message?
+EN Reference: What’s the message?
+
+2
+Original JA: Propshaftを通じて処理されたアセットは、asset_pathヘルパーメソッドを使用してビューで参照できます。
+EN Prediction: The asset processed through Propshaft can be seen in the view using the Asset_path helper method.
+EN Reference: Assets processed through Propshaft can be referenced in views using the asset_path helper method.
+
+3
+Original JA: Rubyにはいくつか名前付けについての規約があります。
+EN Prediction: Ruby has a few regulations on names.
+EN Reference: Ruby enforces some naming conventions. 
+
+4
+Original JA: シングルトンメソッドは、特定のオブジェクトインスタンスに対してのみ定義されるメソッドです。
+EN Prediction: A singleton method is a method defined only for a specific object instance.
+EN Reference: Singleton methods are methods that are defined for only one specific object instance.
+
+5
+Original JA: Solid Cacheは、Railsのキャッシュインターフェースとマルチプロセス環境に互換性のあるデータベースバックアップのキャッシュストアを実装しています。
+EN Prediction: Solid Apache implements a database backup that is compatible with Rails' cache interfaces and multiprocess environments.
+EN Reference: Solid Cache implements a database-backed cache store compatible with Rails' cache interface and multi-process environments.
+
+6
+Original JA: これは、ライブラリとして使われる場合には実行されないけれど、 実行ファイルとして使われる場合には実行されるコードを書くために 使われます。
+EN Prediction: This is not executed when used as a library, but it is used to write code that is executed when used as a executable.
+EN Reference: This allows a file to be used as a library, and not to execute code in that context, but if the file is being used as an executable, then execute that code.
+
+7
+Original JA: これは20分程度で一通り読み通せる、簡単なRubyチュートリアルです。
+EN Prediction: This is a simple Ruby Tutorial that can be read through in about 20 minutes or so.
+EN Reference: This is a small Ruby tutorial that should take no more than 20 minutes to complete.
+
+8
+Original JA: ActionControllerは、受信したウェブリクエストを処理し、出力のレンダリング処理を担当します。
+EN Prediction: ActionControler handles web requests received and handles output rendering.
+EN Reference: ActionController handles incoming web requests and facilitates the rendering of output.
+
+9
+Original JA: Solid Cableの接続回復メカニズムは、アプリケーションのデプロイやサーバーの再起動中のユーザーに見える中断を減少させます。
+EN Prediction: Solid Cable connection recovery mechanisms reduce visible interruptions from application profiles or server restarters.
+EN Reference: Connection recovery mechanisms in Solid Cable reduce user-visible disruptions during application deployments or server restarts.
+
+10
+Original JA: なお、Ruby 2.0やそれ以前のバージョンのRubyでは、このレスポンスは => nil になります。
+EN Prediction: In addition, in Ruby 2.0 and earlier versions of Ruby, this response will be . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+EN Reference: This response could be nil for Ruby 2.0 and earlier versions.
+

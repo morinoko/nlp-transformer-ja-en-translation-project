@@ -1,0 +1,1614 @@
+[
+  {
+    "en": "What if we want to say “Hello” a lot without getting our fingers all tired?",
+    "ja": "いちいち入力せずに、何度も“Hello”と言いたい時にはどうすればいいでしょうか？"
+  },
+  {
+    "en": "We need to define a method!",
+    "ja": "メソッドを定義しましょう！"
+  },
+  {
+    "en": "The code def hi starts the definition of the method.",
+    "ja": "def hiというコードがメソッド定義のはじまりになります。"
+  },
+  {
+    "en": "It tells Ruby that we’re defining a method, that its name is hi.",
+    "ja": "これは、hiという名前のメソッドを定義しようとしていることをRubyに伝えるものです。"
+  },
+  {
+    "en": "The next line is the body of the method, the same line we saw earlier: puts \"Hello World\".",
+    "ja": "次の行はメソッドの本体になります。この行は、すでに見た行、puts \"Hello World\"と 同じものです。"
+  },
+  {
+    "en": "Finally, the last line end tells Ruby we’re done defining the method.",
+    "ja": "そして、最後の行の end は、メソッド定義が終わったことをRubyに伝えます。"
+  },
+  {
+    "en": "Ruby’s response => :hi tells us that it knows we’re done defining the method.",
+    "ja": "Rubyのレスポンス => :hi は、メソッド定義の終了を理解したことを表しています。"
+  },
+  {
+    "en": "This response could be nil for Ruby 2.0 and earlier versions.",
+    "ja": "なお、Ruby 2.0やそれ以前のバージョンのRubyでは、このレスポンスは => nil になります。"
+  },
+  {
+    "en": "But, it’s not important here, so let’s go on.",
+    "ja": "が、その違いはここでは特に重要なことではないので、先に進みます。"
+  },
+  {
+    "en": "The Brief, Repetitive Lives of a Method",
+    "ja": "簡潔で繰り返せるメソッド"
+  },
+  {
+    "en": "Now let’s try running that method a few times.",
+    "ja": "それではこのメソッドを何度か実行してみましょう。"
+  },
+  {
+    "en": "Calling a method in Ruby is as easy as just mentioning its name to Ruby.",
+    "ja": "Rubyでのメソッド呼び出しはその名前をRubyに伝えるのと同じくらい簡単です。"
+  },
+  {
+    "en": "If the method doesn’t take parameters that’s all you need.",
+    "ja": "引数がなければ、名前以外は不要です。"
+  },
+  {
+    "en": "You can add empty parentheses if you’d like, but they’re not needed.",
+    "ja": "メソッドが引数を持たない場合、メソッド名の後ろに空のカッコをつけることができますが、 省略しても構いません。"
+  },
+  {
+    "en": "That’s Ruby’s way of inserting something into a string.",
+    "ja": "これは、文字列に何かを挿入する際の Rubyでのやり方なのです。"
+  },
+  {
+    "en": "Returns a new Enumerator if no block given",
+    "ja": "ブロックを省略した場合は Enumerator を返します。"
+  },
+  {
+    "en": "Calls the block with each element of self and returns a Array whose elements are the return values from the block",
+    "ja": "各要素に対してブロックを評価した結果を全て含む配列を返します。"
+  },
+  {
+    "en": "Returns random elements from self.",
+    "ja": "配列の要素をランダムに選んで返します。"
+  },
+  {
+    "en": "Returns a new Array formed from self with \"count\" elements rotated from one end to the other.",
+    "ja": "cnt で指定したインデックスの要素が先頭になる配列を新しく作成します。"
+  },
+  {
+    "en": "Returns the index of the last element for which object == element.",
+    "ja": "指定された val と == で等しい最後の要素の位置を返します。"
+  },
+  {
+    "en": "Returns nil if no such object found.",
+    "ja": "等しい要素がひとつもなかった時には nil を返します。"
+  },
+  {
+    "en": "When a block is given, calls the block with each successive element from the right (the end) and returns the index of the last element for which the block returns a truthy value.",
+    "ja": "ブロックが与えられた時には、各要素を右(末尾)から順に引数としてブロックを実行し、ブロックが真を返す最初の要素の位置を返します。"
+  },
+  {
+    "en": "Instance variables are hidden away inside the object.",
+    "ja": "インスタンス変数はオブジェクトの内側に隠されています。"
+  },
+  {
+    "en": "Introduction",
+    "ja": "はじめに"
+  },
+  {
+    "en": "This is a small Ruby tutorial that should take no more than 20 minutes to complete.",
+    "ja": "これは20分程度で一通り読み通せる、簡単なRubyチュートリアルです。"
+  },
+  {
+    "en": "It makes the assumption that you already have Ruby installed.",
+    "ja": "Rubyはあらかじめインストールされていることとします。"
+  },
+  {
+    "en": "If you do not have Ruby on your computer install it before you get started.",
+    "ja": "もしお使いのマシンにRubyが入っていない場合、始める前に インストールしておいてください。"
+  },
+  {
+    "en": "Interactive Ruby",
+    "ja": "インタラクティブRuby"
+  },
+  {
+    "en": "Ruby comes with a program that will show the results of any Ruby statements you feed it.",
+    "ja": "Rubyの処理系には、入力したRubyの文を実行して結果を出力するプログラムが付属しています。"
+  },
+  {
+    "en": "Playing with Ruby code in interactive sessions like this is a terrific way to learn the language.",
+    "ja": "このように対話的なセッションでRubyのコードを試してみるのは、新しい言語を学ぶのに最適です。"
+  },
+  {
+    "en": "Open up IRB (which stands for Interactive Ruby).",
+    "ja": "IRBを立ち上げましょう(IRBはInteractive Rubyの略です)。"
+  },
+  {
+    "en": "If you’re using macOS open up Terminal and type irb, then hit enter.",
+    "ja": "macOS をお使いの場合、Terminalを立ち上げてirbと入力し、enterキーを押して下さい。"
+  },
+  {
+    "en": "If you’re using Linux, open up a shell and type irb and hit enter.",
+    "ja": "Linux をお使いの場合、shellを立ち上げてirbと入力し、enterキーを押して下さい。"
+  },
+  {
+    "en": "If you’re using Windows, open Interactive Ruby from the Ruby section of your Start Menu.",
+    "ja": "Windows をお使いの場合、スタートメニューのRubyからInteractive Rubyを起動してください。"
+  },
+  {
+    "en": "Ok, so it’s open.",
+    "ja": "実行するとこのようになります。"
+  },
+  {
+    "en": "Now what?",
+    "ja": "この次はどうしましょうか？"
+  },
+  {
+    "en": "Type this: \"Hello World\"",
+    "ja": "\"Hello World\" と入力してください。"
+  },
+  {
+    "en": "Ruby Obeyed You!",
+    "ja": "Rubyはあなたの言うとおりにします！"
+  },
+  {
+    "en": "What just happened? ",
+    "ja": "何が起こったのでしょうか。"
+  },
+  {
+    "en": "Did we just write the world’s shortest “Hello World” program? ",
+    "ja": "世界一短い “Hello World” プログラムを書いたのでしょうか？"
+  },
+  {
+    "en": "Not exactly.",
+    "ja": "ちょっと違います。"
+  },
+  {
+    "en": "The second line is just IRB’s way of telling us the result of the last expression it evaluated.",
+    "ja": "2行目はIRBが最後の式を実行した結果を教えてくれているのです。"
+  },
+  {
+    "en": "If we want to print out “Hello World” we need a bit more:",
+    "ja": "“Hello World”と出力したいのであれば、もう少し書き加えます:"
+  },
+  {
+    "en": "puts is the basic command to print something out in Ruby. ",
+    "ja": "putsはRubyで何かを出力する基本的なコマンドです。"
+  },
+  {
+    "en": "But then what’s the => nil bit?",
+    "ja": "では、=> nilは何でしょうか？"
+  },
+  {
+    "en": "That’s the result of the expression.",
+    "ja": "これはこのコマンドの評価結果です。"
+  },
+  {
+    "en": "puts always returns nil.",
+    "ja": "putsは必ずnilを返します。"
+  },
+  {
+    "en": "nil is Ruby’s absolutely-positively-nothing value.",
+    "ja": "nilは、「まったく何もない」ことを表すRubyの「値」です。"
+  },
+  {
+    "en": "Your Free Calculator is Here",
+    "ja": "好きなだけ使える計算機をどうぞ"
+  },
+  {
+    "en": "Already, we have enough to use IRB as a basic calculator.",
+    "ja": "ここまで来れば、IRBを簡単な計算機として使いこなせるはずです。"
+  },
+  {
+    "en": "Three plus two.",
+    "ja": "3足す2"
+  },
+    {
+    "en": "Easy enough.",
+    "ja": "簡単ですね。"
+  },
+  {
+    "en": "What about three times two?",
+    "ja": "3 かける 2はどうでしょうか？"
+  },
+  {
+    "en": "You could type it in, it’s short enough, but you may also be able to go up and change what you just entered.",
+    "ja": "短いのでそのまま入力し直してもよいですが、先ほど入力したところに戻って 変更することもできます。"
+  },
+  {
+    "en": "Try hitting the up-arrow on your keyboard and see if it brings up the line with 3+2 on it.",
+    "ja": "その場合、キーボードの 上向き矢印(↑) キーを押して、 その行に 3+2 と表示されているのを確認します。"
+  },
+  {
+    "en": "If it does, you can use the left arrow key to move just after the + sign and then use backspace to change it to a * sign.",
+    "ja": "確認できたら、 左向き矢印(←)キーを使って、 + の直後まで動かし、 バックスペースキーを使って * 記号に変更します。"
+  },
+  {
+    "en": "Next, let’s try three squared.",
+    "ja": "続いて、3を2乗してみましょう。"
+  },
+  {
+    "en": "In Ruby ** is the way you say “to the power of”.",
+    "ja": "Rubyでは、 ** はべき乗するときに使います。"
+  },
+  {
+    "en": "But what if you want to go the other way and find the square root of something?",
+    "ja": "では、平方根(square root)を求めるにはどうすればいいでしょうか？"
+  },
+  {
+    "en": "Ok, wait, what was that last one?",
+    "ja": "これは一体何なんでしょうか？"
+  },
+  {
+    "en": "If you guessed, “it was figuring out the square root of nine,” you’re right.",
+    "ja": "「9の平方根を計算しているのでは」と 思った方は、それで正解です。"
+  },
+  {
+    "en": "But let’s take a closer look at things.",
+    "ja": "しかし、もうちょっと詳しく見てみましょう。"
+  },
+  {
+    "en": "First of all, what’s Math?",
+    "ja": "まず、 Math は一体なんでしょうか？"
+  },
+  {
+    "en": "Modules Group Code by Topic",
+    "ja": "関連コードをグループ化するモジュール"
+  },
+  {
+    "en": "Math is a built-in module for mathematics.",
+    "ja": "Math は数学のためのビルトインモジュール(標準で組み込まれているモジュール)です。"
+  },
+  {
+    "en": "Modules serve two roles in Ruby. ",
+    "ja": "Rubyでは、モジュールには2通りの役割があります。"
+  },
+  {
+    "en": "This shows one role: grouping similar methods together under a familiar name.",
+    "ja": "これはその1つ目の役割、 関連するメソッドを馴染みのある名前でグループ化するものです。"
+  },
+  {
+    "en": "Math also contains methods like sin() and tan().",
+    "ja": "Math は sin() や tan() といったメソッドも持っています。"
+  },
+  {
+    "en": "Next is a dot.",
+    "ja": "その次はドット（.）です。"
+  },
+  {
+    "en": "What does the dot do? ",
+    "ja": "このドットは何でしょうか？"
+  },
+  {
+    "en": "The dot is how you identify the receiver of a message.",
+    "ja": "これは、レシーバの「メッセージ」を指定するためのものです。"
+  },
+  {
+    "en": "What’s the message?",
+    "ja": "では「メッセージ」とは何でしょうか？"
+  },
+  {
+    "en": "In this case it’s sqrt(9).",
+    "ja": "この例では、sqrt(9)がメッセージになります。"
+  },
+  {
+    "en": "It means call the method sqrt, shorthand for “square root” with the parameter of 9.",
+    "ja": "これは「平方根(square root)」の省略形、 sqrtというメソッドにパラメータとして9を与えて呼び出しています。"
+  },
+  {
+    "en": "The result of this method call is the value 3.0.",
+    "ja": "このメソッド呼び出しの実行結果は3.0という値になります。"
+  },
+  {
+    "en": "You might notice it’s not just 3.",
+    "ja": "3 ではないことに気づいたかもしれません。"
+  },
+  {
+    "en": "That’s because most of the time the square root of a number won’t be an integer.",
+    "ja": "平方根はたいてい整数にならないためです。"
+  },
+  {
+    "en": "Therefore the method always returns a floating-point number.",
+    "ja": "そのため、このメソッドは必ず小数（浮動小数点数）を返します。"
+  },
+  {
+    "en": "What if we want to remember the result of some of this math?",
+    "ja": "この計算結果を覚えさせるにはどうすればいいでしょうか？"
+  },
+    {
+    "en": "Assign the result to a variable.",
+    "ja": "実行結果を変数に代入しましょう。"
+  },
+  {
+    "en": "The bit between the braces is turned into a string (if it isn’t one already) and then substituted into the outer string at that point.",
+    "ja": "ブレースの間にあるものは（もし文字列でなければ）文字列に変換され、 その外側の文字列の中に置き換えられます。"
+  },
+  {
+    "en": "You can also use this to make sure that someone’s name is properly capitalized.",
+    "ja": "このしくみは、誰かの名前を正しくcapitalizedするのにも使えます。"
+  },
+  {
+    "en": "A couple of other tricks to spot here.",
+    "ja": "ここでは他にもいろいろなトリックが使われています。"
+  },
+  {
+    "en": "One is that we’re calling the method without parentheses again.",
+    "ja": "一つはカッコなしでメソッド呼び出しが使われていることです。"
+  },
+  {
+    "en": " If it’s obvious what you’re doing, the parentheses are optional.",
+    "ja": "何をやっているか明確であれば、カッコは省略できます。"
+  },
+  {
+    "en": "The other trick is the default parameter World.",
+    "ja": "それ以外のトリックは、デフォルト引数のWorldです。"
+  },
+  {
+    "en": "What this is saying is “If the name isn’t supplied, use the default name of \"World\"”.",
+    "ja": "これは、「もしnameが与えられなければ、nameのデフォルト値である\"World\"を 使う」という定義になります。"
+  },
+  {
+    "en": "Evolving Into a Greeter",
+    "ja": "挨拶人(Greeter)への進化"
+  },
+  {
+    "en": "You might want to use an object for that. ",
+    "ja": "そのためにオブジェクトを使いたくなりそうです。"
+  },
+  {
+    "en": "Let’s create a “Greeter” class.",
+    "ja": "“Greeter”クラスを作ってみましょう。"
+  },
+  {
+    "en": "The new keyword here is class.",
+    "ja": "新しいキーワードはclassです。"
+  },
+  {
+    "en": "This defines a new class called Greeter and a bunch of methods for that class.",
+    "ja": "これはGreeterという新しいクラスと、 そのクラスのメソッドをいくつか定義しています。"
+  },
+  {
+    "en": "Also notice @name.",
+    "ja": "また、@nameにも 気づいたかもしれません。"
+  },
+  {
+    "en": "This is an instance variable, and is available to all the methods of the class.",
+    "ja": "これはインスタンス変数で、このクラスにある 全てのメソッドで使うことができます。"
+  },
+  {
+    "en": "As you can see it’s used by say_hi and say_bye.",
+    "ja": "見ての通り、 say_hi と say_byeで使われています。"
+  },
+  {
+    "en": "So how do we get this Greeter class set in motion?",
+    "ja": "さて、どうすればこのGreeterクラスを動かせるでしょうか？"
+  },
+  {
+    "en": "Create an object.",
+    "ja": "オブジェクトを作りましょう。"
+  },
+  {
+    "en": "They’re not terribly hidden, you see them whenever you inspect the object.",
+    "ja": "とはいえ完全に 見えないようになっているのではなく、オブジェクトをinspectすれば いつでも見ることはできます。"
+  },
+  {
+    "en": "There are other ways of accessing them, but Ruby uses the good object-oriented approach of keeping data sort-of hidden away.",
+    "ja": "他にもアクセスする手段はあるのですが、 Rubyはデータを隠しておく、適切なオブジェクト指向アプローチをとっています。"
+  },
+  {
+    "en": "So what methods do exist for Greeter objects?",
+    "ja": "では、Greeterオブジェクトにはどんなメソッドがあるのでしょうか？"
+  },
+  {
+    "en": "We only defined two methods.",
+    "ja": "メソッドは2つしか定義していないのに。"
+  },
+  {
+    "en": "Well this is all of the methods for Greeter objects, a complete list, including ones defined by ancestor classes.",
+    "ja": "そう、これはGreeterオブジェクトの すべての メソッドで、 親やその上の祖先のクラスで定義されたメソッドを含めた、 完全なリストになっているのです。"
+  },
+  {
+    "en": "If we want to just list methods defined for Greeter we can tell it to not include ancestors by passing it the parameter false.",
+    "ja": "Greeterで定義されたメソッドだけを一覧したいのなら、引数falseを渡します。"
+  },
+  {
+    "en": "That means we don’t want methods defined by ancestors.",
+    "ja": "これは祖先のクラスで定義されたメソッドが不要であることを意味します。"
+  },
+  {
+    "en": "So let’s see which methods our greeter object responds to.",
+    "ja": "では、greeterオブジェクトがどのメソッドに 反応するか見てみましょう。"
+  },
+  {
+    "en": "Altering Classes—It’s Never Too Late",
+    "ja": "クラスの変更 - まだ間に合います"
+  },
+  {
+    "en": "But what if you want to be able to view or change the name?",
+    "ja": "しかし、名前を表示したり変えたりしたい場合はどうでしょう？"
+  },
+  {
+    "en": "Ruby provides an easy way of providing access to an object’s variables.",
+    "ja": "Rubyはオブジェクトの変数にアクセスできる簡単な方法を用意しています。"
+  },
+  {
+    "en": "In Ruby, you can reopen a class and modify it.",
+    "ja": "Rubyでは、定義されたクラスをさらに変更できます。"
+  },
+  {
+    "en": "The changes will be present in any new objects you create and even available in existing objects of that class.",
+    "ja": "この変更は新たに作られたオブジェクトすべてはもちろん、すでにあるオブジェクトにも 反映されます。"
+  },
+  {
+    "en": "So, let’s create a new object and play with its @name property.",
+    "ja": "それでは、@name属性のついた新しくオブジェクトを作って 試してみましょう。"
+  },
+  {
+    "en": "Using attr_accessor defined two new methods for us.",
+    "ja": "attr_accessorを使うと2つの新しいメソッドが定義されます。"
+  },
+  {
+    "en": "Let’s write this one in a file instead of directly in the interactive Ruby interpreter IRB.",
+    "ja": "対話式RubyインタプリタのIRBで直接書くのではなく、ファイルに書いてみましょう。"
+  },
+  {
+    "en": "To quit IRB, type “quit”, “exit” or just hit Control-D.",
+    "ja": "IRBを抜けるには、“quit”や“exit”とタイプするか、コントロールキーを押しながらDキーを押します。"
+  },
+  {
+    "en": "Save this file as “ri20min.rb”, and run it as “ruby ri20min.rb”.",
+    "ja": "このファイルを“ri20min.rb”という名前で保存して、“ruby ri20min.rb”と 実行しましょう。"
+  },
+  {
+    "en": "The output should be:",
+    "ja": "結果は以下のようになるはずです。"
+  },
+  {
+    "en": "Let's take a deeper look.",
+    "ja": "詳しく見てみましょう。"
+  },
+  {
+    "en": "Looking deeper at our new program, notice the initial lines, which begin with a hash mark (#).",
+    "ja": "この新しいプログラムを調べようとすると、最初の行がハッシュマーク(#)で 始まっていることに気づきます。"
+  },
+  {
+    "en": "In Ruby, anything on a line after a hash mark is a comment and is ignored by the interpreter.",
+    "ja": "Rubyでは、ハッシュマークで始まる行の内容は コメントになり、インタプリタからは無視されます。"
+  },
+  {
+    "en": "The first line of the file is a special case, and under a Unix-like operating system tells the shell how to run the file.",
+    "ja": "このファイルの最初の行は 特別な行で、Unix系のOSではファイルをどう実行するかをシェルに知らせてくれます。"
+  },
+  {
+    "en": "The rest of the comments are there just for clarity.",
+    "ja": "その他のコメントは処理内容の説明になっています。"
+  },
+  {
+    "en": "It now looks at the @names instance variable to make decisions.",
+    "ja": "インスタンス変数の@namesによって判断が行われているように見えます。"
+  },
+  {
+    "en": "Cycling and Looping—a.k.a. Iteration",
+    "ja": "サイクルとループ - 別名: イテレーション"
+  },
+  {
+    "en": "If the @names object responds to each, it is something that you can iterate over, so iterate over it and greet each person in turn.",
+    "ja": "@namesオブジェクトがeachメソッドを持っている場合、 イテレーションできる何かであるということで、それぞれの人に対して 挨拶をするイテレーションを行います。"
+  },
+  {
+    "en": "Let’s look at that iterator in more depth.",
+    "ja": "このイテレーションを詳しく見てみましょう。"
+  },
+  {
+    "en": "each is a method that accepts a block of code then runs that block of code for every element in a list.",
+    "ja": "eachはコードブロックをとるメソッドで、リストにある要素それぞれに対して ブロック内のコードを実行します。"
+  },
+  {
+    "en": "The bit between do and end is just such a block. ",
+    "ja": "do と endで囲われている部分がそのブロックです。"
+  },
+  {
+    "en": "A block is like an anonymous function or lambda.",
+    "ja": "ブロックは無名関数やlambdaに似ています。"
+  },
+  {
+    "en": "The variable between pipe characters is the parameter for this block.",
+    "ja": "パイプ文字の挟まれた変数がこのブロックのパラメタになります。"
+  },
+  {
+    "en": "What happens here is that for every entry in a list, name is bound to that list element, and then the expression puts \"Hello #{name}!\" is run with that name.",
+    "ja": "ここでは、リスト内のすべての要素の値について、1つずつnameという変数に代入され、 そしてputs \"Hello #{name}!\"という表現がそのnameの値を使って実行されます。"
+  },
+  {
+    "en": "Most other programming languages handle going over a list using the for loop, which in C looks something like:",
+    "ja": "他の多くのプログラミング言語ではforループを使ってリストを扱います。 たとえばCでは以下のようになります。"
+  },
+  {
+    "en": "This works, but isn’t very elegant.",
+    "ja": "これは動作しますが、あまりエレガントではありません。"
+  },
+  {
+    "en": "You need a throw-away variable like i, have to figure out how long the list is, and have to explain how to walk over the list.",
+    "ja": "iのような使い捨ての変数が必要ですし、そのリストがどのくらいの長さになるか 計算する必要がありますし、どのようにリストを走査するか説明する必要があります。"
+  },
+  {
+    "en": "All the housekeeping details are hidden within the each method, all you need to do is to tell it what to do with each element.",
+    "ja": "細かな扱い方はeachメソッドの中に隠されていて、それを使う側は それぞれの要素をどう扱うかだけ書くだけで済みます。"
+  },
+  {
+    "en": "Internally, the each method will essentially call yield \"Albert\", then yield \"Brenda\" and then yield \"Charles\", and so on.",
+    "ja": "内部では、eachは基本的に yield \"Albert\"を実行し、続いてyield \"Brenda\"、yield \"Charles\"などと 実行していきます。"
+  },
+  {
+    "en": "The real power of blocks is when dealing with things that are more complicated than lists.",
+    "ja": "ブロックが真の力を発揮するのはリストよりももっと複雑なものを扱うときです。"
+  },
+  {
+    "en": "Beyond handling simple housekeeping details within the method, you can also handle setup, teardown, and errors—all hidden away from the cares of the user.",
+    "ja": "簡単な処理だけではなく、準備、後始末、あるいはエラーといったものごとを、 ユーザが気にしなくて済むように、見えないところで処理してくれます。"
+  },
+  {
+    "en": "Instead, it checks to see if @names responds to the join method.",
+    "ja": "その代わり、@namesがjoinメソッドを 処理できるかをチェックしています。"
+  },
+  {
+    "en": "This method does not care about the actual type of a variable; it just relies on what methods it supports.",
+    "ja": "このメソッドは実際の変数の型を意識せず、サポートしているメソッドに頼っています。"
+  },
+  {
+    "en": "This is known as “Duck Typing”, as in “if it walks like a duck and quacks like a duck…”.",
+    "ja": "これは“Duck Typing”という名前で知られている、「もしアヒルのように歩き、 アヒルのように鳴くものは……」というものです。"
+  },
+  {
+    "en": "The benefit of this is that it doesn’t unnecessarily restrict the types of variables that are supported.",
+    "ja": "この方法の良いところは、 対応する変数の型に不要な制約を課さずにすむことです。"
+  },
+  {
+    "en": "f someone comes up with a new kind of list class, as long as it implements the join method with the same semantics as other lists, everything will work as planned.",
+    "ja": "もし誰かが新たな種類のリストクラスを持ち出してくれば、 joinメソッドが他のリストと同様の意味を持っている限り、 すべては期待した通り動きます。"
+  },
+  {
+    "en": "Kicking Off the Script",
+    "ja": "スクリプトの実行"
+  },
+  {
+    "en": "__FILE__ is the magic variable that contains the name of the current file.",
+    "ja": "__FILE__ は現在のファイル名を返す特別な変数です。"
+  },
+  {
+    "en": "$0 is the name of the file used to start the program.",
+    "ja": "$0はプログラムを実行するときに使われるファイル名です。"
+  },
+  {
+    "en": "This allows a file to be used as a library, and not to execute code in that context, but if the file is being used as an executable, then execute that code.",
+    "ja": "これは、ライブラリとして使われる場合には実行されないけれど、 実行ファイルとして使われる場合には実行されるコードを書くために 使われます。"
+  },
+  {
+    "en": "Returns an array of all symbols currently in Ruby’s symbol table.",
+    "ja": "定義済みの全てのシンボルオブジェクトの配列を返します。"
+  },
+  {
+    "en": "Ruby From Other Languages",
+    "ja": "他言語からのRuby入門"
+  },
+  {
+    "en": "When you first look at some Ruby code, it will likely remind you of other programming languages you’ve used.",
+    "ja": "Rubyのコードを目にすると、 他の言語と似た部分があることに気が付くはずです。"
+  },
+  {
+    "en": "Everything has a value",
+    "ja": "すべては値"
+  },
+  {
+    "en": "There’s no difference between an expression and a statement.",
+    "ja": "式と文に違いはありません。"
+  },
+  {
+    "en": "Everything has a value, even if that value is nil.",
+    "ja": "すべては値を持ちます。nilであっても例外ではありません。"
+  },
+  {
+    "en": "Symbols are not lightweight Strings",
+    "ja": "シンボルは軽量文字列ではない"
+  },
+  {
+    "en": "Many Ruby newbies struggle with understanding what Symbols are, and what they can be used for.",
+    "ja": "多くのRuby初学者はシンボルが何であるか、どう使えばよいのかを理解するのに苦戦します。"
+  },
+  {
+    "en": "Symbols can best be described as identities. ",
+    "ja": "シンボルは識別子として記述するのに適しています。"
+  },
+  {
+    "en": "A symbol is all about who it is, not what it is.",
+    "ja": "シンボルは、どんな物かではなく、何者であるかがすべてです。"
+  },
+  {
+    "en": "The object_id methods returns the identity of an Object.",
+    "ja": "object_idメソッドはオブジェクトのIDを返します。"
+  },
+  {
+    "en": "If two objects have the same object_id, they are the same (point to the same Object in memory).",
+    "ja": "もし二つのオブジェクトが同じobject_idを持っていれば、 それらはメモリ上の同じ実体を指すものであると言えます。"
+  },
+  {
+    "en": "As you can see, once you have used a Symbol once, any Symbol with the same characters references the same Object in memory.",
+    "ja": "上記で見たとおり、一度でもシンボルを使ったなら、 同じ文字からなるシンボルは、いずれもメモリ内の同じオブジェクトを参照します。"
+  },
+  {
+    "en": "For any given two Symbols that represent the same characters, the object_ids match.",
+    "ja": "同じ文字で表された2つのシンボルは、同じobject_idを指します。"
+  },
+  {
+    "en": "The object_ids don’t match.",
+    "ja": "object_idは一致していません。"
+  },
+  {
+    "en": "That means they’re referencing two different objects in memory.",
+    "ja": "これは、二つの文字列が異なる実体を指していることを示しています。"
+  },
+  {
+    "en": "Whenever you use a new String, Ruby allocates memory for it.",
+    "ja": " 新しい文字列を使うと、Rubyは毎回その文字列のために新しいメモリ領域を確保します。"
+  },
+  {
+    "en": "Everything is an Object",
+    "ja": "すべてはオブジェクト"
+  },
+  {
+    "en": "Even classes and integers are objects.",
+    "ja": "クラスや整数でさえオブジェクトです。"
+  },
+  {
+    "en": "Variable Constants",
+    "ja": "可変な定数"
+  },
+  {
+    "en": "Constants are not really constant.",
+    "ja": "定数は厳密な意味での定数ではありません。"
+  },
+  {
+    "en": "If you modify an already initialized constant, it will trigger a warning, but not halt your program.",
+    "ja": "初期化済みの定数を変更したとしても、 警告はされますが、プログラムは停止しません。"
+  },
+  {
+    "en": "That isn’t to say you should redefine constants, though.",
+    "ja": "だからと言って、定数を再定義するべきだということではありません。"
+  },
+  {
+    "en": "Naming conventions",
+    "ja": "名前付けの規約"
+  },
+  {
+    "en": "Ruby enforces some naming conventions. ",
+    "ja": "Rubyにはいくつか名前付けについての規約があります。"
+  },
+  {
+    "en": "If an identifier starts with a capital letter, it is a constant.",
+    "ja": "大文字から始まる識別子は定数です。"
+  },
+  {
+    "en": "If it starts with a dollar sign ($), it is a global variable.",
+    "ja": "ドルマーク($)から始まる識別子はグローバル変数です。"
+  },
+  {
+    "en": "If it starts with @, it is an instance variable.",
+    "ja": "@から始まる識別子はインスタンス変数です。"
+  },
+  {
+    "en": "If it starts with @@, it is a class variable.",
+    "ja": "@@から始まる識別子はクラス変数になります。"
+  },
+  {
+    "en": "Method names, however, are allowed to start with capital letters.",
+    "ja": "メソッド名は大文字から始めることもできます。"
+  },
+  {
+    "en": "Keyword arguments",
+    "ja": "キーワード引数"
+  },
+  {
+    "en": "Like in Python, since Ruby 2.0 methods can be defined using keyword arguments.",
+    "ja": "メソッドはRuby 2.0から、Pythonのように、 キーワード引数を定義できるようになりました。"
+  },
+  {
+    "en": "The universal truth",
+    "ja": "普遍の真理"
+  },
+  {
+    "en": "In Ruby, everything except nil and false is considered true.",
+    "ja": "Rubyでは、nilとfalseを除くすべてのものは真と評価されます。"
+  },
+  {
+    "en": "In C, Python and many other languages, 0 and possibly other values, such as empty lists, are considered false.",
+    "ja": " CやPythonを始めとする多くの言語では、0あるいはその他の値、空のリストなどは 偽と評価されます。"
+  },
+  {
+    "en": "Access modifiers apply until the end of scope",
+    "ja": "アクセス修飾子はスコープの最後まで適用される"
+  },
+  {
+    "en": "The private access modifier continues until the end of the scope, or until another access modifier pops up, whichever comes first.",
+    "ja": "privateアクセス修飾子はスコープの終わりか、他のアクセス修飾子が あらわれるまで継続されます。"
+  },
+  {
+    "en": "By default, methods are public.",
+    "ja": "デフォルトでは、メソッドはpublicになります。"
+  },
+  {
+    "en": "public, private and protected are really methods, so they can take parameters.",
+    "ja": "public、private、protectedは実際にはメソッドになるので、 引数を受けることができます。"
+  },
+  {
+    "en": "If you pass a Symbol to one of them, that method’s visibility is altered.",
+    "ja": "これらにシンボルを渡した場合には、 そのメソッドの可視性が変更されます。"
+  },
+  {
+    "en": "Method access",
+    "ja": "アクセス制御"
+  },
+  {
+    "en": "In Java, public means a method is accessible by anyone.",
+    "ja": "Javaでは、publicは誰でもアクセスできることを意味しています。"
+  },
+  {
+    "en": "protected means the class’s instances, instances of descendant classes, and instances of classes in the same package can access it, but not anyone else, and private means nobody besides the class’s instances can access the method.",
+    "ja": "そして、protectedはクラスおよび継承関係にあるクラスのインスタンス、 クラスと同じパッケージにあるクラスのインスタンスからアクセスできること、 privateはクラスのインスタンスからのみアクセスできることを、 ぞれぞれ意味します。"
+  },
+  {
+    "en": "Ruby differs slightly.",
+    "ja": "Rubyでは扱いが若干異なります。"
+  },
+  {
+    "en": "A protected method can be called from a class or descendant class instances.",
+    "ja": "protectedメソッドはクラスか継承関係にあるクラスのインスタンスからのみ 呼び出すことができます。"
+  },
+  {
+    "en": "private means the method(s) are accessible only when they can be called without an explicit receiver.",
+    "ja": "privateは、レシーバなしで呼び出すことができる場合に、 そのメソッドへアクセス可能となります。"
+  },
+  {
+    "en": "public is, naturally, public.",
+    "ja": "publicはそのままの意味になります。"
+  },
+  {
+    "en": "Only self is allowed to be the receiver of a private method call.",
+    "ja": "つまり、selfのみがprivateメソッドを呼び出す際のレシーバとなります。"
+  },
+  {
+    "en": "Ruby classes are open.",
+    "ja": "Rubyのクラスは開いています。"
+  },
+  {
+    "en": "You can open them up, add to them, and change them at any time. ",
+    "ja": "いつでもクラスを開いて、定義を足したり、変更することができます。"
+  },
+  {
+    "en": "Even core classes, like Integer or even Object, the parent of all objects.",
+    "ja": "Integerや、すべてのオブジェクトの祖先であるObjectのようなクラスであっても、 自由に再定義することが可能です。"
+  },
+  {
+    "en": "Ruby on Rails defines a bunch of methods for dealing with time on Integer.",
+    "ja": "Ruby on Railsは、次のような Integerに時間を扱うメソッド群を定義しています。"
+  },
+  {
+    "en": "Funny method names",
+    "ja": "不思議なメソッド名"
+  },
+  {
+    "en": "In Ruby, methods are allowed to end with question marks or exclamation marks.",
+    "ja": "Rubyでは、メソッド名の最後に疑問符(?)や感嘆符(!)が使われることがあります。"
+  },
+  {
+    "en": "By convention, methods that answer questions end in question marks (e.g. Array#empty?, which returns true if the receiver is empty).",
+    "ja": "慣習的に、問い合わせ系のメソッドの最後には疑問符が使われます (例: レシーバが空の場合にtrueを返すArray#empty?)。"
+  },
+  {
+    "en": "Potentially “dangerous” methods by convention end with exclamation marks (e.g. methods that modify self or the arguments, exit!, etc.).",
+    "ja": "また、使用に危険を伴うメソッドの最後には感嘆符が使われます (例: selfあるいは引数の内容を書き換えるようなメソッド。exit!など)。"
+  },
+  {
+    "en": "Not all methods that change their arguments end with exclamation marks, though.",
+    "ja": "けれど、危険なメソッドすべてがこの慣習に従っているわけでも ないことに注意してください。"
+  },
+  {
+    "en": "Array#replace replaces the contents of an array with the contents of another array.",
+    "ja": "Array#replaceは、与えられた配列の内容で配列の内容を置き換えます。"
+  },
+  {
+    "en": "It doesn’t make much sense to have a method like that that doesn’t modify self.",
+    "ja": "この操作は、自身を変更しないようなメソッド名とは意に反する振る舞いをします。"
+  },
+  {
+    "en": "Singleton methods",
+    "ja": "特異メソッド"
+  },
+  {
+    "en": "Singleton methods are per-object methods.",
+    "ja": "特異メソッドはオブジェクト単位のメソッドです。"
+  },
+  {
+    "en": "They are only available on the Object you defined it on.",
+    "ja": "特異メソッドは、定義したオブジェクトからだけ利用できるメソッドになります。"
+  },
+  {
+    "en": "Other objects are not affected",
+    "ja": "他のオブジェクトには影響しない"
+  },
+  {
+    "en": "Ruby doesn’t give up if it can’t find a method that responds to a particular message.",
+    "ja": "Rubyはメッセージに対応するメソッドを見つけられなかったとしても諦めません。"
+  },
+  {
+    "en": "It calls the method_missing method with the name of the method it couldn’t find and the arguments.",
+    "ja": "その場合は、見つけられなかったメソッド名と引数と共に、 method_missingメソッドを呼び出します。"
+  },
+  {
+    "en": "By default, method_missing raises a NameError exception, but you can redefine it to better fit your application.",
+    "ja": "method_missingメソッドはデフォルトではNameError例外を投げますが、 アプリケーションに合うように再定義することもできます。"
+  },
+  {
+    "en": "Many libraries do so in practice.",
+    "ja": "実際、多くのライブラリがそのようにしています。"
+  },
+  {
+    "en": "A method call is really a message to another object.",
+    "ja": "メソッド呼び出しは実際には他のオブジェクトへのメッセージ送信です。"
+  },
+  {
+    "en": "Message passing, not function calls",
+    "ja": "関数呼び出しではなくメッセージ送信"
+  },
+  {
+    "en": "Blocks (closures, really) are heavily used by the standard library.",
+    "ja": "ブロック(実際にはクロージャ)は標準ライブラリでもすごく使われています。"
+  },
+  {
+    "en": "To call a block, you can either use yield, or make it a Proc by appending a special argument to the argument list.",
+    "ja": "ブロックを呼び出すには、yieldを使うか、引数リストに特別な引数を追加して それをProcオブジェクトにします。"
+  },
+  {
+    "en": "You can create blocks outside of method calls, too, by calling Proc.new with a block or calling the lambda method.",
+    "ja": "Proc.newにブロックを渡すか、lambdaメソッドを呼び出すことで、 メソッド呼び出しの外側でブロックを作成することもできます。"
+  },
+  {
+    "en": "Similarly, methods are also Objects in the making.",
+    "ja": "同様に、メソッドもまた作りかけのオブジェクトです。"
+  },
+  {
+    "en": "Operators are syntactic sugar",
+    "ja": "演算子は糖衣構文(シンタックスシュガー)"
+  },
+  {
+    "en": "Most operators in Ruby are just syntactic sugar for method calls.",
+    "ja": "Rubyにおけるほとんどの演算子は糖衣構文です。"
+  },
+  {
+    "en": "You can, for example, override Integer’s + method.",
+    "ja": " たとえば、Integerクラスの+メソッドを次のようにオーバーライドすることもできます。"
+  },
+  {
+    "en": "You can even have array-style access if you define the [] and []= methods.",
+    "ja": "[]や[]=といったメソッドを定義すれば、配列のようなスタイルでアクセスすることもできます。"
+  },
+  {
+    "en": " To define the unary + and - (think +1 and -2), you must define the +@ and -@ methods, respectively.",
+    "ja": " (+1や-2みたいな)単項の+や-を定義するには、+@か-@といったメソッドを定義する必要があります。"
+  },
+  {
+    "en": "The operators below are not syntactic sugar, though.",
+    "ja": "けれど、以下の演算子は糖衣構文ではありません。"
+  },
+  {
+    "en": "They are not methods, and cannot be redefined.",
+    "ja": "これらはメソッドではないので、再定義できません。"
+  },
+  {
+    "en": "In addition, +=, *= etc. are just abbreviations for var = var + other_var, var = var * other_var, etc. and therefore cannot be redefined.",
+    "ja": "加えて+=、*=などはvar = var + other_var、var = var * other_var などの処理の略記法になり、これらも再定義できません。"
+  },
+  {
+    "en": "Finding Out More",
+    "ja": "もっと知りたい"
+  },
+  {
+    "en": "When you are ready for more Ruby knowledge, see our Documentation section.",
+    "ja": "Rubyについてもっと知りたくなったのなら、 ドキュメントの その他のコンテンツを見てみてください。"
+  },
+    {
+    "en": "Ruby is an interpreted, high-level, general-purpose programming language which supports multiple programming paradigms.",
+    "ja": "Rubyは、複数のプログラミングパラダイムをサポートする、インタプリタ型の高水準汎用プログラミング言語です。"
+  },
+  {
+    "en": "Variables in Ruby do not need to be declared and are denoted by a name preceded with a special character.",
+    "ja": "Rubyの変数は宣言する必要がなく、特殊文字が前に付いた名前で表されます。"
+  },
+  {
+    "en": "A block is a chunk of code enclosed between braces or do...end keywords that you can pass to a method.",
+    "ja": "ブロックは、メソッドに渡すことができる、中括弧またはdo...endキーワードで囲まれたコードの塊です。"
+  },
+  {
+    "en": "Symbol objects represent names inside the Ruby interpreter, are created using the colon syntax, and are immutable.",
+    "ja": "シンボルオブジェクトはRubyインタプリタ内の名前を表し、コロン構文を使用して作成され、不変です。"
+  },
+  {
+    "en": "Ruby's garbage collector uses a mark-and-sweep algorithm to reclaim memory occupied by objects that are no longer referenced.",
+    "ja": "Rubyのガベージコレクタは、参照されなくなったオブジェクトが占めるメモリを再利用するために、マーク・アンド・スイープアルゴリズムを使用します。"
+  },
+  {
+    "en": "Procs are nameless functions, similar to lambdas, but with different behavior regarding return statements and argument checking.",
+    "ja": "Procは名前のない関数で、ラムダに似ていますが、return文や引数チェックの挙動が異なります。"
+  },
+  {
+    "en": "Metaprogramming in Ruby allows you to write code that writes code during runtime.",
+    "ja": "Rubyのメタプログラミングでは、実行時にコードを書くコードを作成することができます。"
+  },
+  {
+    "en": "The module keyword is used to create a namespace and prevent name clashes.",
+    "ja": "moduleキーワードは、名前空間を作成し、名前の衝突を防ぐために使用されます。"
+  },
+  {
+    "en": "Singleton methods are methods that are defined for only one specific object instance.",
+    "ja": "シングルトンメソッドは、特定のオブジェクトインスタンスに対してのみ定義されるメソッドです。"
+  },
+  {
+    "en": "Ruby's method_missing hook allows objects to intercept calls to undefined methods.",
+    "ja": "Rubyのmethod_missingフックにより、オブジェクトは未定義のメソッドへの呼び出しを傍受できます。"
+  },
+  {
+    "en": "Exception handling in Ruby is done with begin, rescue, ensure and end blocks.",
+    "ja": "Rubyでの例外処理は、begin、rescue、ensure、endブロックで行われます。"
+  },
+  {
+    "en": "Thread safety is a concern when multiple threads access shared data simultaneously.",
+    "ja": "複数のスレッドが共有データに同時にアクセスする場合、スレッドセーフティが懸念事項となります。"
+  },
+  {
+    "en": "The freeze method prevents an object from being modified, raising a RuntimeError if modification is attempted.",
+    "ja": "freezeメソッドはオブジェクトの変更を防止し、変更が試みられるとRuntimeErrorを発生させます。"
+  },
+  {
+    "en": "Ruby's eigenclass (or singleton class) is a hidden class associated with each object where singleton methods reside.",
+    "ja": "Rubyの特異クラス（またはシングルトンクラス）は、各オブジェクトに関連付けられた隠しクラスで、シングルトンメソッドが存在する場所です。"
+  },
+  {
+    "en": "Refinements provide a way to extend a class locally within a module, without affecting the class globally.",
+    "ja": "リファインメントは、クラスをグローバルに影響を与えることなく、モジュール内でローカルに拡張する方法を提供します。"
+  },
+  {
+    "en": "Fibers in Ruby provide a way to implement lightweight cooperative concurrency.",
+    "ja": "RubyのFiberは、軽量な協調的並行処理を実装する方法を提供します。"
+  },
+  {
+    "en": "Hash tables in Ruby use a special hashing algorithm optimized for string keys.",
+    "ja": "Rubyのハッシュテーブルでは、文字列キー用に最適化された特別なハッシュアルゴリズムを使用します。"
+  },
+  {
+    "en": "The defined? operator returns a description string or nil if its argument is defined or not.",
+    "ja": "defined?演算子は、その引数が定義されているかどうかによって、説明文字列またはnilを返します。"
+  },
+  {
+    "en": "Ruby implements tail call optimization only when the optimization flag is enabled.",
+    "ja": "Rubyは、最適化フラグが有効な場合にのみ末尾呼び出し最適化を実装します。"
+  },
+  {
+    "en": "RubyGems is Ruby's standard package manager used to distribute Ruby programs and libraries.",
+    "ja": "RubyGemsは、Rubyのプログラムとライブラリを配布するために使用される標準のパッケージマネージャです。"
+  },
+  {
+    "en": "The Array#map method returns a new array with the results of running a block once for every element in the original array.",
+    "ja": "Array#mapメソッドは、元の配列の各要素に対してブロックを一度実行した結果を含む新しい配列を返します。"
+  },
+  {
+    "en": "Array#select returns a new array containing all elements for which the given block returns a true value.",
+    "ja": "Array#selectは、与えられたブロックが真の値を返す全ての要素を含む新しい配列を返します。"
+  },
+  {
+    "en": "Array#flatten returns a new array that is a one-dimensional flattening of the original array.",
+    "ja": "Array#flattenは、元の配列を一次元に平坦化した新しい配列を返します。"
+  },
+  {
+    "en": "The Array#inject method combines all elements of the array by applying a binary operation specified by a block.",
+    "ja": "Array#injectメソッドは、ブロックで指定された二項演算を適用して配列の全要素を結合します。"
+  },
+  {
+    "en": "String#gsub substitutes all occurrences of a pattern with a replacement string or the result of a block.",
+    "ja": "String#gsubは、パターンの全ての出現を置換文字列またはブロックの結果で置き換えます。"
+  },
+  {
+    "en": "String#split divides a string into substrings based on a delimiter, returning an array of these substrings.",
+    "ja": "String#splitは、区切り文字に基づいて文字列を部分文字列に分割し、これらの部分文字列の配列を返します。"
+  },
+  {
+    "en": "String#match returns a MatchData object describing the match of a pattern against the string or nil if no match was found.",
+    "ja": "String#matchは、文字列に対するパターンの一致を記述するMatchDataオブジェクトを返します。一致がない場合はnilを返します。"
+  },
+  {
+    "en": "The String#encode method returns a copy of the string transcoded to the given encoding.",
+    "ja": "String#encodeメソッドは、指定されたエンコーディングに変換された文字列のコピーを返します。"
+  },
+  {
+    "en": "Hash#fetch returns a value from the hash for the given key, raising a KeyError if the key is not found.",
+    "ja": "Hash#fetchは、指定されたキーに対するハッシュの値を返します。キーが見つからない場合はKeyErrorを発生させます。"
+  },
+  {
+    "en": "Hash#merge returns a new hash containing the contents of the original hash and the other hash, with duplicate keys resolved with the block if provided.",
+    "ja": "Hash#mergeは、元のハッシュと他のハッシュの内容を含む新しいハッシュを返します。重複するキーはブロックが提供された場合、それによって解決されます。"
+  },
+  {
+    "en": "Enumerable#each_with_index calls the block with two arguments: the item and its index for each item in the enumerable.",
+    "ja": "Enumerable#each_with_indexは、列挙可能オブジェクトの各アイテムに対して、アイテムとそのインデックスの2つの引数でブロックを呼び出します。"
+  },
+  {
+    "en": "Enumerable#reduce combines elements of the enumerable by applying a binary operation specified by a block.",
+    "ja": "Enumerable#reduceは、ブロックで指定された二項演算を適用して列挙可能オブジェクトの要素を結合します。"
+  },
+  {
+    "en": "The Time#strftime method formats a time according to the directives in the given format string.",
+    "ja": "Time#strftimeメソッドは、指定された書式文字列の指示に従って時間をフォーマットします。"
+  },
+  {
+    "en": "File.open opens the file named by filename according to the given mode and returns a new File object.",
+    "ja": "File.openは、指定されたモードに従ってファイル名で指定されたファイルを開き、新しいFileオブジェクトを返します。"
+  },
+  {
+    "en": "IO#readlines returns an array of all lines in the IO stream, which can be filtered using an optional line separator.",
+    "ja": "IO#readlinesは、IOストリーム内のすべての行の配列を返します。オプションの行区切り文字を使用してフィルタリングできます。"
+  },
+  {
+    "en": "Regexp#match matches the regular expression against a string and returns a MatchData object describing the match or nil if there is no match.",
+    "ja": "Regexp#matchは、正規表現を文字列と照合し、一致を記述するMatchDataオブジェクトを返します。一致がない場合はnilを返します。"
+  },
+  {
+    "en": "The BasicObject#instance_eval evaluates a string containing Ruby code or a given block in the context of the receiver.",
+    "ja": "BasicObject#instance_evalは、Rubyコードを含む文字列または与えられたブロックをレシーバのコンテキストで評価します。"
+  },
+  {
+    "en": "Module#include adds the specified module's constants, class variables, and instance methods to the including class.",
+    "ja": "Module#includeは、指定されたモジュールの定数、クラス変数、インスタンスメソッドをインクルードするクラスに追加します。"
+  },
+  {
+    "en": "The Kernel#lambda method creates a Proc object that enforces argument count and returns from the lambda rather than the calling method.",
+    "ja": "Kernel#lambdaメソッドは、引数の数を強制し、呼び出したメソッドではなくラムダから戻る Procオブジェクトを作成します。"
+  },
+  {
+    "en": "The ObjectSpace module contains methods to interact with the garbage collection facility and allows iterating over all existing objects.",
+    "ja": "ObjectSpaceモジュールには、ガベージコレクション機能を操作するためのメソッドが含まれており、既存のすべてのオブジェクトを反復処理できます。"
+  },
+  {
+    "en": "The Module#define_method creates an instance method in the receiver with the given name and the body of the block.",
+    "ja": "Module#define_methodは、与えられた名前とブロックの本体を持つインスタンスメソッドをレシーバに作成します。"
+  },
+  {
+    "en": "Using method_missing allows you to intercept calls to undefined methods and implement dynamic behavior.",
+    "ja": "method_missingを使用すると、未定義メソッドへの呼び出しを傍受し、動的な振る舞いを実装できます。"
+  },
+  {
+    "en": "Object#send invokes the method identified by the symbol, passing it any arguments specified.",
+    "ja": "Object#sendは、シンボルによって識別されるメソッドを呼び出し、指定された引数を渡します。"
+  },
+  {
+    "en": "Module#class_eval evaluates a string containing Ruby code or a given block in the context of the receiver as a class.",
+    "ja": "Module#class_evalは、Rubyコードを含む文字列または与えられたブロックをクラスとしてレシーバのコンテキストで評価します。"
+  },
+  {
+    "en": "The Module#attr_accessor method defines getter and setter methods for instance variables.",
+    "ja": "Module#attr_accessorメソッドは、インスタンス変数のゲッターメソッドとセッターメソッドを定義します。"
+  },
+  {
+    "en": "The Object#instance_variable_set method sets the instance variable named by symbol to the given object.",
+    "ja": "Object#instance_variable_setメソッドは、シンボルで指定されたインスタンス変数を与えられたオブジェクトに設定します。"
+  },
+  {
+    "en": "The Module#remove_method removes the method definition from the current class, but leaves inherited methods intact.",
+    "ja": "Module#remove_methodは、現在のクラスからメソッド定義を削除しますが、継承されたメソッドはそのままにします。"
+  },
+  {
+    "en": "Module#undef_method prevents the class or module from responding to the named method.",
+    "ja": "Module#undef_methodは、クラスまたはモジュールが指定された名前のメソッドに応答できないようにします。"
+  },
+  {
+    "en": "The const_missing method is called when a reference is made to an undefined constant.",
+    "ja": "const_missingメソッドは、未定義の定数が参照されたときに呼び出されます。"
+  },
+  {
+    "en": "Module#const_set sets the named constant to the given object, returning that object.",
+    "ja": "Module#const_setは、指定された名前の定数を与えられたオブジェクトに設定し、そのオブジェクトを返します。"
+  },
+  {
+    "en": "The begin...rescue...ensure...end structure is used for exception handling in Ruby.",
+    "ja": "begin...rescue...ensure...end構造は、Rubyでの例外処理に使用されます。"
+  },
+  {
+    "en": "The rescue clause catches exceptions of specified types and executes code when an exception occurs.",
+    "ja": "rescue節は、指定されたタイプの例外をキャッチし、例外が発生したときにコードを実行します。"
+  },
+  {
+    "en": "The ensure clause is always executed whether an exception was raised or not, making it ideal for cleanup operations.",
+    "ja": "ensure節は、例外が発生したかどうかに関わらず常に実行されるため、クリーンアップ操作に理想的です。"
+  },
+  {
+    "en": "The retry statement in a rescue block jumps back to the beginning of the begin block and retries the code.",
+    "ja": "rescue節内のretry文は、begin節の先頭に戻り、コードを再試行します。"
+  },
+  {
+    "en": "Using raise without arguments re-raises the current exception in a rescue clause.",
+    "ja": "引数なしでraiseを使用すると、rescue節内で現在の例外を再度発生させます。"
+  },
+  {
+    "en": "The Exception#backtrace method returns an array of strings representing the call stack at the point where the exception was raised.",
+    "ja": "Exception#backtraceメソッドは、例外が発生した時点でのコールスタックを表す文字列の配列を返します。"
+  },
+  {
+    "en": "Custom exceptions should inherit from StandardError rather than Exception to avoid catching system exceptions.",
+    "ja": "カスタム例外は、システム例外をキャッチするのを避けるため、ExceptionではなくStandardErrorから継承するべきです。"
+  },
+  {
+    "en": "The throw and catch methods provide a way to exit from a deeply nested structure that isn't easy to exit with a return.",
+    "ja": "throwとcatchメソッドは、returnで簡単に抜け出せない深くネストした構造から抜け出す方法を提供します。"
+  },
+  {
+    "en": "BasicObject#respond_to? returns whether an object responds to a given method, with an optional second parameter to include private methods.",
+    "ja": "BasicObject#respond_to?は、オブジェクトが指定されたメソッドに応答するかどうかを返します。オプションの2番目のパラメータでプライベートメソッドを含めることができます。"
+  },
+  {
+    "en": "The prepend method inserts a module before the including class in the ancestor chain, allowing method overriding.",
+    "ja": "prependメソッドは、メソッドのオーバーライドを可能にするために、モジュールを継承チェーンのインクルードするクラスの前に挿入します。"
+  },
+  {
+    "en": "ActiveRecord is Rails' ORM (Object-Relational Mapping) framework that connects business objects and database tables.",
+    "ja": "ActiveRecordは、ビジネスオブジェクトとデータベーステーブルを接続するRailsのORM（オブジェクト関係マッピング）フレームワークです。"
+  },
+  {
+    "en": "The Rails router recognizes URLs and dispatches them to a controller's action or to a Rack application.",
+    "ja": "Railsのルーターは、URLを認識し、コントローラーのアクションまたはRackアプリケーションに送信します。"
+  },
+  {
+    "en": "Rails migrations are a feature that allows you to evolve your database schema over time.",
+    "ja": "Railsのマイグレーションは、時間の経過とともにデータベーススキーマを進化させることができる機能です。"
+  },
+  {
+    "en": "ActiveRecord::Base.find searches for a record by its primary key and raises an exception if not found.",
+    "ja": "ActiveRecord::Base.findは、主キーでレコードを検索し、見つからない場合は例外を発生させます。"
+  },
+  {
+    "en": "ActionController handles incoming web requests and facilitates the rendering of output.",
+    "ja": "ActionControllerは、受信したウェブリクエストを処理し、出力のレンダリング処理を担当します。"
+  },
+  {
+    "en": "ActionView is responsible for rendering templates and providing view helpers that assist when building HTML forms.",
+    "ja": "ActionViewは、テンプレートのレンダリングと、HTMLフォームの構築を支援するビューヘルパーの提供を担当します。"
+  },
+  {
+    "en": "ActiveJob provides a consistent interface for declaring, creating, and running background jobs.",
+    "ja": "ActiveJobは、バックグラウンドジョブを宣言、作成、実行するための一貫したインターフェースを提供します。"
+  },
+  {
+    "en": "Rails scaffolding automatically generates the model, views, controller, and migrations for a resource.",
+    "ja": "Railsのスキャフォールディングは、リソースのモデル、ビュー、コントローラー、マイグレーションを自動的に生成します。"
+  },
+  {
+    "en": "The before_action callback is executed before a controller action and is often used for authentication.",
+    "ja": "before_actionコールバックは、コントローラーアクションの前に実行され、認証によく使用されます。"
+  },
+  {
+    "en": "ActiveRecord callbacks allow you to trigger logic before or after an alteration of an object's state.",
+    "ja": "ActiveRecordコールバックを使用すると、オブジェクトの状態が変更される前後にロジックをトリガーできます。"
+  },
+  {
+    "en": "Strong Parameters is a feature of Action Controller that prevents assigning request parameters to objects unless they have been explicitly permitted.",
+    "ja": "Strong Parametersは、明示的に許可されていない限り、リクエストパラメータをオブジェクトにに設定するのを防止するAction Controllerの機能です。"
+  },
+  {
+    "en": "The has_many association indicates a one-to-many connection with another model, with the foreign key being on the other class.",
+    "ja": "has_many関連付けは、別のモデルとの1対多の接続を示し、外部キーは他のクラスにあります。"
+  },
+  {
+    "en": "Turbolinks accelerates navigation by replacing the full page refresh with JavaScript-powered partial updates.",
+    "ja": "Turbolinksは、完全ページ更新をJavaScriptによる部分更新に置き換えることで、ナビゲーションを高速化します。"
+  },
+  {
+    "en": "Rails environments (development, test, production) allow you to run your application differently based on the environment it's running in.",
+    "ja": "Rails環境（開発、テスト、本番）により、アプリケーションが実行されている環境に基づいて異なる方法でアプリケーションを実行できます。"
+  },
+  {
+    "en": "ActiveStorage facilitates uploading files to cloud storage services and attaching those files to Active Record objects.",
+    "ja": "ActiveStorageは、クラウドストレージサービスへのファイルのアップロードと、それらのファイルをActive Recordオブジェクトに添付することを容易にします。"
+  },
+  {
+    "en": "ActionMailer is the Rails component that enables sending emails from your application.",
+    "ja": "ActionMailerは、アプリケーションからメールを送信できるようにするRailsのコンポーネントです。"
+  },
+  {
+    "en": "Rails validators ensure that only valid data is stored in the database.",
+    "ja": "Railsのバリデータは、有効なデータのみがデータベースに保存されることを保証します。"
+  },
+  {
+    "en": "The rails generate command is used to automatically generate boilerplate code for various Rails components.",
+    "ja": "rails generateコマンドは、さまざまなRailsコンポーネントのボイラープレートコードを自動的に生成するために使用されます。"
+  },
+  {
+    "en": "Rails' flash is a special part of the session which is cleared with each request and commonly used to display error or success messages.",
+    "ja": "Railsのflashは、リクエストごとにクリアされるセッションの特別な部分で、一般的にエラーメッセージや成功メッセージの表示に使用されます。"
+  },
+  {
+    "en": "Concerns in Rails provide a way to share common code between controllers and models.",
+    "ja": "RailsのConcernsは、コントローラとモデル間で共通コードを共有する方法を提供します。"
+  },
+  {
+    "en": "By inheriting from ActiveRecord::Base, your class automatically gains the ability to interact with a database table.",
+    "ja": "ActiveRecord::Baseを継承することで、あなたのクラスは自動的にデータベーステーブルとやり取りする能力を獲得します。"
+  },
+  {
+    "en": "When dealing with complex queries, ActiveRecord's where.not can be more readable than SQL's NOT operator.",
+    "ja": "複雑なクエリを扱う場合、ActiveRecordのwhere.notは、SQLのNOT演算子よりも読みやすいことがあります。"
+  },
+  {
+    "en": "What makes ActiveRecord so powerful is its ability to represent associations between models using simple declarations.",
+    "ja": "ActiveRecordを非常に強力にしているのは、単純な宣言を使用してモデル間の関連性を表現する能力です。"
+  },
+  {
+    "en": "Did you know that counter_cache can significantly improve performance by avoiding unnecessary COUNT queries?",
+    "ja": "counter_cacheが不要なCOUNTクエリを回避することでパフォーマンスを大幅に向上できることをご存知でしたか？"
+  },
+  {
+    "en": "Through the use of transactions, ActiveRecord ensures that multiple database operations either all succeed or all fail.",
+    "ja": "トランザクションを使用することで、ActiveRecordは複数のデータベース操作がすべて成功するか、すべて失敗することを保証します。"
+  },
+  {
+    "en": "Never directly interpolate user input into your ActiveRecord queries, as this could lead to SQL injection attacks!",
+    "ja": "SQLインジェクション攻撃につながる可能性があるため、ユーザー入力を直接ActiveRecordクエリに補間しないでください！"
+  },
+  {
+    "en": "Although convenient, using find_or_create_by without a block might result in race conditions in high-traffic applications.",
+    "ja": "便利ではありますが、ブロックなしでfind_or_create_byを使用すると、高トラフィックのアプリケーションで競合状態が発生する可能性があります。"
+  },
+  {
+    "en": "Not only does ActiveRecord handle database operations, but it also provides validations to ensure data integrity.",
+    "ja": "ActiveRecordはデータベース操作を処理するだけでなく、データの整合性を確保するためのバリデーションも提供します。"
+  },
+  {
+    "en": "Optimistic locking, implemented via the lock_version column, prevents conflicting updates when multiple users edit the same record.",
+    "ja": "lock_versionカラムを介して実装される楽観的ロックは、複数のユーザーが同じレコードを編集する際の競合する更新を防止します。"
+  },
+  {
+    "en": "While developing the application, we discovered that ActiveRecord callbacks can sometimes lead to unexpected side effects.",
+    "ja": "アプリケーションを開発している間、ActiveRecordコールバックが時々予期しない副作用を引き起こす可能性があることを発見しました。"
+  },
+  {
+    "en": "Rarely do developers need to write raw SQL when using ActiveRecord, as its query interface is so comprehensive.",
+    "ja": "ActiveRecordを使用する場合、そのクエリインターフェースが非常に包括的であるため、開発者が生のSQLを書く必要はほとんどありません。"
+  },
+  {
+    "en": "Since implementing database indices, our ActiveRecord queries have become significantly faster.",
+    "ja": "データベースインデックスを実装して以来、私たちのActiveRecordクエリは大幅に高速化しました。"
+  },
+  {
+    "en": "Unless you explicitly specify a primary key, ActiveRecord will assume the table has an 'id' column.",
+    "ja": "主キーを明示的に指定しない限り、ActiveRecordはテーブルに'id'カラムがあると想定します。"
+  },
+  {
+    "en": "Before saving records, ActiveRecord checks if the object is valid by running all applicable validations.",
+    "ja": "レコードを保存する前に、ActiveRecordは適用可能なすべてのバリデーションを実行して、オブジェクトが有効かどうかをチェックします。"
+  },
+  {
+    "en": "Rails provides built-in support for three testing approaches: unit, functional, and integration testing.",
+    "ja": "Railsは、ユニットテスト、機能テスト、統合テストの3つのテストアプローチに対する組み込みサポートを提供しています。"
+  },
+  {
+    "en": "The Rails testing framework uses fixtures to populate the test database with sample data.",
+    "ja": "Railsのテストフレームワークは、フィクスチャを使用してテストデータベースにサンプルデータを入力します。"
+  },
+  {
+    "en": "Minitest is the default testing framework included with Rails and provides a complete suite of testing capabilities.",
+    "ja": "MinitestはRailsに同梱されているデフォルトのテストフレームワークで、完全なテスト機能スイートを提供します。"
+  },
+  {
+    "en": "RSpec is a popular alternative testing framework for Rails that emphasizes readable, descriptive test cases.",
+    "ja": "RSpecは、読みやすく説明的なテストケースを重視したRailsの人気のある代替テストフレームワークです。"
+  },
+  {
+    "en": "Controller tests in Rails focus on a single controller action and its interactions with the model and view.",
+    "ja": "Railsのコントローラテストは、単一のコントローラアクションとそのモデルおよびビューとの相互作用に焦点を当てています。"
+  },
+  {
+    "en": "Model tests verify the business logic, validations, and associations defined in ActiveRecord models.",
+    "ja": "モデルテストは、ActiveRecordモデルで定義されたビジネスロジック、バリデーション、関連付けを検証します。"
+  },
+  {
+    "en": "System tests in Rails allow testing of browser interactions using Capybara and a browser driver.",
+    "ja": "Railsのシステムテストでは、Capybaraとブラウザドライバーを使用してブラウザの操作をテストできます。"
+  },
+  {
+    "en": "The test environment in Rails uses a separate database to ensure tests do not affect development or production data.",
+    "ja": "Railsのテスト環境は、テストが開発または本番データに影響を与えないように、別のデータベースを使用します。"
+  },
+  {
+    "en": "Rails generators automatically create test files when generating models, controllers, and other components.",
+    "ja": "Railsジェネレーターは、モデル、コントローラー、その他のコンポーネントを生成するときに、テストファイルを自動的に作成します。"
+  },
+  {
+    "en": "Factories in Rails testing provide a more flexible alternative to fixtures for creating test data.",
+    "ja": "Railsテストにおけるファクトリーは、テストデータを作成するためのフィクスチャよりも柔軟な代替手段を提供します。"
+  },
+  {
+    "en": "The assert_difference method verifies that a numeric difference occurs before and after the execution of a block.",
+    "ja": "assert_differenceメソッドは、ブロックの実行前後に数値の差異が発生することを検証します。"
+  },
+  {
+    "en": "Mocks and stubs in Rails tests allow simulation of external dependencies without requiring actual implementation.",
+    "ja": "Railsテストのモックとスタブは、実際の実装を必要とせずに外部依存関係のシミュレーションを可能にします。"
+  },
+  {
+    "en": "Integration tests in Rails verify the interaction between controllers, assessing the whole application working together.",
+    "ja": "Railsの統合テストは、コントローラー間の相互作用を検証し、アプリケーション全体の連携を評価します。"
+  },
+  {
+    "en": "The Rails test runner provides options for running specific tests or test directories selectively.",
+    "ja": "Railsのテストランナーは、特定のテストまたはテストディレクトリを選択的に実行するためのオプションを提供します。"
+  },
+  {
+    "en": "Test-driven development in Rails involves writing tests before implementing the functionality they verify.",
+    "ja": "Railsのテスト駆動開発は、検証する機能を実装する前にテストを書くことを含みます。"
+  },
+  {
+    "en": "Rails parallel testing can distribute test execution across multiple processors to reduce test suite runtime.",
+    "ja": "Railsの並列テストは、テストスイートの実行時間を短縮するために、複数のプロセッサにわたってテスト実行を分散できます。"
+  },
+  {
+    "en": "The setup method in Rails tests initializes objects and conditions needed by all test methods in a class.",
+    "ja": "Railsテストのsetupメソッドは、クラス内のすべてのテストメソッドで必要なオブジェクトと条件を初期化します。"
+  },
+  {
+    "en": "ActionMailer tests check that emails are delivered with the correct content and recipients.",
+    "ja": "ActionMailerテストは、メールが正しい内容と受信者に配信されることを確認します。"
+  },
+  {
+    "en": "The Rails VCR gem records HTTP interactions for tests and replays them during future test runs.",
+    "ja": "Rails VCRgemは、テスト用のHTTP操作を記録し、将来のテスト実行中にそれらを再生します。"
+  },
+  {
+    "en": "Rails provides test helpers that simplify common testing tasks and promote test code reuse.",
+    "ja": "Railsは、一般的なテストタスクを簡素化し、テストコードの再利用を促進するテストヘルパーを提供します。"
+  },
+  {
+    "en": "ActionMailer provides a way to send emails from your application using mailer classes and views.",
+    "ja": "ActionMailerは、メーラークラスとビューを使用してアプリケーションからメールを送信する方法を提供します。"
+  },
+  {
+    "en": "To generate a mailer in Rails, developers can use the rails generate mailer command followed by the mailer name.",
+    "ja": "Railsでメーラーを生成するには、開発者はrails generate mailerコマンドの後にメーラー名を使用できます。"
+  },
+  {
+    "en": "Similar to controllers, mailers consist of methods that can be called to handle email delivery logic.",
+    "ja": "コントローラーと同様に、メーラーはメール配信ロジックを処理するために呼び出せるメソッドで構成されています。"
+  },
+  {
+    "en": "Within a mailer method, instance variables are assigned for use in the email template view.",
+    "ja": "メーラーメソッド内では、メールテンプレートビューで使用するためにインスタンス変数が割り当てられます。"
+  },
+  {
+    "en": "By default, Rails creates both HTML and plain text email templates when generating a new mailer action.",
+    "ja": "デフォルトでは、Railsは新しいメーラーアクションを生成するとき、HTMLとプレーンテキストの両方のメールテンプレートを作成します。"
+  },
+  {
+    "en": "Email delivery can be configured to happen synchronously or asynchronously using ActiveJob integration.",
+    "ja": "メール配信は、ActiveJob統合を使用して同期的または非同期的に行われるように設定できます。"
+  },
+  {
+    "en": "Through the use of callbacks, ActionMailer allows pre-processing of emails before they are sent.",
+    "ja": "コールバックを使用することで、ActionMailerはメールが送信される前に前処理を行うことができます。"
+  },
+  {
+    "en": "Rails applications in development mode can use the letter_opener gem to preview emails in the browser instead of sending them.",
+    "ja": "開発モードのRailsアプリケーションでは、letter_opener gemを使用して、メールを送信する代わりにブラウザでプレビューできます。"
+  },
+  {
+    "en": "The delivery_method configuration option specifies how emails will be delivered, with SMTP being the most common in production.",
+    "ja": "delivery_method設定オプションは、メールの配信方法を指定し、SMTPが本番環境で最も一般的です。"
+  },
+  {
+    "en": "In the testing environment, ActionMailer::Base.deliveries array stores emails for later inspection instead of sending them.",
+    "ja": "テスト環境では、ActionMailer::Base.deliveries配列がメールを送信する代わりに後で検査するためにメールを保存します。"
+  },
+  {
+    "en": "For multipart emails, Rails automatically sets the appropriate content-type headers based on the available templates.",
+    "ja": "マルチパートメールの場合、Railsは利用可能なテンプレートに基づいて適切なcontent-typeヘッダーを自動的に設定します。"
+  },
+  {
+    "en": "Rails mailers support file attachments through the attachments method, allowing binary data to be included with emails.",
+    "ja": "Railsメーラーは、attachmentsメソッドを通じてファイル添付をサポートし、バイナリデータをメールに含めることができます。"
+  },
+  {
+    "en": "A mailer preview class inheriting from ActionMailer::Preview enables developers to view emails in a browser during development.",
+    "ja": "ActionMailer::Previewを継承するメーラープレビュークラスにより、開発者は開発中にブラウザでメールを表示できます。"
+  },
+  {
+    "en": "The mail method, when called within a mailer action, returns a mail object that will eventually be delivered.",
+    "ja": "メーラーアクション内で呼び出されるとき、mailメソッドは最終的に配信されるメールオブジェクトを返します。"
+  },
+  {
+    "en": "During the asset compilation phase, Rails will automatically inline CSS when the premailer-rails gem is included in the project.",
+    "ja": "アセットコンパイルフェーズ中、premailer-rails gemがプロジェクトに含まれていると、RailsはCSSを自動的にインライン化します。"
+  },
+  {
+    "en": "Despite being similar to controllers, mailers differ in that they inherit from ActionMailer::Base rather than ApplicationController.",
+    "ja": "コントローラーに似ているにもかかわらず、メーラーはApplicationControllerではなくActionMailer::Baseから継承するという点で異なります。"
+  },
+  {
+    "en": "After defining a mailer method, calling the deliver_now or deliver_later method will trigger the actual email delivery process.",
+    "ja": "メーラーメソッドを定義した後、deliver_nowまたはdeliver_laterメソッドを呼び出すと、実際のメール配信プロセスが開始されます。"
+  },
+  {
+    "en": "With internationalization support, Rails mailers can render templates in different languages based on the user's locale.",
+    "ja": "国際化サポートにより、Railsメーラーはユーザーのロケールに基づいて異なる言語でテンプレートをレンダリングできます。"
+  },
+  {
+    "en": "Since version 6.0, Rails offers Action Mailbox for handling incoming emails by routing them to controller-like mailboxes.",
+    "ja": "バージョン6.0以降、Railsはコントローラーに似たメールボックスに受信メールをルーティングすることで、それらを処理するAction Mailboxを提供しています。"
+  },
+  {
+    "en": "Without properly configuring the sender address, emails might be marked as spam by receiving email servers.",
+    "ja": "送信者アドレスを適切に設定しないと、メールは受信メールサーバーによってスパムとしてマークされる可能性があります。"
+  },
+  {
+    "en": "Action Cable integrates WebSockets with the rest of your Rails application, allowing real-time features to be written in Ruby.",
+    "ja": "Action CableはWebSocketsをRailsアプリケーションの他の部分と統合し、リアルタイム機能をRubyで記述できるようにします。"
+  },
+  {
+    "en": "Through channels in Action Cable, specific streams can be created for different types of real-time functionality.",
+    "ja": "Action Cableのチャネルを通じて、異なるタイプのリアルタイム機能向けの特定のストリームを作成できます。"
+  },
+  {
+    "en": "Connection authentication in Action Cable often relies on the same authentication system used by the main Rails application.",
+    "ja": "Action Cableの接続認証は、多くの場合、メインのRailsアプリケーションで使用されるのと同じ認証システムに依存しています。"
+  },
+  {
+    "en": "While WebSockets maintain a persistent connection, Action Cable can fall back to polling when WebSockets aren't available.",
+    "ja": "WebSocketsは永続的な接続を維持しますが、Action CableはWebSocketsが利用できない場合にポーリングにフォールバックできます。"
+  },
+  {
+    "en": "Broadcasting to channels allows servers to push content to subscribed clients without requiring the clients to request it.",
+    "ja": "チャネルへのブロードキャストにより、サーバーはクライアントがリクエストすることなく、登録済みクライアントにコンテンツをプッシュできます。"
+  },
+  {
+    "en": "Redis is commonly used as the subscription adapter for Action Cable in production environments with multiple servers.",
+    "ja": "複数のサーバーを持つ本番環境では、RedisがAction Cableのサブスクリプションアダプターとして一般的に使用されます。"
+  },
+  {
+    "en": "Import maps in Rails 7 provide a way to use JavaScript modules directly from CDNs or local files without requiring a bundler.",
+    "ja": "Rails 7のインポートマップは、バンドラーを必要とせずにCDNやローカルファイルから直接JavaScriptモジュールを使用する方法を提供します。"
+  },
+  {
+    "en": "With import maps, browser-native ESM imports are mapped to specific URLs for modules, simplifying JavaScript management.",
+    "ja": "インポートマップを使用すると、ブラウザネイティブのESMインポートがモジュールの特定のURLにマッピングされ、JavaScript管理が簡素化されます。"
+  },
+  {
+    "en": "By editing the importmap.json file, developers can specify the source location for each JavaScript module used in the application.",
+    "ja": "importmap.jsonファイルを編集することで、開発者はアプリケーションで使用される各JavaScriptモジュールのソース場所を指定できます。"
+  },
+  {
+    "en": "Unlike traditional bundlers, import maps load modules on-demand rather than combining them into large bundles.",
+    "ja": "従来のバンドラーとは異なり、インポートマップはモジュールを大きなバンドルに結合するのではなく、オンデマンドでロードします。"
+  },
+  {
+    "en": "Local module installation for import maps can be managed using the pin command provided by the importmap-rails gem.",
+    "ja": "インポートマップのローカルモジュールインストールは、importmap-rails gemが提供するpinコマンドを使用して管理できます。"
+  },
+  {
+    "en": "During development, import maps can improve iteration speed since no rebuild step is required when changing JavaScript code.",
+    "ja": "開発中、JavaScriptコードを変更する際に再構築ステップが不要なため、インポートマップは反復速度を向上させることができます。"
+  },
+  {
+    "en": "Propshaft serves as an asset pipeline for Rails focused on simplicity and leveraging modern web standards.",
+    "ja": "Propshaftは、シンプルさと最新のWeb標準の活用に焦点を当てたRails向けのアセットパイプラインとして機能します。"
+  },
+  {
+    "en": "Unlike Sprockets, Propshaft doesn't transform assets but instead focuses on fingerprinting and path resolution.",
+    "ja": "Sprocketsとは異なり、Propshaftはアセットを変換せず、フィンガープリントとパス解決に焦点を当てています。"
+  },
+  {
+    "en": "Manifest compilation in Propshaft provides a mapping between logical asset names and their fingerprinted versions.",
+    "ja": "Propshaftのマニフェストコンパイルは、論理的なアセット名とそのフィンガープリントバージョン間のマッピングを提供します。"
+  },
+  {
+    "en": "Assets processed through Propshaft can be referenced in views using the asset_path helper method.",
+    "ja": "Propshaftを通じて処理されたアセットは、asset_pathヘルパーメソッドを使用してビューで参照できます。"
+  },
+  {
+    "en": "The Propshaft asset pipeline was designed to work well with modern front-end build tools like esbuild and Vite.",
+    "ja": "Propshaftアセットパイプラインは、esbuildやViteなどの最新のフロントエンドビルドツールとうまく連携するように設計されています。"
+  },
+  {
+    "en": "By delegating JavaScript processing to specialized tools, Propshaft maintains a clearer separation of concerns than previous asset pipelines.",
+    "ja": "JavaScript処理を専門ツールに委任することで、Propshaftは以前のアセットパイプラインよりも明確な関心の分離を維持します。"
+  },
+  {
+    "en": "Since Propshaft lacks the preprocessing capabilities of Sprockets, external compilers must be integrated for tasks like Sass compilation.",
+    "ja": "PropshaftにはSprocketsの前処理機能がないため、Sassコンパイルなどのタスクには外部コンパイラを統合する必要があります。"
+  },
+  {
+    "en": "Between Sprockets and Propshaft, the latter offers improved performance due to its minimalist approach to asset processing.",
+    "ja": "SprocketsとPropshaftの間では、後者はアセット処理に対するミニマリストアプローチにより、パフォーマンスが向上しています。"
+  },
+  {
+    "en": "Solid Queue provides a database-backed Active Job backend that prioritizes reliability and operational simplicity.",
+    "ja": "Solid Queueは、信頼性と運用のシンプルさを優先するデータベースをバックエンドとしたActive Jobバックエンドを提供します。"
+  },
+  {
+    "en": "Unlike Redis-based job queues, Solid Queue stores all job data directly in your application's primary database.",
+    "ja": "Redisベースのジョブキューとは異なり、Solid Queueはすべてのジョブデータをアプリケーションのプライマリデータベースに直接保存します。"
+  },
+  {
+    "en": "The architecture of Solid Queue separates job execution from job polling through dedicated processes called dispatchers.",
+    "ja": "Solid Queueのアーキテクチャは、ディスパッチャーと呼ばれる専用プロセスを通じて、ジョブの実行をジョブのポーリングから分離します。"
+  },
+  {
+    "en": "Through concurrency controls, Solid Queue prevents the same job from being processed simultaneously by multiple workers.",
+    "ja": "並行制御を通じて、Solid Queueは同じジョブが複数のワーカーによって同時に処理されることを防ぎます。"
+  },
+  {
+    "en": "Solid Queue's supervisor process monitors and restarts dispatchers and workers when they unexpectedly terminate.",
+    "ja": "Solid Queueのスーパーバイザープロセスは、ディスパッチャーとワーカーが予期せず終了した場合に、それらを監視して再起動します。"
+  },
+  {
+    "en": "Database-level locking mechanisms in Solid Queue ensure that scheduled jobs are processed exactly once.",
+    "ja": "Solid Queueのデータベースレベルのロックメカニズムは、スケジュールされたジョブが確実に1回だけ処理されることを保証します。"
+  },
+  {
+    "en": "During deployment, Solid Queue gracefully handles job processing by allowing in-progress jobs to complete before shutting down.",
+    "ja": "デプロイ中、Solid Queueはシャットダウンする前に進行中のジョブを完了させることで、ジョブ処理を適切に処理します。"
+  },
+  {
+    "en": "Solid Cache implements a database-backed cache store compatible with Rails' cache interface and multi-process environments.",
+    "ja": "Solid Cacheは、Railsのキャッシュインターフェースとマルチプロセス環境に互換性のあるデータベースバックアップのキャッシュストアを実装しています。"
+  },
+  {
+    "en": "The data model of Solid Cache utilizes two primary tables: one for entries and another for key-value pairs.",
+    "ja": "Solid Cacheのデータモデルは、エントリー用とキーと値のペア用の2つの主要テーブルを利用しています。"
+  },
+  {
+    "en": "Unlike memory-based caches, Solid Cache persists across application restarts without losing cached content.",
+    "ja": "メモリベースのキャッシュとは異なり、Solid Cacheはキャッシュされたコンテンツを失うことなくアプリケーションの再起動後も維持されます。"
+  },
+  {
+    "en": "For distributed applications, Solid Cache eliminates the need for a separate cache server while maintaining performance.",
+    "ja": "分散アプリケーションの場合、Solid Cacheはパフォーマンスを維持しながら、別のキャッシュサーバーの必要性を排除します。"
+  },
+  {
+    "en": "Memory utilization remains stable with Solid Cache even as the cache size grows due to database-based storage.",
+    "ja": "データベースベースのストレージにより、キャッシュサイズが増加しても、Solid Cacheではメモリ使用量は安定したままです。"
+  },
+  {
+    "en": "Solid Cache implements automatic expiration through a background job that periodically removes obsolete entries.",
+    "ja": "Solid Cacheは、定期的に古いエントリーを削除するバックグラウンドジョブを通じて自動有効期限切れを実装しています。"
+  },
+  {
+    "en": "Solid Cable extends Action Cable by providing database-backed persistence for WebSocket connections and broadcasts.",
+    "ja": "Solid CableはAction Cableを拡張し、WebSocket接続とブロードキャストのためのデータベースバックアップの永続性を提供します。"
+  },
+  {
+    "en": "Within high-availability environments, Solid Cable enables seamless WebSocket connection handling across multiple application servers.",
+    "ja": "高可用性環境内で、Solid Cableは複数のアプリケーションサーバー間でシームレスなWebSocket接続処理を可能にします。"
+  },
+  {
+    "en": "The subscription storage model in Solid Cable facilitates reconnection to appropriate channels even when users connect to different server instances.",
+    "ja": "Solid Cableのサブスクリプションストレージモデルは、ユーザーが異なるサーバーインスタンスに接続する場合でも、適切なチャネルへの再接続を容易にします。"
+  },
+  {
+    "en": "By storing connection state in the database, Solid Cable allows for more resilient real-time features in load-balanced environments.",
+    "ja": "データベースに接続状態を保存することで、Solid Cableはロードバランス環境でより回復力のあるリアルタイム機能を可能にします。"
+  },
+  {
+    "en": "The adaptation layer between Solid Cable and Action Cable maintains compatibility with existing channel implementations.",
+    "ja": "Solid CableとAction Cable間の適応層は、既存のチャネル実装との互換性を維持します。"
+  },
+  {
+    "en": "Message broadcasting in Solid Cable ensures delivery across all application servers through database-backed message queues.",
+    "ja": "Solid Cableのメッセージブロードキャストは、データベースバックアップのメッセージキューを通じて、すべてのアプリケーションサーバー間での配信を確保します。"
+  },
+  {
+    "en": "Connection recovery mechanisms in Solid Cable reduce user-visible disruptions during application deployments or server restarts.",
+    "ja": "Solid Cableの接続回復メカニズムは、アプリケーションのデプロイやサーバーの再起動中のユーザーに見える中断を減少させます。"
+  }
+]

@@ -1,0 +1,287 @@
+Preparing dataset for training...
+Finished preparing dataset!
+
+Preparing model and tokenizer...
+Finished setting up model and tokenizer.
+
+Tokenizing dataset...
+Finished tokenizing dataset:
+DatasetDict({
+    train: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 362
+    })
+    test: Dataset({
+        features: ['en', 'ja', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 41
+    })
+})
+
+Starting training...
+{'eval_loss': 1.759268879890442, 'eval_bleu': 0.32830161454938145, 'eval_chrf': 64.85226133626499, 'eval_runtime': 3.7422, 'eval_samples_per_second': 10.956, 'eval_steps_per_second': 0.802, 'epoch': 1.0}
+{'eval_loss': 1.6914809942245483, 'eval_bleu': 0.32600103081656867, 'eval_chrf': 64.67048424991614, 'eval_runtime': 3.3423, 'eval_samples_per_second': 12.267, 'eval_steps_per_second': 0.898, 'epoch': 2.0}
+{'eval_loss': 1.6713911294937134, 'eval_bleu': 0.32996252769320933, 'eval_chrf': 64.84930478397678, 'eval_runtime': 3.3107, 'eval_samples_per_second': 12.384, 'eval_steps_per_second': 0.906, 'epoch': 3.0}
+{'train_runtime': 26.3833, 'train_samples_per_second': 41.162, 'train_steps_per_second': 2.615, 'train_loss': 2.10711669921875, 'epoch': 3.0}
+Finished training!
+
+Saving model and uploading to Hugging Face Hub...
+Finished training the model!
+
+Starting fine-tuned evaluation with test set:
+-----------------------------------------
+Fine-tuned Model Evaluation scores vs original model
+-----------------------------------------
+BLEU - Fine-tuned Ruby: 0.32996252769320933
+chrF - Fine-tuned Ruby: 64.67220727528255
+BLEU - Original Ruby: 0.2636261043611309
+chrF - Original Ruby: 61.985392167045504
+
+-----------------------------------------
+Translations from fine-tuned model test data output compared to original:
+-----------------------------------------
+1
+Original JA: これは動作しますが、あまりエレガントではありません。
+Fine-tuned EN Prediction: This works, but it isn't very elegant.
+Original EN Prediction: This works, but it's not very elegant.
+EN Reference: This works, but isn’t very elegant.
+
+2
+Original JA: つまり、selfのみがprivateメソッドを呼び出す際のレシーバとなります。
+Fine-tuned EN Prediction: In other words, it's a recording of who you are when you call a private method.
+Original EN Prediction: In other words, you're the only person calling the "private method" method.
+EN Reference: Only self is allowed to be the receiver of a private method call.
+
+3
+Original JA: オブジェクトを作りましょう。
+Fine-tuned EN Prediction: Let's create an object.
+Original EN Prediction: Let's make an object.
+EN Reference: Create an object.
+
+4
+Original JA: Action CableはWebSocketsをRailsアプリケーションの他の部分と統合し、リアルタイム機能をRubyで記述できるようにします。
+Fine-tuned EN Prediction: Action Cable combines WebSocks with the rest of Rails applications, allowing them to describe real-time features in Ruby.
+Original EN Prediction: Action Cables combine webSocks with other parts of the Rails application and allow you to describe real-time features in Ruby.
+EN Reference: Action Cable integrates WebSockets with the rest of your Rails application, allowing real-time features to be written in Ruby.
+
+5
+Original JA: 短いのでそのまま入力し直してもよいですが、先ほど入力したところに戻って 変更することもできます。
+Fine-tuned EN Prediction: Since it's short, you can re-enter it, but you can also change it back to where you typed it earlier.
+Original EN Prediction: It's so short that you can re-enter it, but you can go back to where you typed it and change it.
+EN Reference: You could type it in, it’s short enough, but you may also be able to go up and change what you just entered.
+
+6
+Original JA: このメソッドは実際の変数の型を意識せず、サポートしているメソッドに頼っています。
+Fine-tuned EN Prediction: This method is unaware of the actual variable type and depends on the methods it supports.
+Original EN Prediction: This method is unaware of the actual type of variable and depends on the methods that support it.
+EN Reference: This method does not care about the actual type of a variable; it just relies on what methods it supports.
+
+7
+Original JA: この例では、sqrt(9)がメッセージになります。
+Fine-tuned EN Prediction: In this example, sqrt (9) is a message.
+Original EN Prediction: In this example, sqrt (9) will be a message.
+EN Reference: In this case it’s sqrt(9).
+
+8
+Original JA: クラスや整数でさえオブジェクトです。
+Fine-tuned EN Prediction: Even classes and integers are objects.
+Original EN Prediction: Even classes and integers are objects.
+EN Reference: Even classes and integers are objects.
+
+9
+Original JA: では、=> nilは何でしょうか？
+Fine-tuned EN Prediction: Let's do another one.
+Original EN Prediction: Let's see if we can figure out what's greater than or equal to.
+EN Reference: But then what’s the => nil bit?
+
+10
+Original JA: 3足す2
+Fine-tuned EN Prediction: Three plus two.
+Original EN Prediction: Three plus two.
+EN Reference: Three plus two.
+
+11
+Original JA: JavaScript処理を専門ツールに委任することで、Propshaftは以前のアセットパイプラインよりも明確な関心の分離を維持します。
+Fine-tuned EN Prediction: By delegateing JavaScript processing as a special tool, Propshaft maintains a separateness of interest more clearly than the original asset pipeline.
+Original EN Prediction: By delegateing JavaScript processing as a special tool, Propshaft maintains a separateness of interest more clearly than the previous asset pipeline.
+EN Reference: By delegating JavaScript processing to specialized tools, Propshaft maintains a clearer separation of concerns than previous asset pipelines.
+
+12
+Original JA: ActiveRecordを非常に強力にしているのは、単純な宣言を使用してモデル間の関連性を表現する能力です。
+Fine-tuned EN Prediction: What makes ActiveRecor so powerful is the ability to express relations between models using simple declarations.
+Original EN Prediction: What makes ActiveRecor so powerful is the ability to express relations between models using simple declarations.
+EN Reference: What makes ActiveRecord so powerful is its ability to represent associations between models using simple declarations.
+
+13
+Original JA: そのため、このメソッドは必ず小数（浮動小数点数）を返します。
+Fine-tuned EN Prediction: Therefore, this method always returns a decimal float value.
+Original EN Prediction: Therefore, this method always returns a decimal float value.
+EN Reference: Therefore the method always returns a floating-point number.
+
+14
+Original JA: File.openは、指定されたモードに従ってファイル名で指定されたファイルを開き、新しいFileオブジェクトを返します。
+Fine-tuned EN Prediction: File.open opens a file named by the filename according to the specified mode and returns a new File object.
+Original EN Prediction: File.open will open a file named by filename according to the specified mode and return a new File object.
+EN Reference: File.open opens the file named by filename according to the given mode and returns a new File object.
+
+15
+Original JA: Windows をお使いの場合、スタートメニューのRubyからInteractive Rubyを起動してください。
+Fine-tuned EN Prediction: If you are using Windows, please start Interactive Ruby from Ruby in the start-up menu.
+Original EN Prediction: If you want to use Windows, please start Interactive Ruby from Ruby on the start menu.
+EN Reference: If you’re using Windows, open Interactive Ruby from the Ruby section of your Start Menu.
+
+16
+Original JA: 一つはカッコなしでメソッド呼び出しが使われていることです。
+Fine-tuned EN Prediction: One is that method calls are being used without a screw.
+Original EN Prediction: One is that method calls are being used without makeup.
+EN Reference: One is that we’re calling the method without parentheses again.
+
+17
+Original JA: Array#replaceは、与えられた配列の内容で配列の内容を置き換えます。
+Fine-tuned EN Prediction: Array#replace replaces the contents of the array with the contents of the given array.
+Original EN Prediction: The Array#replace will replace the contents of the array with the contents of the given array.
+EN Reference: Array#replace replaces the contents of an array with the contents of another array.
+
+18
+Original JA: @@から始まる識別子はクラス変数になります。
+Fine-tuned EN Prediction: The identifier starting with @@ is a class variable.
+Original EN Prediction: The identifier starting with @@ will be a class variable.
+EN Reference: If it starts with @@, it is a class variable.
+
+19
+Original JA: インポートマップのローカルモジュールインストールは、importmap-rails gemが提供するpinコマンドを使用して管理できます。
+Fine-tuned EN Prediction: Local installations of import maps can be managed using the iportmap-rails gm supply command.
+Original EN Prediction: The local installation of the import map can be managed by using the php command provided by iportmap-mailsgm.
+EN Reference: Local module installation for import maps can be managed using the pin command provided by the importmap-rails gem.
+
+20
+Original JA: Action Cableのチャネルを通じて、異なるタイプのリアルタイム機能向けの特定のストリームを作成できます。
+Fine-tuned EN Prediction: Through ActionCable channels, you can create a specific stream for different types of real-time functions.
+Original EN Prediction: You can create a specific stream for different types of real-time functions through the ActionCile channel.
+EN Reference: Through channels in Action Cable, specific streams can be created for different types of real-time functionality.
+
+21
+Original JA: これらはメソッドではないので、再定義できません。
+Fine-tuned EN Prediction: Since these aren't methods, they can't be redefined.
+Original EN Prediction: These aren't methods, so we can't redefinate them.
+EN Reference: They are not methods, and cannot be redefined.
+
+22
+Original JA: Sprocketsとは異なり、Propshaftはアセットを変換せず、フィンガープリントとパス解決に焦点を当てています。
+Fine-tuned EN Prediction: Unlike Speckets, Propshaft doesn't convert asset, but focuss on fingerprint and path resolution.
+Original EN Prediction: Unlike Sprockers, Propshaft doesn't transform the asset, but focuses on fingerprint and path resolution.
+EN Reference: Unlike Sprockets, Propshaft doesn't transform assets but instead focuses on fingerprinting and path resolution.
+
+23
+Original JA: だからと言って、定数を再定義するべきだということではありません。
+Fine-tuned EN Prediction: That doesn't mean we should redefin the constants.
+Original EN Prediction: That doesn't mean we should redefine the constant.
+EN Reference: That isn’t to say you should redefine constants, though.
+
+24
+Original JA: method_missingを使用すると、未定義メソッドへの呼び出しを傍受し、動的な振る舞いを実装できます。
+Fine-tuned EN Prediction: Using method_missing enables you to intercept calls to undefined methods and implement dynamic behaviors.
+Original EN Prediction: Using method_missing enables you to intercept calls to undefined methods and implement dynamic behavior.
+EN Reference: Using method_missing allows you to intercept calls to undefined methods and implement dynamic behavior.
+
+25
+Original JA: Railsのテストフレームワークは、フィクスチャを使用してテストデータベースにサンプルデータを入力します。
+Fine-tuned EN Prediction: The test framework in Rails inputs sample data into a test database using a faxer.
+Original EN Prediction: The test framework for Rails will be used to enter sample data into test databases.
+EN Reference: The Rails testing framework uses fixtures to populate the test database with sample data.
+
+26
+Original JA: rescue節は、指定されたタイプの例外をキャッチし、例外が発生したときにコードを実行します。
+Fine-tuned EN Prediction: The recoup section captures the exception of the specified type and executes the code when an exception occurs.
+Original EN Prediction: The recoup section captures the exception of the specified type and executes the code when an exception occurs.
+EN Reference: The rescue clause catches exceptions of specified types and executes code when an exception occurs.
+
+27
+Original JA: importmap.jsonファイルを編集することで、開発者はアプリケーションで使用される各JavaScriptモジュールのソース場所を指定できます。
+Fine-tuned EN Prediction: By editing emportmap. json files, developers can specify the source location of each JavaScript module used by applications.
+Original EN Prediction: By editing the emportmap. json file, the developer can specify the source location of each JavaScript module used by the application.
+EN Reference: By editing the importmap.json file, developers can specify the source location for each JavaScript module used in the application.
+
+28
+Original JA: カスタム例外は、システム例外をキャッチするのを避けるため、ExceptionではなくStandardErrorから継承するべきです。
+Fine-tuned EN Prediction: Custom exceptions should inherit from StandardError rather than Excession to avoid catching system exceptions.
+Original EN Prediction: Custom exceptions should be inherited from StandardError rather than Excessor to avoid catching system exceptions.
+EN Reference: Custom exceptions should inherit from StandardError rather than Exception to avoid catching system exceptions.
+
+29
+Original JA: Railsのシステムテストでは、Capybaraとブラウザドライバーを使用してブラウザの操作をテストできます。
+Fine-tuned EN Prediction: In Rails system testing, you can test browser operations using CapKara and browser drivers.
+Original EN Prediction: In Rails' system test, you can test your browser operation using Caporara and the browser driver.
+EN Reference: System tests in Rails allow testing of browser interactions using Capybara and a browser driver.
+
+30
+Original JA: ActiveRecordを使用する場合、そのクエリインターフェースが非常に包括的であるため、開発者が生のSQLを書く必要はほとんどありません。
+Fine-tuned EN Prediction: When using ActiveRecor, the query interface is so comprehensive that developers rarely need to write a raw SQL.
+Original EN Prediction: When using ActiveRecor, the query interface is so comprehensive that you have little need for the developer to write a raw SQL.
+EN Reference: Rarely do developers need to write raw SQL when using ActiveRecord, as its query interface is so comprehensive.
+
+31
+Original JA: もしお使いのマシンにRubyが入っていない場合、始める前に インストールしておいてください。
+Fine-tuned EN Prediction: If your machine doesn't contain Ruby, please install it before you start.
+Original EN Prediction: If your machine isn't loaded, please install it before you start.
+EN Reference: If you do not have Ruby on your computer install it before you get started.
+
+32
+Original JA: しかし、もうちょっと詳しく見てみましょう。
+Fine-tuned EN Prediction: But let's take a closer look.
+Original EN Prediction: But let's take a closer look.
+EN Reference: But let’s take a closer look at things.
+
+33
+Original JA: Rails VCRgemは、テスト用のHTTP操作を記録し、将来のテスト実行中にそれらを再生します。
+Fine-tuned EN Prediction: Rails VCRagem records tests of HTTP operations and plays them during future tests.
+Original EN Prediction: Rails VCRagem records your testing operations and plays them during future tests.
+EN Reference: The Rails VCR gem records HTTP interactions for tests and replays them during future test runs.
+
+34
+Original JA: 結果は以下のようになるはずです。
+Fine-tuned EN Prediction: The result should be:
+Original EN Prediction: The result should be:
+EN Reference: The output should be:
+
+35
+Original JA: 簡単ですね。
+Fine-tuned EN Prediction: It's easy.
+Original EN Prediction: It's easy, isn't it?
+EN Reference: Easy enough.
+
+36
+Original JA: 開発中、JavaScriptコードを変更する際に再構築ステップが不要なため、インポートマップは反復速度を向上させることができます。
+Fine-tuned EN Prediction: During development, since reconstruction steps are unnecessary when changing JavaScript code, import maps can increase the repetition speed.
+Original EN Prediction: In the course of the development of JavaScript code, there is no need for a reassemble step in changing the JavaScript code, so the import map can increase the repetition speed.
+EN Reference: During development, import maps can improve iteration speed since no rebuild step is required when changing JavaScript code.
+
+37
+Original JA: Rubyはオブジェクトの変数にアクセスできる簡単な方法を用意しています。
+Fine-tuned EN Prediction: Ruby provides a simple way to access object variables.
+Original EN Prediction: Ruby provides a simple way to access object variables.
+EN Reference: Ruby provides an easy way of providing access to an object’s variables.
+
+38
+Original JA: prependメソッドは、メソッドのオーバーライドを可能にするために、モジュールを継承チェーンのインクルードするクラスの前に挿入します。
+Fine-tuned EN Prediction: The prepend method inserts a module in front of a class that allows the inherit chain to override methods.
+Original EN Prediction: The prepend method will insert the module in front of the class that will be included in the inherit chain to enable the method to override.
+EN Reference: The prepend method inserts a module before the including class in the ancestor chain, allowing method overriding.
+
+39
+Original JA: Module#attr_accessorメソッドは、インスタンス変数のゲッターメソッドとセッターメソッドを定義します。
+Fine-tuned EN Prediction: The Module#attr_accessor method defines the instance variable's Getter method and the sector method.
+Original EN Prediction: The Module #attr_accessor method defines the instance variable's Getter method and the sector method.
+EN Reference: The Module#attr_accessor method defines getter and setter methods for instance variables.
+
+40
+Original JA: 開発モードのRailsアプリケーションでは、letter_opener gemを使用して、メールを送信する代わりにブラウザでプレビューできます。
+Fine-tuned EN Prediction: Rails applications in development mode allow browser previews instead of sending emails using letter_opener gm.
+Original EN Prediction: The Rails application in development mode allows you to preview your browser using letter_opener gm instead of sending mail.
+EN Reference: Rails applications in development mode can use the letter_opener gem to preview emails in the browser instead of sending them.
+
+41
+Original JA: Array#injectメソッドは、ブロックで指定された二項演算を適用して配列の全要素を結合します。
+Fine-tuned EN Prediction: The Array#inject method combines all elements of an array with a binary operation specified by a block.
+Original EN Prediction: The Array#inject method combines all elements of the array using the binary operation specified by the block.
+EN Reference: The Array#inject method combines all elements of the array by applying a binary operation specified by a block.
+
