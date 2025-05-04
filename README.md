@@ -25,6 +25,7 @@ The following three datasets were used for evaluation:
 - `ruby_dataset/`: Contains the Ruby dataset used for training and evaluation
   - `data.json`: The full dataset, including synthetic and real data
   - `synthetic.json`: Dataset with only the synthetic data
+- `report_and_presentation_slides/`: Contains the project report and presentation slides. Link to the presentation video is in the README in this directory.
 
 ## Running Evaluation Scripts
 
