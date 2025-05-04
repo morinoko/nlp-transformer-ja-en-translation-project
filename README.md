@@ -2,7 +2,10 @@
 
 This repository contains the scripts (and outputs) for evaluating four transformer models for Japanese-English translation, as well as a fine-tuning experiment using the Helsinki Opus model.
 
-See report and presentation slides in the `report_and_presentation_slides/` directory for more details on the models, datasets, evaluation metrics, and results.
+See report and presentation slides in the [`report_and_presentation_slides/`](https://github.com/morinoko/nlp-transformer-ja-en-translation-project/tree/main/report_and_presentation_slides) directory for more details on the models, datasets, evaluation metrics, and results:
+- [Link to report](https://github.com/morinoko/nlp-transformer-ja-en-translation-project/blob/main/report_and_presentation_slides/ProjectReport.pdf)
+- [Link to presentation slides](https://github.com/morinoko/nlp-transformer-ja-en-translation-project/blob/main/report_and_presentation_slides/ProjectPresentationSlides.pdf)
+- [Presentation video](https://www.youtube.com/watch?v=TeqbkwpSctI) (YouTube)
 
 The models evaluated are:
 - [Helsinki OPUS JA-EN (Helsinki-NLP/opus-mt-ja-en)](https://huggingface.co/Helsinki-NLP/opus-mt-ja-en)
